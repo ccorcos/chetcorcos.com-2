@@ -1,12 +1,12 @@
 import * as React from "react"
-import recordedData from "file!../img/password/recorded-data.png"
-import differencedData from "file!../img/password/differenced-data.png"
-import centeredDifferencedData from "file!../img/password/centered-differenced-data.png"
-import transformedData from "file!../img/password/transformed-data.png"
-import reducedTransformedData from "file!../img/password/reduced-transformed-data.png"
-import trainingData from "file!../img/password/training-data.png"
-import testSample from "file!../img/password/test-sample.png"
-import crackedRhythms from "file!../img/password/cracked-rhythms.png"
+import * as recordedData from "file-loader!../img/password/recorded-data.png"
+import * as differencedData from "file-loader!../img/password/differenced-data.png"
+import * as centeredDifferencedData from "file-loader!../img/password/centered-differenced-data.png"
+import * as transformedData from "file-loader!../img/password/transformed-data.png"
+import * as reducedTransformedData from "file-loader!../img/password/reduced-transformed-data.png"
+import * as trainingData from "file-loader!../img/password/training-data.png"
+import * as testSample from "file-loader!../img/password/test-sample.png"
+import * as crackedRhythms from "file-loader!../img/password/cracked-rhythms.png"
 
 export default () => (
 	<div>

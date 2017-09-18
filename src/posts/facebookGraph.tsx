@@ -1,6 +1,6 @@
 import * as React from "react"
-import fbMe from "file!../img/facebook-me.png"
-import fbOthers from "file!../img/facebook-others.png"
+import * as fbMe from "file-loader!../img/facebook-me.png"
+import * as fbOthers from "file-loader!../img/facebook-others.png"
 
 export default () => (
 	<div>

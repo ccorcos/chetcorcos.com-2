@@ -1,5 +1,5 @@
-import * as path from "path"
-import * as HtmlWebpackPlugin from "html-webpack-plugin"
+const path = require("path")
+const HtmlWebpackPlugin = require("html-webpack-plugin")
 
 module.exports = {
 	entry: "./src/index.tsx",
@@ -43,4 +43,8 @@ module.exports = {
 			template: path.join(__dirname, "src/index.html"),
 		}),
 	],
+	devServer: {
+		publicPath: "/",
+		historyApiFallback: true,
+	},
 }

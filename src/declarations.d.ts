@@ -1,4 +1,1 @@
-declare module "file!*" {
-	const content: string
-	export default content
-}
+declare module "file-loader!*"

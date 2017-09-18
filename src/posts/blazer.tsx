@@ -1,5 +1,5 @@
 import * as React from "react"
-import blazer from "file!../img/blazer.jpg"
+import * as blazer from "file-loader!../img/blazer.jpg"
 
 export default () => (
 	<div>

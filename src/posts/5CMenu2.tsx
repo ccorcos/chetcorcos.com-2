@@ -1,9 +1,9 @@
 import * as React from "react"
-import mudd2 from "file!../img/mudd2.jpeg"
-import scripps2 from "file!../img/scripps2.jpeg"
-import pitzer2 from "file!../img/pitzer2.jpeg"
-import frank2 from "file!../img/frank2.jpeg"
-import frary2 from "file!../img/frary2.jpeg"
+import * as mudd2 from "file-loader!../img/mudd2.jpeg"
+import * as scripps2 from "file-loader!../img/scripps2.jpeg"
+import * as pitzer2 from "file-loader!../img/pitzer2.jpeg"
+import * as frank2 from "file-loader!../img/frank2.jpeg"
+import * as frary2 from "file-loader!../img/frary2.jpeg"
 
 export default () => (
 	<div>

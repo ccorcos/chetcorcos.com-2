@@ -1,10 +1,10 @@
 import * as React from "react"
-import hendrix0 from "file!../img/hendrix/0.jpg"
-import hendrix1 from "file!../img/hendrix/1.jpg"
-import hendrix2 from "file!../img/hendrix/2.jpg"
-import hendrix3 from "file!../img/hendrix/3.jpg"
-import hendrix5 from "file!../img/hendrix/5.jpg"
-import hendrix4 from "file!../img/hendrix/4.jpg"
+import * as hendrix0 from "file-loader!../img/hendrix/0.jpg"
+import * as hendrix1 from "file-loader!../img/hendrix/1.jpg"
+import * as hendrix2 from "file-loader!../img/hendrix/2.jpg"
+import * as hendrix3 from "file-loader!../img/hendrix/3.jpg"
+import * as hendrix5 from "file-loader!../img/hendrix/5.jpg"
+import * as hendrix4 from "file-loader!../img/hendrix/4.jpg"
 
 export default () => (
 	<div>

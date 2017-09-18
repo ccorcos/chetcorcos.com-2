@@ -1,5 +1,5 @@
 import * as React from "react"
-import rsa from "file!../img/rsa.png"
+import * as rsa from "file-loader!../img/rsa.png"
 
 export default () => (
 	<div>
