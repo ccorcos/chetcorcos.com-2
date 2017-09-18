@@ -1,11 +1,5 @@
 import * as React from "react"
 
-const data = {
-	title: "Reactive CSS",
-	date: "February 16, 2105",
-	url: "reactive-css",
-}
-
 export default () => (
 	<div>
 		<p>

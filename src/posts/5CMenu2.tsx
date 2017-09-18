@@ -5,12 +5,6 @@ import pitzer2 from "file!../img/pitzer2.jpeg"
 import frank2 from "file!../img/frank2.jpeg"
 import frary2 from "file!../img/frary2.jpeg"
 
-const data = {
-	title: "5C Menu iPhone App - Round 2",
-	url: "5c-menu-2",
-	date: "December 18, 2014",
-}
-
 export default () => (
 	<div>
 		<p>

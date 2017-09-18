@@ -1,11 +1,5 @@
 import * as React from "react"
 
-const data = {
-	title: "Observable Streams",
-	url: "/observable-streams",
-	date: "February 7, 2015",
-}
-
 export default () => (
 	<div>
 		<p>

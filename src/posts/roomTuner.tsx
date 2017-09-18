@@ -1,11 +1,5 @@
 import * as React from "react"
 
-const data = {
-	title: "Room Tuner",
-	url: "/room-tuner",
-	date: "December 16, 2014",
-}
-
 export default () => (
 	<div>
 		<p>

@@ -7,12 +7,6 @@ import doneInterior from "file!../img/malibu/done-interior.jpg"
 import fixHeaders from "file!../img/malibu/fix-headers.jpg"
 import done from "file!../img/malibu/done.jpg"
 
-const data = {
-	title: "1965 Malibu Restoration",
-	url: "/malibu",
-	date: "September 1, 2007",
-}
-
 export default () => (
 	<div>
 		<p>

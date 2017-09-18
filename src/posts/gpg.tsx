@@ -1,11 +1,5 @@
 import * as React from "react"
 
-const data = {
-	title: "GNU Privacy Guard Tutorial",
-	date: "February 10, 2014",
-	url: "gpg",
-}
-
 export default () => (
 	<div>
 		<p>

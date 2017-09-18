@@ -1,11 +1,5 @@
 import * as React from "react"
 
-const data = {
-	title: "Animation with Meteor",
-	date: "November 20, 2014",
-	url: "blaze-animation",
-}
-
 export default () => (
 	<div>
 		<p>

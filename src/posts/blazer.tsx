@@ -1,12 +1,6 @@
 import * as React from "react"
 import blazer from "file!../img/blazer.jpg"
 
-const data = {
-	title: "1971 Blazer Restoration",
-	date: "January 1, 2010",
-	url: "blazer",
-}
-
 export default () => (
 	<div>
 		<p>

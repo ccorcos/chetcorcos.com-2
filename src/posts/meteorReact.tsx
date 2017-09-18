@@ -1,11 +1,5 @@
 import * as React from "react"
 
-const data = {
-	title: "Meteor and React",
-	url: "/meteor-react",
-	date: "February 20, 2015",
-}
-
 export default () => (
 	<div>
 		<hr />

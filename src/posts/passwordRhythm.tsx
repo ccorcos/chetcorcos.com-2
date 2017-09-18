@@ -8,12 +8,6 @@ import trainingData from "file!../img/password/training-data.png"
 import testSample from "file!../img/password/test-sample.png"
 import crackedRhythms from "file!../img/password/cracked-rhythms.png"
 
-const data = {
-	title: "Password Rhythm Authentication",
-	url: "/password-rhythm",
-	date: "March 11, 2014",
-}
-
 export default () => (
 	<div>
 		<p>

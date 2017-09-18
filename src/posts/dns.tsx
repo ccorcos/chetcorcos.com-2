@@ -1,11 +1,5 @@
 import * as React from "react"
 
-const data = {
-	title: "Configuring Your DNS",
-	url: "/configure-dns",
-	date: "June 6, 2014",
-}
-
 export default () => (
 	<div>
 		<p>

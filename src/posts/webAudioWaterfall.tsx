@@ -1,11 +1,5 @@
 import * as React from "react"
 
-const data = {
-	title: "Web Audio API Waterfall",
-	date: "December 28, 2014",
-	url: "audio-waterfall",
-}
-
 export default () => (
 	<div>
 		<p>

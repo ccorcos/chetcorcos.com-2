@@ -1,12 +1,6 @@
 import * as React from "react"
 import rsa from "file!../img/rsa.png"
 
-const data = {
-	title: "RSA Encryption Tutorial",
-	date: "February 22, 2014",
-	url: "rsa",
-}
-
 export default () => (
 	<div>
 		<p><a href="https://github.com/ccorcos/rsa-tutorial">https://github.com/ccorcos/rsa-tutorial</a></p>

@@ -1,11 +1,5 @@
 import * as React from "react"
 
-const data = {
-	title: "Raw Guitar Tuner",
-	url: "/guitar-tuner",
-	date: "January 5, 2015",
-}
-
 export default () => (
 	<div>
 		<p>

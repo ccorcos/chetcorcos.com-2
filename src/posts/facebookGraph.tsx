@@ -2,12 +2,6 @@ import * as React from "react"
 import fbMe from "file!../img/facebook-me.png"
 import fbOthers from "file!../img/facebook-others.png"
 
-const data = {
-	title: "Facebook Social Network Visualization",
-	date: "October 10, 2013",
-	url: "fb-graph",
-}
-
 export default () => (
 	<div>
 		<p>

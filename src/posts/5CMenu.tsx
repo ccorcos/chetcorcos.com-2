@@ -1,11 +1,5 @@
 import * as React from "react"
 
-const data = {
-	title: "5C Menu iPhone App",
-	date: "June 2, 2012",
-	url: "5cmenu",
-}
-
 export default () => (
 	<div>
 		<p>

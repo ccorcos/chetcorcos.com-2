@@ -11,12 +11,6 @@ import controller from "file!../img/etruck/controller.jpg"
 import thinking from "file!../img/etruck/thinking.jpg"
 import sign from "file!../img/etruck/sign.jpg"
 
-const data = {
-	title: "Electric Truck Conversion",
-	date: "September 1, 2008",
-	url: "electric-truck",
-}
-
 export default () => (
 	<div>
 		<p>

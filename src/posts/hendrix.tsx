@@ -6,12 +6,6 @@ import hendrix3 from "file!../img/hendrix/3.jpg"
 import hendrix5 from "file!../img/hendrix/5.jpg"
 import hendrix4 from "file!../img/hendrix/4.jpg"
 
-const data = {
-	title: "Jimi Hendrix Mural",
-	date: "August 29, 2011",
-	url: "hendrix",
-}
-
 export default () => (
 	<div>
 		<p>
