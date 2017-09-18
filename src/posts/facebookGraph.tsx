@@ -1,6 +1,6 @@
 import * as React from "react"
-import fbMe from "file!/img/facebook-me.png"
-import fbOthers from "file!/img/facebook-others.png"
+import fbMe from "file!../img/facebook-me.png"
+import fbOthers from "file!../img/facebook-others.png"
 
 const data = {
 	title: "Facebook Social Network Visualization",

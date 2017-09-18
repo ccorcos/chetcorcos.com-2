@@ -1,10 +1,10 @@
 import * as React from "react"
-import hendrix0 from "file!/img/hendrix/0.jpg"
-import hendrix1 from "file!/img/hendrix/1.jpg"
-import hendrix2 from "file!/img/hendrix/2.jpg"
-import hendrix3 from "file!/img/hendrix/3.jpg"
-import hendrix5 from "file!/img/hendrix/5.jpg"
-import hendrix4 from "file!/img/hendrix/4.jpg"
+import hendrix0 from "file!../img/hendrix/0.jpg"
+import hendrix1 from "file!../img/hendrix/1.jpg"
+import hendrix2 from "file!../img/hendrix/2.jpg"
+import hendrix3 from "file!../img/hendrix/3.jpg"
+import hendrix5 from "file!../img/hendrix/5.jpg"
+import hendrix4 from "file!../img/hendrix/4.jpg"
 
 const data = {
 	title: "Jimi Hendrix Mural",

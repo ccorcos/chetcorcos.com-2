@@ -1,6 +1,8 @@
 # chetcorcos.com
 
 
+- async loading https://github.com/Microsoft/TypeScript/issues/16820
+
 href="/ to find broken links
 
 

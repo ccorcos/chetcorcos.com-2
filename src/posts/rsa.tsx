@@ -1,5 +1,5 @@
 import * as React from "react"
-import rsa from "file!/img/rsa.png"
+import rsa from "file!../img/rsa.png"
 
 const data = {
 	title: "RSA Encryption Tutorial",

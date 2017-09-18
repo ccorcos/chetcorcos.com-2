@@ -1,9 +1,9 @@
 import * as React from "react"
-import mudd2 from "file!/img/mudd2.jpeg"
-import scripps2 from "file!/img/scripps2.jpeg"
-import pitzer2 from "file!/img/pitzer2.jpeg"
-import frank2 from "file!/img/frank2.jpeg"
-import frary2 from "file!/img/frary2.jpeg"
+import mudd2 from "file!../img/mudd2.jpeg"
+import scripps2 from "file!../img/scripps2.jpeg"
+import pitzer2 from "file!../img/pitzer2.jpeg"
+import frank2 from "file!../img/frank2.jpeg"
+import frary2 from "file!../img/frary2.jpeg"
 
 const data = {
 	title: "5C Menu iPhone App - Round 2",

@@ -1,11 +1,11 @@
 import * as React from "react"
-import before from "file!/img/malibu/before.jpg"
-import beforeEngine from "file!/img/malibu/before-engine.jpg"
-import newEngine from "file!/img/malibu/new-engine.jpg"
-import buffing from "file!/img/malibu/buffing.jpg"
-import doneInterior from "file!/img/malibu/done-interior.jpg"
-import fixHeaders from "file!/img/malibu/fix-headers.jpg"
-import done from "file!/img/malibu/done.jpg"
+import before from "file!../img/malibu/before.jpg"
+import beforeEngine from "file!../img/malibu/before-engine.jpg"
+import newEngine from "file!../img/malibu/new-engine.jpg"
+import buffing from "file!../img/malibu/buffing.jpg"
+import doneInterior from "file!../img/malibu/done-interior.jpg"
+import fixHeaders from "file!../img/malibu/fix-headers.jpg"
+import done from "file!../img/malibu/done.jpg"
 
 const data = {
 	title: "1965 Malibu Restoration",
