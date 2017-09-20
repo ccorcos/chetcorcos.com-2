@@ -19,7 +19,7 @@ export default () => (
 			repository (a git version-controlled directory), you'll use{" "}
 			<code>clone</code>.
 		</p>
-		<Code value={`$ git clone durl/path to git repo&gt;`} />
+		<Code value={`$ git clone <url/path to git repo>`} />
 		<p>
 			If you make any changes to the repo, you can use <code>status</code> to
 			view what changes have been made.
@@ -66,7 +66,7 @@ export default () => (
 			cloned the repository from somewhere else, you'll need to{" "}
 			<code>push</code> the changes to the remote “origin” repository.
 		</p>
-		<Code value={`$ git push origin dbranch&gt;`} />
+		<Code value={`$ git push origin <branch>`} />
 		<p>
 			Every git repository is initialized with a “master” branch. Branches allow
 			you to develop multiple versions of your code. You may have a different
@@ -75,7 +75,7 @@ export default () => (
 			the designs. To make a new branch, you'll use the <code>branch</code>{" "}
 			command.
 		</p>
-		<Code value={`$ git branch dname&gt;`} />
+		<Code value={`$ git branch <name>`} />
 		<p>
 			This will create a new branch that is a copy of the current branch you are
 			on. You can check which branch you are on by not including a name.
@@ -84,7 +84,7 @@ export default () => (
 		<p>
 			To move to another branch, you have to use <code>checkout</code>.
 		</p>
-		<Code value={`$ git checkout dname&gt;`} />
+		<Code value={`$ git checkout <name>`} />
 		<p>
 			To view a list of previous commits, you use <code>log</code>.
 		</p>
@@ -125,15 +125,15 @@ export default () => (
 		</p>
 		<Code
 			value={`
-				$ git remote add origin dgithub url&gt; $ git push -u origin master
-
+$ git remote add origin <github url>
+$ git push -u origin master
 			`}
 		/>
 		<p>
 			The other way you may start with git is my simply cloning an existing
 			repository.
 		</p>
-		<Code value={`$ git clone dgithub url or path&gt;`} />
+		<Code value={`$ git clone <github url or path>`} />
 		<p>
 			Now that you have the repo, you you'll want to create a branch to start
 			writing your own code. You'll probably want to always branch from master
@@ -145,8 +145,9 @@ export default () => (
 		</p>
 		<Code
 			value={`
-				$ git checkout master $ git pull origin master $ git branch adding_login
-
+$ git checkout master
+$ git pull origin master
+$ git branch adding_login
 			`}
 		/>
 		<p>This creates the branch locally which you can verify.</p>
@@ -344,7 +345,12 @@ export default () => (
 			to origin/master (origin is github, and master is the branch that we are
 			pushing).
 		</p>
-		<Code value={`$ git push origin master $ git status`} />
+		<Code
+			value={`
+$ git push origin master
+$ git status
+`}
+		/>
 		<p>
 			You will now see that there is nothing to commit and that we are synced
 			with origin master. This was a piece of cake - even ideal. There was no
@@ -366,8 +372,8 @@ export default () => (
 		</p>
 		<Code
 			value={`
-				$ git branch making_another_change $ git checkout making_another_change
-
+$ git branch making_another_change
+$ git checkout making_another_change
 			`}
 		/>
 		<p>
@@ -382,8 +388,8 @@ export default () => (
 		<p>Then lets commit the change.</p>
 		<Code
 			value={`
-				$ git add . $ git commit -m "me making another change"
-
+$ git add .
+$ git commit -m "me making another change"
 			`}
 		/>
 		<p>
@@ -423,10 +429,11 @@ export default () => (
 		<p>Now, lets merge and push…</p>
 		<Code
 			value={`
-				$ git add . $ git commit -m "someone making a change" $ git
-				checkout master $ git merge someone_making_some_change $ git push origin
-				master
-
+$ git add .
+$ git commit -m "someone making a change"
+$ git checkout master
+$ git merge someone_making_some_change
+$ git push origin master
 			`}
 		/>
 		<p>
@@ -439,7 +446,14 @@ export default () => (
 			Try these commands on master and <code>making_another_change</code> to
 			verify that we were right where we left off.
 		</p>
-		<Code value={`$ git branch $ git status $ git log $ cat file.txt`} />
+		<Code
+			value={`
+$ git branch
+$ git status
+$ git log
+$ cat file.txt
+`}
+		/>
 		<p>
 			Note that your repo has no knowledge of someone's commit because the local
 			repo hasn't been updated. Now, here we can do one of two things. We can
@@ -450,8 +464,9 @@ export default () => (
 		</p>
 		<Code
 			value={`
-				$ git checkout master $ git merge making_another_change $ git log
-
+$ git checkout master
+$ git merge making_another_change
+$ git log
 			`}
 		/>
 		<p>You will see that we are missing the commit made by someone…</p>
@@ -472,7 +487,7 @@ export default () => (
 		<p>
 			You will see that the merge failed because there is a conflict in{" "}
 			<code>file.txt</code>. Open it and you wwill see the conflict between the{" "}
-			<code>ddddddd ======= &gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;</code>.
+			<code>{"<<<<<<< ======= >>>>>>>>"}</code>.
 		</p>
 		<p>
 			Where it says head, we will see the changes that we made on out local git
@@ -499,9 +514,10 @@ export default () => (
 		<p>Lets commit our work.</p>
 		<Code
 			value={`
-				$ git add . $ git commit -m "merge success" $ git status $ git
-				log
-
+$ git add .
+$ git commit -m "merge success"
+$ git status
+$ git log
 			`}
 		/>
 		<p>
@@ -524,7 +540,7 @@ export default () => (
 			practices). Pushing other branches allows other people to work off that
 			branch with you.
 		</p>
-		<Code value={`$ git push origin dname of branch&gt;`} />
+		<Code value={`$ git push origin <name of branch>`} />
 		<h2>Suggestions</h2>
 		<p>
 			Commit often. The more often you commit, the easier it is to back track to
@@ -559,12 +575,20 @@ export default () => (
 			deleted a file from your Finder but want to, you and use one of the
 			following commands.
 		</p>
-		<Code value={`$ git rm path/to/file $ git rm -rf path/to/folder`} />
+		<Code
+			value={`
+$ git rm path/to/file
+$ git rm -rf path/to/folder`}
+		/>
 		<p>
 			However, if you have already deleted these files from the Finder, you can
 			delete them from the repo with this command.
 		</p>
-		<Code value={`$ git rm $(git ls-files --deleted)`} />
+		<Code
+			value={`
+$ git rm
+$(git ls-files --deleted)`}
+		/>
 		<p>
 			Then commit with a message like “clean up deleted files”. I found this
 			command online and it has been very useful…
@@ -578,9 +602,9 @@ export default () => (
 		</p>
 		<Code
 			value={`
-				$ git rm -r --cached $ git add . $ git commit -m "fixed
-				gitignore"
-
+$ git rm -r --cached
+$ git add .
+$ git commit -m "fixed gitignore"
 			`}
 		/>
 		<p>
@@ -590,7 +614,6 @@ export default () => (
 		<Code
 			value={`
 				alias gitclean="git rm -r --cached . &amp;&amp; git add ."
-
 			`}
 		/>
 		<p>
@@ -606,12 +629,12 @@ export default () => (
 			Sometimes you'll want to see a previous commit. Run <code>git log</code>,
 			copy the commit id, then
 		</p>
-		<Code value={`$ git checkout dcommit id&gt;`} />
+		<Code value={`$ git checkout <commit id>`} />
 		<p>
 			Sometimes you'll just want to say fuck it and replace the branch with a
 			previous commit.
 		</p>
-		<Code value={`$ git reset --hard dcommit id&gt;`} />
+		<Code value={`$ git reset --hard <commit id>`} />
 		<p>
 			Then to update origin master with the new repo, you can force a push to
 			origin/master.

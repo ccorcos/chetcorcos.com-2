@@ -48,7 +48,7 @@ export default () => (
 			</a>{" "}
 			integrates with Iron Router to specify transitions between routes! It
 			basically the same package with an autorun to specify the transitions
-			around your <code>{`{% raw %}{{&gt;yeild}}{% endraw %}`}</code> template.
+			around your <code>{`{% raw %}{{>yeild}}{% endraw %}`}</code> template.
 		</p>
 	</div>
 )

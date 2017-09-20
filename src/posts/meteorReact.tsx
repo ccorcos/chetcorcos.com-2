@@ -37,7 +37,7 @@ export default () => (
           (input {type:'password', placeholder:'verify'})
         ])
       ])
-      do =&gt; if @state.error then (Error @state.error)
+      do => if @state.error then (Error @state.error)
       (Padding [
         (Button {type:'block', color:'balanced'}, 'signup')
       ])
@@ -61,10 +61,10 @@ export default () => (
 		<Code
 			value={`
 getMeteorState:
-  players:        -&gt; Meteor.users.find({}, { sort: { 'profile.score': -1, username: 1 } }).fetch()
-  selectedPlayer: -&gt; Meteor.users.findOne(Session.get('selectedPlayerId'))
+  players:        -> Meteor.users.find({}, { sort: { 'profile.score': -1, username: 1 } }).fetch()
+  selectedPlayer: -> Meteor.users.findOne(Session.get('selectedPlayerId'))
 
-subscribe: -&gt;
+subscribe: ->
   Reactor.subscribe('players')
 `}
 		/>

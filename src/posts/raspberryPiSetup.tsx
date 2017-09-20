@@ -37,9 +37,9 @@ export default () => (
 		</p>
 		<Code
 			value={`
-				$ sudo apt-get install vim $ echo "set nocompatible" &gt;
-				~/.vimrc $ echo "export VISUAL=vim" &gt; ~/.bashrc $ echo
-				"export EDITOR=$VISUAL" &gt; ~/.bashrc
+				$ sudo apt-get install vim $ echo "set nocompatible" >
+				~/.vimrc $ echo "export VISUAL=vim" > ~/.bashrc $ echo
+				"export EDITOR=$VISUAL" > ~/.bashrc
 			`}
 		/>
 		<p>
@@ -115,9 +115,9 @@ export default () => (
 		</p>
 		<Code value={`$ sudo raspi-config`} />
 		<p>
-			Go to internationalization options &gt; timezone and set it to your
-			timezone. Now you're good to go! Have fun, and let me know of any awesome
-			cron jobs your set up on your Raspberry Pi!
+			Go to internationalization options > timezone and set it to your timezone.
+			Now you're good to go! Have fun, and let me know of any awesome cron jobs
+			your set up on your Raspberry Pi!
 		</p>
 		<p>
 			If you are having any trouble and it seems the jobs aren't running as

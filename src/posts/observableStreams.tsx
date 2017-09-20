@@ -72,7 +72,7 @@ export default () => (
 		<p>
 			Everything is defined within the <code>menu.rendered</code> function:
 		</p>
-		<Code value={`Template.menu.rendered = -&gt; self = this`} />
+		<Code value={`Template.menu.rendered = -> self = this`} />
 		<p>
 			We create some streams, purify, and merge them to keep track of the start,
 			movement, and end of the menu UI events.
@@ -80,9 +80,9 @@ export default () => (
 		<Code
 			value={`
 				# start stream of x position values toushStart =
-				@eventStream("touchstart", ".handle") .map (e) -&gt;
+				@eventStream("touchstart", ".handle") .map (e) ->
 				e.originalEvent.touches[0].pageX mouseDown =
-				@eventStream("mousedown", ".handle") .map (e) -&gt;
+				@eventStream("mousedown", ".handle") .map (e) ->
 				e.pageX startStream = Tracker.mergeStreams(toushStart, mouseDown) #
 				cancel on a variety of annoying events touchEnd =
 				self.eventStream("touchend", ".page", true)
@@ -91,13 +91,13 @@ export default () => (
 				self.eventStream("touchleave", ".page", true)
 				mouseUp = self.eventStream("mouseup", ".page", true)
 				mouseOut = self.eventStream("mouseout", ".page",
-				true) mouseOffPage = mouseOut .filter (e) -&gt; (e.relatedTarget or
+				true) mouseOffPage = mouseOut .filter (e) -> (e.relatedTarget or
 				e.toElement) is undefined endStream = Tracker.mergeStreams(mouseUp,
 				mouseOffPage, touchEnd, touchCancel, touchLeave) # create a move stream
 				on demand returning the x position values mouseMove =
 				self.eventStream("mousemove", ".page", true) .map
-				(e) -&gt; e.pageX touchMove = self.eventStream("touchmove",
-				".page", true) .map (e) -&gt; e.originalEvent.touches[0].pageX
+				(e) -> e.pageX touchMove = self.eventStream("touchmove",
+				".page", true) .map (e) -> e.originalEvent.touches[0].pageX
 				moveStream = Tracker.mergeStreams(mouseMove, touchMove)
 			`}
 		/>
@@ -120,7 +120,7 @@ export default () => (
 		<Code
 			value={`
 				# get the jquery object we're going to drag $menu = $(@find('.menu'))
-				startStream .unless(animatingStream) .map (x) -&gt; initLeft =
+				startStream .unless(animatingStream) .map (x) -> initLeft =
 				$menu.position().left offset = initLeft - x lastLeft = initLeft velocity
 				= 0
 			`}
@@ -135,13 +135,13 @@ export default () => (
 		<Code
 			value={`
 # toggle menu position
-      toggle = -&gt;
-        if lastLeft &gt; -menuWidth/2
+      toggle = ->
+        if lastLeft > -menuWidth/2
           # close it
-          $menu.velocity({translateX: [-menuWidth, 0], translateZ: [0, 0]}, {duration: 400, easing: 'ease-in-out', complete: -&gt; animatingStream.set(false)})
+          $menu.velocity({translateX: [-menuWidth, 0], translateZ: [0, 0]}, {duration: 400, easing: 'ease-in-out', complete: -> animatingStream.set(false)})
         else
           # open it
-          $menu.velocity({translateX: [0, -menuWidth], translateZ: [0, 0]}, {duration: 400, easing: 'ease-in-out', complete: -&gt; animatingStream.set(false)})
+          $menu.velocity({translateX: [0, -menuWidth], translateZ: [0, 0]}, {duration: 400, easing: 'ease-in-out', complete: -> animatingStream.set(false)})
 `}
 		/>
 		<p>
@@ -153,7 +153,7 @@ export default () => (
 		<Code
 			value={`
 # resolve menu position
-      resolve = -&gt;
+      resolve = ->
         animatingStream.set(true)
         # wait for animation to finish
         if initLeft is lastLeft and velocity is 0
@@ -161,14 +161,14 @@ export default () => (
           return
 
         momentum = velocity*3
-        if lastLeft + momentum &gt; -menuWidth/2
+        if lastLeft + momentum > -menuWidth/2
           momentum = Math.abs(momentum)
           duration = Math.min(-lastLeft/momentum*100, 400)
-          $menu.velocity({translateX: 0, translateZ: 0}, {duration: duration, easing: 'ease-out', complete: -&gt; animatingStream.set(false)})
+          $menu.velocity({translateX: 0, translateZ: 0}, {duration: duration, easing: 'ease-out', complete: -> animatingStream.set(false)})
         else
           momentum = Math.abs(momentum)
           duration = Math.min((200-lastLeft)/momentum*100, 400)
-          $menu.velocity({translateX: -menuWidth, translateZ: 0}, {duration: duration, easing: 'ease-out', complete: -&gt; animatingStream.set(false)})
+          $menu.velocity({translateX: -menuWidth, translateZ: 0}, {duration: duration, easing: 'ease-out', complete: -> animatingStream.set(false)})
 `}
 		/>
 		<p>
@@ -181,7 +181,7 @@ export default () => (
 			value={`
 moveStream
         .takeUntil(endStream, resolve)
-        .forEach (x) -&gt;
+        .forEach (x) ->
           # wait for animation to finish
           left = strangle(x + offset, [-menuWidth, 0])
           velocity = left - lastLeft
