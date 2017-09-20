@@ -1,7 +1,14 @@
 # chetcorcos.com
 
-- list of articles, projects, open source repos
-- resume
+- global layout
+- contact info
+- about
+
+- backward compatible urls with old chetcorcos.com
+
+- add more content
+	- github repos and other music projects
+	- resume
+
 - fuzzy search
-- move resume over
 - chets news!
