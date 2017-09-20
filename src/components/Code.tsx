@@ -11,7 +11,6 @@ export default class Code extends React.PureComponent<CodeProps, {}> {
 	}
 
 	private static codeStyle: React.CSSProperties = {
-		padding: "2px 4px",
 		verticalAlign: "text-bottom",
 	}
 
