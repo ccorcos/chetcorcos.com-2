@@ -1,3 +1,4 @@
+const webpack = require("webpack")
 const path = require("path")
 const HtmlWebpackPlugin = require("html-webpack-plugin")
 
@@ -36,11 +37,15 @@ module.exports = {
 	output: {
 		path: path.join(__dirname, "dist"),
 		publicPath: "/",
-		filename: "bundle.js",
+		filename: "[name]-[chunkhash].js",
+		chunkFilename: "[name]-[chunkhash].js",
 	},
 	plugins: [
 		new HtmlWebpackPlugin({
 			template: path.join(__dirname, "src/index.html"),
+		}),
+		new webpack.optimize.CommonsChunkPlugin({
+			name: "common",
 		}),
 	],
 	devServer: {

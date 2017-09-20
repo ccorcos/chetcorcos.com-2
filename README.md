@@ -1,5 +1,7 @@
 # chetcorcos.com
 
+- file loader isnt working
+- async module loading
 
 - async loading https://github.com/Microsoft/TypeScript/issues/16820
 
