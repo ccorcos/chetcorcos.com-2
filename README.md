@@ -4,6 +4,8 @@
 - contact info
 - about
 
+- favicon
+
 - backward compatible urls with old chetcorcos.com
 
 - add more content
