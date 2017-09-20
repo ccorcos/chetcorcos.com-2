@@ -5,6 +5,7 @@ import * as hendrix2 from "file-loader!../img/hendrix/2.jpg"
 import * as hendrix3 from "file-loader!../img/hendrix/3.jpg"
 import * as hendrix5 from "file-loader!../img/hendrix/5.jpg"
 import * as hendrix4 from "file-loader!../img/hendrix/4.jpg"
+import Image from "../components/Image"
 
 export default () => (
 	<div>
@@ -16,7 +17,7 @@ export default () => (
 			cool and easy enough to paint (if I traced it 😉).
 		</p>
 		<p>
-			<img src={hendrix0} />
+			<Image src={hendrix0} />
 		</p>
 		<p>
 			Anyways, that's what I did. I borrowed a projector from a friend,
@@ -24,7 +25,7 @@ export default () => (
 			my roomates to help me trace any lines or edges.
 		</p>
 		<p>
-			<img src={hendrix1} />
+			<Image src={hendrix1} />
 		</p>
 		<p>
 			Then we got to painting it. It took about a week of causally painting in
@@ -32,11 +33,11 @@ export default () => (
 			make sense of the weird edges that wound up traces on the wall.
 		</p>
 		<p>
-			<img src={hendrix2} />
+			<Image src={hendrix2} />
 		</p>
 		<p>In the end, it turned out AWESOME.</p>
 		<p>
-			<img src={hendrix3} />
+			<Image src={hendrix3} />
 		</p>
 		<p>
 			I was so impressed with myself. Now, I did trace this. No one is denying
@@ -45,12 +46,12 @@ export default () => (
 			some kind of graphic to trace. This is how it looks in my dorm room.
 		</p>
 		<p>
-			<img src={hendrix5} />
+			<Image src={hendrix5} />
 		</p>
 		<p>And here's a before/after pic.</p>
 		<p>
-			<img src={hendrix0} />
-			<img src={hendrix4} />
+			<Image src={hendrix0} />
+			<Image src={hendrix4} />
 		</p>
 		<p>
 			I've got to say, there were many moments when we thought this wasn't going

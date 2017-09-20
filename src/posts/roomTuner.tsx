@@ -1,5 +1,6 @@
 import * as React from "react"
 import Link from "../components/Link"
+import Image from "../components/Image"
 
 export default () => (
 	<div>
@@ -39,7 +40,7 @@ export default () => (
 			and the microphone listens to the response and plots the spectrum
 		</p>
 		<p>
-			<img src="https://raw.githubusercontent.com/ccorcos/room-tuner/master/public/screenshot.png" />
+			<Image src="https://raw.githubusercontent.com/ccorcos/room-tuner/master/public/screenshot.png" />
 		</p>
 		<p>Now, this setup has all sorts if problems.</p>
 		<ol>

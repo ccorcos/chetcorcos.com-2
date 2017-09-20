@@ -5,6 +5,7 @@ import * as pitzer from "file-loader!../img/pitzer.jpg"
 import * as cmc from "file-loader!../img/cmc.jpg"
 import * as pomona from "file-loader!../img/pomona.jpg"
 import Link from "../components/Link"
+import Image from "../components/Image"
 
 export default () => (
 	<div>
@@ -45,10 +46,10 @@ export default () => (
 			the python parser sadly took the most time of anything and now its
 			basically worthless.
 		</p>
-		<img src={mudd} />
-		<img src={scripps} />
-		<img src={pitzer} />
-		<img src={cmc} />
-		<img src={pomona} />
+		<Image src={mudd} />
+		<Image src={scripps} />
+		<Image src={pitzer} />
+		<Image src={cmc} />
+		<Image src={pomona} />
 	</div>
 )

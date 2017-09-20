@@ -2,6 +2,7 @@ import * as React from "react"
 import * as fbMe from "file-loader!../img/facebook-me.png"
 import * as fbOthers from "file-loader!../img/facebook-others.png"
 import Link from "../components/Link"
+import Image from "../components/Image"
 
 export default () => (
 	<div>
@@ -45,7 +46,7 @@ export default () => (
 		</p>
 		<p>
 			<Link href={fbMe}>
-				<img src={fbMe} />
+				<Image src={fbMe} />
 			</Link>
 		</p>
 		<p>
@@ -56,7 +57,7 @@ export default () => (
 		</p>
 		<p>
 			<Link href={fbOthers}>
-				<img src={fbOthers} />
+				<Image src={fbOthers} />
 			</Link>
 		</p>
 	</div>

@@ -1,5 +1,6 @@
 import * as React from "react"
 import Link from "../components/Link"
+import Image from "../components/Image"
 
 export default () => (
 	<div>
@@ -15,7 +16,7 @@ export default () => (
 		</p>
 		<p>Here you can see me tuning the A on my guitar.</p>
 		<p>
-			<img src="https://raw.githubusercontent.com/ccorcos/webaudio-guitar-tuner/master/public/screenshot.png" />
+			<Image src="https://raw.githubusercontent.com/ccorcos/webaudio-guitar-tuner/master/public/screenshot.png" />
 		</p>
 		<p>
 			One thing I like about this kind of tuner is that you have finer-grained

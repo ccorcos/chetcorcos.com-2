@@ -11,6 +11,7 @@ import * as controller from "file-loader!../img/etruck/controller.jpg"
 import * as thinking from "file-loader!../img/etruck/thinking.jpg"
 import * as sign from "file-loader!../img/etruck/sign.jpg"
 import Link from "../components/Link"
+import Image from "../components/Image"
 
 export default () => (
 	<div>
@@ -21,7 +22,7 @@ export default () => (
 			and we could easily weld battery trays under the bed.
 		</p>
 		<p>
-			<img src={done} />
+			<Image src={done} />
 		</p>
 		<p>
 			This was a long and frustrating project. We figured things out my calling
@@ -34,11 +35,11 @@ export default () => (
 			exhaust pipes, engine, etc.
 		</p>
 		<p>
-			<img src={grinder} />
+			<Image src={grinder} />
 		</p>
 		<p>Then, we welded battery trays under the bed.</p>
 		<p>
-			<img src={welding} />
+			<Image src={welding} />
 		</p>
 		<p>
 			We used 20 6V deep cycle marine batteries wired in series to get 120V DC
@@ -46,22 +47,22 @@ export default () => (
 			deionized water so we mounted the bed on hinges for easy access.
 		</p>
 		<p>
-			<img src={batteries} />
+			<Image src={batteries} />
 		</p>
 		<p>
 			We also beefed up the suspension with some air bags to hold the extra
 			weight (~ 1/2 ton) of the batteries.
 		</p>
 		<p>
-			<img src={shocks} />
+			<Image src={shocks} />
 		</p>
 		<p>
 			Next, mounted the clutch on the motor and mounted it to the 5-speed manual
 			transmission.
 		</p>
 		<p>
-			<img src={motor} />
-			<img src={clutch} />
+			<Image src={motor} />
+			<Image src={clutch} />
 		</p>
 		<p>
 			The next challenge was fitting everything under the hood. We put the
@@ -70,21 +71,21 @@ export default () => (
 			the relays right next to the high voltage and low voltage buses.
 		</p>
 		<p>
-			<img src={relays} />
+			<Image src={relays} />
 		</p>
 		<p>
 			We mounted the 3-phase DC controller on a huge heat sync and mounted it on
 			hinges on top of the motor.
 		</p>
 		<p>
-			<img src={controller} />
+			<Image src={controller} />
 		</p>
 		<p>
 			We had many frustrating hours staring at diagrams and calling
 			manufacturers.
 		</p>
 		<p>
-			<img src={thinking} />
+			<Image src={thinking} />
 		</p>
 		<p>
 			Eventually, it powered up. Luckily, we had the truck on stands because the
@@ -106,6 +107,6 @@ export default () => (
 			and they build me a plug in the parking lot with my own designated parking
 			space!
 		</p>
-		<img src={sign} />
+		<Image src={sign} />
 	</div>
 )

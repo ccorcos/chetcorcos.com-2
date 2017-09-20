@@ -5,6 +5,7 @@ import * as pitzer2 from "file-loader!../img/pitzer2.jpeg"
 import * as frank2 from "file-loader!../img/frank2.jpeg"
 import * as frary2 from "file-loader!../img/frary2.jpeg"
 import Link from "../components/Link"
+import Image from "../components/Image"
 
 export default () => (
 	<div>
@@ -39,10 +40,10 @@ export default () => (
 			You can also visit the{" "}
 			<Link href="http://5cmenu.com/">5C Menu online</Link>.
 		</p>
-		<img src={mudd2} />
-		<img src={scripps2} />
-		<img src={pitzer2} />
-		<img src={frank2} />
-		<img src={frary2} />
+		<Image src={mudd2} />
+		<Image src={scripps2} />
+		<Image src={pitzer2} />
+		<Image src={frank2} />
+		<Image src={frary2} />
 	</div>
 )

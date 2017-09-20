@@ -1,5 +1,6 @@
 import * as React from "react"
 import * as blazer from "file-loader!../img/blazer.jpg"
+import Image from "../components/Image"
 
 export default () => (
 	<div>
@@ -11,7 +12,7 @@ export default () => (
 			pretty good condition. And we refurbished all the interior.
 		</p>
 		<p>
-			<img src={blazer} />
+			<Image src={blazer} />
 		</p>
 		<iframe src="http://www.youtube.com/embed/fWozxL50oEI" />
 	</div>

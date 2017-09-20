@@ -1,5 +1,6 @@
 import * as React from "react"
 import Link from "../components/Link"
+import Image from "../components/Image"
 
 export default () => (
 	<div>
@@ -21,9 +22,7 @@ export default () => (
 				GRiZ - The Future Is Now
 			</Link>.
 		</p>
-		<p>
-			<img src="https://raw.githubusercontent.com/ccorcos/webaudio-waterfall/master/public/screenshot.png" />
-		</p>
+		<Image src="https://raw.githubusercontent.com/ccorcos/webaudio-waterfall/master/public/screenshot.png" />
 		<p>
 			Anyways,{" "}
 			<Link href="https://github.com/ccorcos/webaudio-waterfall">

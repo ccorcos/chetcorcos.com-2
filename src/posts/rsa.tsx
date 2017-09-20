@@ -2,6 +2,7 @@ import * as React from "react"
 import * as rsa from "file-loader!../img/rsa.png"
 import Code from "../components/Code"
 import Link from "../components/Link"
+import Image from "../components/Image"
 
 export default () => (
 	<div>
@@ -15,6 +16,6 @@ $ cd rsa-tutorial
 $ python rsa.py
 		`}/>
 		<p>Here's what the tutorial looks like.</p>
-		<p><img src={rsa} /></p>
+		<Image src={rsa} />
 	</div>
 	)

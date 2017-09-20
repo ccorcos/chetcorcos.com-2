@@ -8,6 +8,7 @@ import * as trainingData from "file-loader!../img/password/training-data.png"
 import * as testSample from "file-loader!../img/password/test-sample.png"
 import * as crackedRhythms from "file-loader!../img/password/cracked-rhythms.png"
 import Link from "../components/Link"
+import Image from "../components/Image"
 
 export default () => (
 	<div>
@@ -47,7 +48,7 @@ export default () => (
 			you throw at it.
 		</p>
 		<p>
-			<img src={recordedData} />
+			<Image src={recordedData} />
 		</p>
 		<p>
 			This example uses the password, <code>goalie12</code>. Note the rhythm
@@ -70,10 +71,10 @@ export default () => (
 			also center the data by removing the mean.
 		</p>
 		<p>
-			<img src={differencedData} />
+			<Image src={differencedData} />
 		</p>
 		<p>
-			<img src={centeredDifferencedData} />
+			<Image src={centeredDifferencedData} />
 		</p>
 		<p>
 			Now things are starting to look a bit more Gaussian. Notice the 2
@@ -96,7 +97,7 @@ export default () => (
 			leaving us with independent Gaussian features.
 		</p>
 		<p>
-			<img src={transformedData} />
+			<Image src={transformedData} />
 		</p>
 		<p>
 			Notice how there no longer appears to be systematic error. Now we just
@@ -141,7 +142,7 @@ export default () => (
 			time features (the larger eignvector).
 		</p>
 		<p>
-			<img src={reducedTransformedData} />
+			<Image src={reducedTransformedData} />
 		</p>
 		<p>
 			After reducing the feature space in such a way, we are left with features
@@ -156,7 +157,7 @@ export default () => (
 			repeatability of the rhythm and the amount of security desired.
 		</p>
 		<p>
-			<img src={trainingData} />
+			<Image src={trainingData} />
 		</p>
 		<h2>Authentication</h2>
 		<p>
@@ -168,7 +169,7 @@ export default () => (
 			tolerance, then authentication fails.
 		</p>
 		<p>
-			<img src={testSample} />
+			<Image src={testSample} />
 		</p>
 		<h2>Security</h2>
 		<p>
@@ -196,7 +197,7 @@ export default () => (
 			cores), we are left with the rhythms that successfully authenticated.
 		</p>
 		<p>
-			<img src={crackedRhythms} />
+			<Image src={crackedRhythms} />
 		</p>
 		<p>
 			There are a few things to realize here. There were a lot of rhythms that

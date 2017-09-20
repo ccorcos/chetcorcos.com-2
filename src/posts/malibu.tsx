@@ -6,6 +6,7 @@ import * as buffing from "file-loader!../img/malibu/buffing.jpg"
 import * as doneInterior from "file-loader!../img/malibu/done-interior.jpg"
 import * as fixHeaders from "file-loader!../img/malibu/fix-headers.jpg"
 import * as done from "file-loader!../img/malibu/done.jpg"
+import Image from "../components/Image"
 
 export default () => (
 	<div>
@@ -23,7 +24,7 @@ export default () => (
 			283. Interior was a wreck. The engine started but wasn't running well.
 		</p>
 		<p>
-			<img src={before} />
+			<Image src={before} />
 		</p>
 		<p>
 			First, we took the whole car apart. We pulled out the power train, the
@@ -32,7 +33,7 @@ export default () => (
 			professional because they're incredibly complicated.
 		</p>
 		<p>
-			<img src={beforeEngine} />
+			<Image src={beforeEngine} />
 		</p>
 		<p>
 			In the meantime, we took the entire motor apart to clean the parts and
@@ -49,7 +50,7 @@ export default () => (
 			headers.
 		</p>
 		<p>
-			<img src={newEngine} />
+			<Image src={newEngine} />
 		</p>
 		<p>
 			My dad and I did all the body work and painting ourselves for our first
@@ -62,7 +63,7 @@ export default () => (
 			making our way up to 2500 grit sand paper followed by buffing and waxing.
 		</p>
 		<p>
-			<img src={buffing} />
+			<Image src={buffing} />
 		</p>
 		<p>
 			On to the interior, we laid speaker wire under the carpet and installed
@@ -75,7 +76,7 @@ export default () => (
 			rekeyed and threw the seats in.
 		</p>
 		<p>
-			<img src={doneInterior} />
+			<Image src={doneInterior} />
 		</p>
 		<p>
 			All we had to do now was make sure the motor was tuned to spec, and put
@@ -88,11 +89,11 @@ export default () => (
 			back together and sure enough, the clicking was gone.
 		</p>
 		<p>
-			<img src={fixHeaders} />
+			<Image src={fixHeaders} />
 		</p>
 		<p>And here's the finished product.</p>
 		<p>
-			<img src={done} />
+			<Image src={done} />
 		</p>
 	</div>
 )
