@@ -1,9 +1,8 @@
 import * as React from "react"
+import Code from "../components/Code"
 
 export default () => (
 	<div>
-		<hr />
-		<h2>layout: post title: Git Tutorial</h2>
 		<p>
 			Learning git was difficult for me because I couldn’t find any good
 			tutorials by example. So this is my attempt.
@@ -20,32 +19,24 @@ export default () => (
 			repository (a git version-controlled directory), you’ll use{" "}
 			<code>clone</code>.
 		</p>
-		<pre>
-			<code>$ git clone &lt;url/path to git repo&gt;</code>
-		</pre>
+		<Code value={`$ git clone durl/path to git repo&gt;`} />
 		<p>
 			If you make any changes to the repo, you can use <code>status</code> to
 			view what changes have been made.
 		</p>
-		<pre>
-			<code>$ git status</code>
-		</pre>
+		<Code value={`$ git status`} />
 		<p>
 			The <code>status</code> command will only tell you the files that have
 			changed. So if you want to see the specific line-by-line changes of each
 			file, you can use the <code>diff</code> command.
 		</p>
-		<pre>
-			<code>$ git diff</code>
-		</pre>
+		<Code value={`$ git diff`} />
 		<p>
 			To update changes to your local git repository, you want to first add all
 			the files, directories and subdirectories that you want to be tracked
 			(version-controlled).
 		</p>
-		<pre>
-			<code>$ git add .</code>
-		</pre>
+		<Code value={`$ git add .`} />
 		<p>
 			Sometimes there are files you will not want to save to your git repo. This
 			is what the <code>.gitignore</code> file is for. Compiled binaries are a
@@ -54,9 +45,7 @@ export default () => (
 			which will add a lot of garbage when you <code>diff</code>. I will
 			typically always have this in my <code>.gitignore</code> file:
 		</p>
-		<pre>
-			<code>**.DS_Store **.pyc</code>
-		</pre>
+		<Code value={`**.DS_Store **.pyc`} />
 		<p>
 			Watch out for training spaces and use <code>**</code> to use this pattern
 			for all directories and subdirectories. I dont know what .DS_Store is, but
@@ -67,19 +56,17 @@ export default () => (
 			To save a version of the files you just addes, you’ll use the{" "}
 			<code>commit</code> command.
 		</p>
-		<pre>
-			<code>
-				$ git commit -m &quot;A meaningful message about what was changed&quot;
-			</code>
-		</pre>
+		<Code
+			value={`
+				$ git commit -m "A meaningful message about what was changed"
+			`}
+		/>
 		<p>
 			These changes are only committed to the local git repository. If you
 			cloned the repository from somewhere else, you’ll need to{" "}
 			<code>push</code> the changes to the remote “origin” repository.
 		</p>
-		<pre>
-			<code>$ git push origin &lt;branch&gt;</code>
-		</pre>
+		<Code value={`$ git push origin dbranch&gt;`} />
 		<p>
 			Every git repository is initialized with a “master” branch. Branches allow
 			you to develop multiple versions of your code. You may have a different
@@ -88,36 +75,26 @@ export default () => (
 			the designs. To make a new branch, you’ll use the <code>branch</code>{" "}
 			command.
 		</p>
-		<pre>
-			<code>$ git branch &lt;name&gt;</code>
-		</pre>
+		<Code value={`$ git branch dname&gt;`} />
 		<p>
 			This will create a new branch that is a copy of the current branch you are
 			on. You can check which branch you are on by not including a name.
 		</p>
-		<pre>
-			<code>$ git branch</code>
-		</pre>
+		<Code value={`$ git branch`} />
 		<p>
 			To move to another branch, you have to use <code>checkout</code>.
 		</p>
-		<pre>
-			<code>$ git checkout &lt;name&gt;</code>
-		</pre>
+		<Code value={`$ git checkout dname&gt;`} />
 		<p>
 			To view a list of previous commits, you use <code>log</code>.
 		</p>
-		<pre>
-			<code>$ git log</code>
-		</pre>
+		<Code value={`$ git log`} />
 		<p>
 			You can also checkout a previous commit using the commit id. To reset
 			everything back to the previous commit, use <code>reset</code> with the{" "}
 			<code>--hard</code> tag.
 		</p>
-		<pre>
-			<code>$ git reset --hard</code>
-		</pre>
+		<Code value={`$ git reset --hard`} />
 		<h2>Git Workflow</h2>
 		<p>
 			Here I am going to cover a general workflow when using git (at least this
@@ -128,42 +105,35 @@ export default () => (
 		<p>
 			Typically, to initialize a git repo, use <code>init</code>.
 		</p>
-		<pre>
-			<code>$ git init</code>
-		</pre>
+		<Code value={`$ git init`} />
 		<p>
 			You will typically also want to initialize your <code>.gitignore</code> as
 			well at this point.
 		</p>
-		<pre>
-			<code>$ touch .gitignore</code>
-		</pre>
+		<Code value={`$ touch .gitignore`} />
 		<p>
 			Change the <code>.gitignore</code> to ignore certain files like the{" "}
 			<code>.DS_Store</code> files on Mac OSX. Then <code>add</code> all the
 			files you want to track and <code>commit</code> the changes.
 		</p>
-		<pre>
-			<code>$ git add . $ git commit -m &quot;first commit&quot;</code>
-		</pre>
+		<Code value={`$ git add . $ git commit -m &quot;first commit&quot;`} />
 		<p>
 			You will likely want to put this code on Github so you can share the code
 			with others and develop together. Go onto Github to create a new
 			repository. The link the “remote origin” of your local repository to the
 			Github repo.
 		</p>
-		<pre>
-			<code>
-				$ git remote add origin &lt;github url&gt; $ git push -u origin master
-			</code>
-		</pre>
+		<Code
+			value={`
+				$ git remote add origin dgithub url&gt; $ git push -u origin master
+
+			`}
+		/>
 		<p>
 			The other way you may start with git is my simply cloning an existing
 			repository.
 		</p>
-		<pre>
-			<code>$ git clone &lt;github url or path&gt;</code>
-		</pre>
+		<Code value={`$ git clone dgithub url or path&gt;`} />
 		<p>
 			Now that you have the repo, you you’ll want to create a branch to start
 			writing your own code. You’ll probably want to always branch from master
@@ -173,53 +143,50 @@ export default () => (
 			from origin to make sure you are not behind, make a branch, and name the
 			branch something meaningful.
 		</p>
-		<pre>
-			<code>
+		<Code
+			value={`
 				$ git checkout master $ git pull origin master $ git branch adding_login
-			</code>
-		</pre>
+
+			`}
+		/>
 		<p>This creates the branch locally which you can verify.</p>
-		<pre>
-			<code>$ git branch</code>
-		</pre>
+		<Code value={`$ git branch`} />
 		<p>
 			We are still on the master branch so we still need to checkout the new
 			branch.
 		</p>
-		<pre>
-			<code>$ git checkout adding_login</code>
-		</pre>
+		<Code value={`$ git checkout adding_login`} />
 		<p>
 			Now that I an on my own branch, I can make all the changes I want without
 			messing up anyone else who is also working with this codebase. I make
 			changes and what not. I add files, I frequently commit locally to leave a
 			trace of what I did.
 		</p>
-		<pre>
-			<code>
+		<Code
+			value={`
 				$ git add . $ git commit -m &quot;Something very specific was done&quot;
-			</code>
-		</pre>
+
+			`}
+		/>
 		<p>
 			Now suppose I am not done with this branch but I dont have time to
 			continue working on it. I could push this branch to origin so others can
 			continue to work on it.
 		</p>
-		<pre>
-			<code>$ git push origin adding_login</code>
-		</pre>
+		<Code value={`$ git push origin adding_login`} />
 		<p>
 			Or, suppose I am finished with this branch, its workable code, and no one
 			else will ever need to see this branch. In this case, I want to push it to
 			origin master. But first, I’ll want to make sure I have the latest master
 			branch.
 		</p>
-		<pre>
-			<code>
+		<Code
+			value={`
 				$ git checkout master $ git pull origin master $ git merge master $ git
 				push origin master
-			</code>
-		</pre>
+
+			`}
+		/>
 		<p>
 			Now if there are any conflicts, you will have to search them out, manually
 			deal with them, make a new commit, and then push back to origin.
@@ -241,12 +208,13 @@ export default () => (
 			Open Terminal and execute the following commands to create some
 			directories and initialize a git repo as follows.
 		</p>
-		<pre>
-			<code>
+		<Code
+			value={`
 				$ cd ~/Desktop/ $ mkdir github $ cd github $ mkdir project $ cd project
 				$ git init --bare
-			</code>
-		</pre>
+
+			`}
+		/>
 		<p>
 			This makes a folder called “github” with a folder called “project” inside
 			it. Then we initialized a bare git repo inside the project folder. Github
@@ -254,11 +222,12 @@ export default () => (
 			tutorial.
 		</p>
 		<p>Now we want to copy this git repo over from “github”.</p>
-		<pre>
-			<code>
+		<Code
+			value={`
 				$ cd ~/Desktop/ $ mkdir me $ cd me $ git clone ~/Desktop/github/project
-			</code>
-		</pre>
+
+			`}
+		/>
 		<p>
 			Here, you made a folder called “me” which will represent you in this
 			example. Then you clone the project from “github”. This will copy the
@@ -266,9 +235,7 @@ export default () => (
 			that you just copied an empty repo, so lets make a file and add it to the
 			repo.
 		</p>
-		<pre>
-			<code>$ cd project $ touch file.txt</code>
-		</pre>
+		<Code value={`$ cd project $ touch file.txt`} />
 		<p>
 			In <code>file.txt</code>, write, “this is the initial file”. Then we want
 			to add all of the files and subdirectories of the project folder to the
@@ -283,27 +250,24 @@ export default () => (
 			<code>master</code> signifies that we want to push the master branch of
 			the repo.
 		</p>
-		<pre>
-			<code>
+		<Code
+			value={`
 				$ git add . $ git commit -m &quot;first commit&quot; $ git push origin
 				master
-			</code>
-		</pre>
+
+			`}
+		/>
 		<p>
 			We just initialized the repo with a file for the sake of this example. We
 			made a file, added it to the local repo, committed the change locally, and
 			pushed the commit to origin/master. Now play with the following commands.
 		</p>
-		<pre>
-			<code>$ git status $ git log</code>
-		</pre>
+		<Code value={`$ git status $ git log`} />
 		<p>
 			You’ll see that we are on the master branch, everything is updated and we
 			have one commit, the “first commit”. Now try this command.
 		</p>
-		<pre>
-			<code>$ git remote show origin</code>
-		</pre>
+		<Code value={`$ git remote show origin`} />
 		<p>
 			This will show you the path to github project which is the{" "}
 			<code>remote origin</code> to this repository. That basically means that
@@ -327,30 +291,20 @@ export default () => (
 			in that branch.
 		</p>
 		<p>So lets make “some change”.</p>
-		<pre>
-			<code>$ git branch</code>
-		</pre>
+		<Code value={`$ git branch`} />
 		<p>
 			This shows you are on the master branch, so we are branching from master.
 			Lets make a new branch.
 		</p>
-		<pre>
-			<code>$ git branch making_some_change</code>
-		</pre>
+		<Code value={`$ git branch making_some_change`} />
 		<p>You’ll see that we are still on master branch though.</p>
-		<pre>
-			<code>$ git branch</code>
-		</pre>
+		<Code value={`$ git branch`} />
 		<p>
 			To change branches, you have to <code>checkout</code> that branch.
 		</p>
-		<pre>
-			<code>$ git checkout making_some_change</code>
-		</pre>
+		<Code value={`$ git checkout making_some_change`} />
 		<p>And now verify that you are on the correct branch.</p>
-		<pre>
-			<code>$ git branch</code>
-		</pre>
+		<Code value={`$ git branch`} />
 		<p>
 			This branch has all of the contents of master since we just created it.
 			Now lets make our changes.
@@ -359,34 +313,29 @@ export default () => (
 			Open <code>file.txt</code> and append the “me making a good change” to a
 			new line at the end.
 		</p>
-		<pre>
-			<code>
+		<Code
+			value={`
 				$ git add . $ git commit -m &quot;me making a change&quot; $ git log
-			</code>
-		</pre>
+
+			`}
+		/>
 		<p>
 			Now, assuming that this is a good change and that this code is now
 			workable, we will then want to merge back to master before we push to
 			origin/master. So switch to the master branch.
 		</p>
-		<pre>
-			<code>$ git checkout master $ git log</code>
-		</pre>
+		<Code value={`$ git checkout master $ git log`} />
 		<p>
 			Verify that the commit made on <code>making_some_change</code> is not on
 			the master branch. Try opening up the <code>file.txt</code> and you will
 			see it is the old file. Then merge the branch back to master.
 		</p>
-		<pre>
-			<code>$ git merge making_some_change $ git log</code>
-		</pre>
+		<Code value={`$ git merge making_some_change $ git log`} />
 		<p>
 			You will now see that that commit was added to the file and that file has
 			been changed. Then try:
 		</p>
-		<pre>
-			<code>$ git status</code>
-		</pre>
+		<Code value={`$ git status`} />
 		<p>
 			You will see that it says your branch is ahead of origin/master by 1
 			commit. This means that github (or the folder in this instance) has not
@@ -395,9 +344,7 @@ export default () => (
 			to origin/master (origin is github, and master is the branch that we are
 			pushing).
 		</p>
-		<pre>
-			<code>$ git push origin master $ git status</code>
-		</pre>
+		<Code value={`$ git push origin master $ git status`} />
 		<p>
 			You will now see that there is nothing to commit and that we are synced
 			with origin master. This was a piece of cake - even ideal. There was no
@@ -411,19 +358,18 @@ export default () => (
 			branch because perhaps at some point while we were away someone else
 			updated origin master.
 		</p>
-		<pre>
-			<code>$ git pull origin master</code>
-		</pre>
+		<Code value={`$ git pull origin master`} />
 		<p>
 			You will see that your master branch is already up-to-date. If it wasn’t,
 			you’d want check the log to see what was added. So lets make another
 			change.
 		</p>
-		<pre>
-			<code>
+		<Code
+			value={`
 				$ git branch making_another_change $ git checkout making_another_change
-			</code>
-		</pre>
+
+			`}
+		/>
 		<p>
 			Open <code>file.txt</code> and add “me making another change” to the
 			bottom of the file. So the file should look something like this.
@@ -434,36 +380,37 @@ export default () => (
 			<p>me making another change</p>
 		</blockquote>
 		<p>Then lets commit the change.</p>
-		<pre>
-			<code>
+		<Code
+			value={`
 				$ git add . $ git commit -m &quot;me making another change&quot;
-			</code>
-		</pre>
+
+			`}
+		/>
 		<p>
 			Meanwhile, on the other side of the world, someone is also working on
 			their own branch off of master adding their own feature. Lets simulate
 			someone else working on this project at the same time.
 		</p>
-		<pre>
-			<code>
+		<Code
+			value={`
 				$ cd ~/Desktop/ $ mkdir someone $ cd someone $ git clone
 				~/Desktop/github/project $ cd project
-			</code>
-		</pre>
+
+			`}
+		/>
 		<p>Try the following.</p>
-		<pre>
-			<code>$ git log $ git status $ cat file.txt</code>
-		</pre>
+		<Code value={`$ git log $ git status $ cat file.txt`} />
 		<p>
 			Verify that we just copied the same file over from origin master. Now lets
 			assume that someone wants to make a change so they create a branch, etc…
 		</p>
-		<pre>
-			<code>
+		<Code
+			value={`
 				$ git branch someone_making_some_change $ git checkout
 				someone_making_some_change
-			</code>
-		</pre>
+
+			`}
+		/>
 		<p>
 			Open <code>file.txt</code> and write “someone made another good change” on
 			a new line at the end. So now the file should have the following.
@@ -474,28 +421,25 @@ export default () => (
 			<p>someone made another good change</p>
 		</blockquote>
 		<p>Now, lets merge and push…</p>
-		<pre>
-			<code>
+		<Code
+			value={`
 				$ git add . $ git commit -m &quot;someone making a change&quot; $ git
 				checkout master $ git merge someone_making_some_change $ git push origin
 				master
-			</code>
-		</pre>
+
+			`}
+		/>
 		<p>
 			So now, lets go back to “me” and try merging{" "}
 			<code>making_another_change</code> into master and pushing to
 			origin/master. You can already tell this is going to get ugly right?
 		</p>
-		<pre>
-			<code>$ cd ~/Desktop/me/project</code>
-		</pre>
+		<Code value={`$ cd ~/Desktop/me/project`} />
 		<p>
 			Try these commands on master and <code>making_another_change</code> to
 			verify that we were right where we left off.
 		</p>
-		<pre>
-			<code>$ git branch $ git status $ git log $ cat file.txt</code>
-		</pre>
+		<Code value={`$ git branch $ git status $ git log $ cat file.txt`} />
 		<p>
 			Note that your repo has no knowledge of someone’s commit because the local
 			repo hasn’t been updated. Now, here we can do one of two things. We can
@@ -504,38 +448,31 @@ export default () => (
 			recent origin master, merge to master, deal with the conflicts, and then
 			push back to origin master.
 		</p>
-		<pre>
-			<code>
+		<Code
+			value={`
 				$ git checkout master $ git merge making_another_change $ git log
-			</code>
-		</pre>
+
+			`}
+		/>
 		<p>You will see that we are missing the commit made by someone…</p>
-		<pre>
-			<code>$ git push origin master</code>
-		</pre>
+		<Code value={`$ git push origin master`} />
 		<p>
 			This is where git it both useful, and interestingly difficult to learn. We
 			have a conflict. Our master is behind origin master. We are missing the
 			commit made by someone else. So we what we want to do is pull the repo
 			from origin master, merge the repos, and the recommit to origin master.
 		</p>
-		<pre>
-			<code>$ git status</code>
-		</pre>
+		<Code value={`$ git status`} />
 		<p>
 			Verify we have the same problem. First we are going to do a pull. Pull
 			executes a fetch and a merge. Basically, it takes origin master and tries
 			to apply the commits we dont have onto master.
 		</p>
-		<pre>
-			<code>$ git pull origin master</code>
-		</pre>
+		<Code value={`$ git pull origin master`} />
 		<p>
 			You will see that the merge failed because there is a conflict in{" "}
 			<code>file.txt</code>. Open it and you wwill see the conflict between the{" "}
-			<code>
-				&lt;&lt;&lt;&lt;&lt;&lt;&lt; ======= &gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;
-			</code>.
+			<code>ddddddd ======= &gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;</code>.
 		</p>
 		<p>
 			Where it says head, we will see the changes that we made on out local git
@@ -560,12 +497,13 @@ export default () => (
 			<p>someone made another good change</p>
 		</blockquote>
 		<p>Lets commit our work.</p>
-		<pre>
-			<code>
+		<Code
+			value={`
 				$ git add . $ git commit -m &quot;merge success&quot; $ git status $ git
 				log
-			</code>
-		</pre>
+
+			`}
+		/>
 		<p>
 			You’ll see that we are 3 commits ahead of master now. And note the order
 			of the commits. Your commits from “me” we put on top of those from
@@ -579,18 +517,14 @@ export default () => (
 			master. So once you are done working on the code and think it is workable
 			you should push to origin master.
 		</p>
-		<pre>
-			<code>$ git push origin master</code>
-		</pre>
+		<Code value={`$ git push origin master`} />
 		<p>
 			And there ya go. One thing I didn’t mention is that you can push other
 			branches to origin. They do’;t have to be workable, only master does (best
 			practices). Pushing other branches allows other people to work off that
 			branch with you.
 		</p>
-		<pre>
-			<code>$ git push origin &lt;name of branch&gt;</code>
-		</pre>
+		<Code value={`$ git push origin dname of branch&gt;`} />
 		<h2>Suggestions</h2>
 		<p>
 			Commit often. The more often you commit, the easier it is to back track to
@@ -614,9 +548,7 @@ export default () => (
 			clone from the https url and not the ssh url. To allow your keychain to
 			remember your github authentication run the following command.
 		</p>
-		<pre>
-			<code>$ git-credential-osxkeychain</code>
-		</pre>
+		<Code value={`$ git-credential-osxkeychain`} />
 		<h2>Quirks</h2>
 		<p>Some things I’ve learned over the days…</p>
 		<h3>Orphaned Repo Files</h3>
@@ -627,16 +559,12 @@ export default () => (
 			deleted a file from your Finder but want to, you and use one of the
 			following commands.
 		</p>
-		<pre>
-			<code>$ git rm path/to/file $ git rm -rf path/to/folder</code>
-		</pre>
+		<Code value={`$ git rm path/to/file $ git rm -rf path/to/folder`} />
 		<p>
 			However, if you have already deleted these files from the Finder, you can
 			delete them from the repo with this command.
 		</p>
-		<pre>
-			<code>$ git rm $(git ls-files --deleted)</code>
-		</pre>
+		<Code value={`$ git rm $(git ls-files --deleted)`} />
 		<p>
 			Then commit with a message like “clean up deleted files”. I found this
 			command online and it has been very useful…
@@ -648,21 +576,23 @@ export default () => (
 			spaces. Lastly, sometimes this issue is caused by files cached by git. To
 			fix that, do the following.
 		</p>
-		<pre>
-			<code>
+		<Code
+			value={`
 				$ git rm -r --cached $ git add . $ git commit -m &quot;fixed
 				gitignore&quot;
-			</code>
-		</pre>
+
+			`}
+		/>
 		<p>
 			In fact, I do this a lot. In my <code>~.bash_profile</code>, I have and
 			alias for this.
 		</p>
-		<pre>
-			<code>
+		<Code
+			value={`
 				alias gitclean=&quot;git rm -r --cached . &amp;&amp; git add .&quot;
-			</code>
-		</pre>
+
+			`}
+		/>
 		<p>
 			Now I run <code>gitclean</code> whenever I need.
 		</p>
@@ -671,29 +601,21 @@ export default () => (
 			If you mess up and want to just go back to the latest commit, then user{" "}
 			<code>reset --hard</code>.
 		</p>
-		<pre>
-			<code>$ git reset --hard</code>
-		</pre>
+		<Code value={`$ git reset --hard`} />
 		<p>
 			Sometimes you’ll want to see a previous commit. Run <code>git log</code>,
 			copy the commit id, then
 		</p>
-		<pre>
-			<code>$ git checkout &lt;commit id&gt;</code>
-		</pre>
+		<Code value={`$ git checkout dcommit id&gt;`} />
 		<p>
 			Sometimes you’ll just want to say fuck it and replace the branch with a
 			previous commit.
 		</p>
-		<pre>
-			<code>$ git reset --hard &lt;commit id&gt;</code>
-		</pre>
+		<Code value={`$ git reset --hard dcommit id&gt;`} />
 		<p>
 			Then to update origin master with the new repo, you can force a push to
 			origin/master.
 		</p>
-		<pre>
-			<code>$ git push origin master --force</code>
-		</pre>
+		<Code value={`$ git push origin master --force`} />
 	</div>
 )

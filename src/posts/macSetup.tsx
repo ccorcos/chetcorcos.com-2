@@ -1,9 +1,8 @@
 import * as React from "react"
+import Code from "../components/Code"
 
 export default () => (
 	<div>
-		<hr />
-		<h2>layout: post title: Mac Development Setup</h2>
 		<p>
 			Every year, when the new OS X operating system comes out, I like to do a
 			clean install, getting rid of all the junk on my computer that accumulated
@@ -19,9 +18,7 @@ export default () => (
 			install the Xcode commandline tools which you can do directly from the
 			commandline without installing Xcode.
 		</p>
-		<pre>
-			<code>$ xcode-select --install</code>
-		</pre>
+		<Code value={`$ xcode-select --install`} />
 		<p>
 			Next, you’ll want to install any apps you have already purchased from the
 			App Store. You’ll probably want to install Xcode anyways.
@@ -47,16 +44,12 @@ export default () => (
 			highlighting, command highlighting for valid and invalid commands, and git
 			status icons. To get started, install zsh through brew.
 		</p>
-		<pre>
-			<code>$ brew install zsh</code>
-		</pre>
+		<Code value={`$ brew install zsh`} />
 		<p>
 			Then open zsh, don’t worry about the initial configuration it asks you
 			for.
 		</p>
-		<pre>
-			<code>$ zsh</code>
-		</pre>
+		<Code value={`$ zsh`} />
 		<p>
 			Then{" "}
 			<a href="https://github.com/ccorcos/prezto">
@@ -65,9 +58,7 @@ export default () => (
 			to clone and symlink all the resource files and finally, set your default
 			shell to zsh.
 		</p>
-		<pre>
-			<code>$ chsh -s /bin/zsh</code>
-		</pre>
+		<Code value={`$ chsh -s /bin/zsh`} />
 		<h2>Atom Editor</h2>
 		<p>
 			I prefer to use the <a href="https://atom.io/">Atom Editor</a> as opposed
@@ -78,12 +69,12 @@ export default () => (
 			</a>{" "}
 			script, or simply the following.
 		</p>
-		<pre>
-			<code>
-				$ brew cask install atom $ git clone
-				https://github.com/ccorcos/atom-editor-settings.git ~/.atom
-			</code>
-		</pre>
+		<Code
+			value={`
+$ brew cask install atom
+$ git clone https://github.com/ccorcos/atom-editor-settings.git ~/.atom
+			`}
+		/>
 		<p>This gives you a slew of amazing packages and themes.</p>
 		<h2>OSX Defaults</h2>
 		<p>

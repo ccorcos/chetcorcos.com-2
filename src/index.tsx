@@ -5,6 +5,7 @@ import Posts from "./pages/posts"
 import { css } from "glamor"
 import { myPosts } from "./posts"
 import Loader from "./components/Loader"
+import Post from "./components/Post"
 
 css.global("html, body", {
 	padding: 0,
@@ -24,7 +25,11 @@ const App = () => (
 				<Route
 					key={post.url}
 					path={post.url}
-					component={() => <Loader component={post.component} />}
+					component={() => (
+						<Post {...post}>
+							<Loader component={post.component} />
+						</Post>
+					)}
 				/>
 			))}
 		</div>

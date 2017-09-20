@@ -1,4 +1,5 @@
 import * as React from "react"
+import Code from "../components/Code"
 
 export default () => (
 	<div>
@@ -14,56 +15,36 @@ export default () => (
 		<p>
 			Install with <a href="http://brew.sh/">Homebrew</a>.
 		</p>
-		<pre>
-			<code>brew install gnupg</code>
-		</pre>
+		<Code value={`brew install gnupg`} />
 		<p>Create a key pair</p>
-		<pre>
-			<code>gpg --gen-key</code>
-		</pre>
+		<Code value={`gpg --gen-key`} />
 		<p>You can get a copy of the public key like this</p>
-		<pre>
-			<code>gpg -a --export &quot;Name or email&quot;</code>
-		</pre>
+		<Code value={`gpg -a --export &quot;Name or email&quot;`} />
 		<p>
 			You can also publish your public key to a key server. First get the
 			fingerprint of the key you want to export:
 		</p>
-		<pre>
-			<code>gpg --fingerprint</code>
-		</pre>
+		<Code value={`gpg --fingerprint`} />
 		<p>Then send it off like this</p>
-		<pre>
-			<code>gpg --send-keys &quot;fingerprint of your key&quot;</code>
-		</pre>
+		<Code value={`gpg --send-keys &quot;fingerprint of your key&quot;`} />
 		<p>
 			If someone sent you their public key in a file, you and import it like
 			this
 		</p>
-		<pre>
-			<code>gpg --import pub.key</code>
-		</pre>
+		<Code value={`gpg --import pub.key`} />
 		<p>Or you can search for them on a public key server</p>
-		<pre>
-			<code>gpg --search-keys &quot;name or email address&quot;</code>
-		</pre>
+		<Code value={`gpg --search-keys &quot;name or email address&quot;`} />
 		<p>
 			To send a message, first write it up in a text file. Then you can encrypt
 			it with their public key using ASCII armor, and signing it with your
 			private key with the following
 		</p>
-		<pre>
-			<code>gpg -e -a -s -r email message.txt</code>
-		</pre>
+		<Code value={`gpg -e -a -s -r email message.txt`} />
 		<p>To decrypt the message, you simply use</p>
-		<pre>
-			<code>gpg message.txt.asm</code>
-		</pre>
+		<Code value={`gpg message.txt.asm`} />
 		<p>
 			Another cool think about GnuPG is that you can use symmetric encryption
 		</p>
-		<pre>
-			<code>gpg -o doc.gpg -c doc</code>
-		</pre>
+		<Code value={`gpg -o doc.gpg -c doc`} />
 	</div>
 )

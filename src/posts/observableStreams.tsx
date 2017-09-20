@@ -1,4 +1,5 @@
 import * as React from "react"
+import Code from "../components/Code"
 
 export default () => (
 	<div>
@@ -71,16 +72,13 @@ export default () => (
 		<p>
 			Everything is defined within the <code>menu.rendered</code> function:
 		</p>
-		<pre>
-			<code>Template.menu.rendered = -&gt; self = this</code>
-		</pre>
+		<Code value={`Template.menu.rendered = -&gt; self = this`} />
 		<p>
 			We create some streams, purify, and merge them to keep track of the start,
 			movement, and end of the menu UI events.
 		</p>
-		<pre>
-			<code>
-				{" "}
+		<Code
+			value={`
 				# start stream of x position values toushStart =
 				@eventStream(&quot;touchstart&quot;, &quot;.handle&quot;) .map (e) -&gt;
 				e.originalEvent.touches[0].pageX mouseDown =
@@ -101,34 +99,32 @@ export default () => (
 				(e) -&gt; e.pageX touchMove = self.eventStream(&quot;touchmove&quot;,
 				&quot;.page&quot;, true) .map (e) -&gt; e.originalEvent.touches[0].pageX
 				moveStream = Tracker.mergeStreams(mouseMove, touchMove)
-			</code>
-		</pre>
+			`}
+		/>
 		<p>
 			We also keep track of when the menu is animating so we don’t interrupt any
 			animations with a new animation.
 		</p>
-		<pre>
-			<code>
-				{" "}
+		<Code
+			value={`
 				# create an animation stream to block the start stream from interrupting
 				an animation animatingStream = @stream(false)
-			</code>
-		</pre>
+			`}
+		/>
 		<p>
 			And here somes the meat of our component. We map over every startSteam
 			unless we are currently animating. We record the initial position of the
 			menu handle and the offset within the handle that we touched. We also keep
 			track of the velocity of the touch so we can flick it.
 		</p>
-		<pre>
-			<code>
-				{" "}
+		<Code
+			value={`
 				# get the jquery object we're going to drag $menu = $(@find('.menu'))
 				startStream .unless(animatingStream) .map (x) -&gt; initLeft =
 				$menu.position().left offset = initLeft - x lastLeft = initLeft velocity
 				= 0
-			</code>
-		</pre>
+			`}
+		/>
 		<p>
 			If we touch the menu without moving, we must assume its a toggle. We use
 			the amazing <a href="http://julian.com/research/velocity/">
@@ -136,8 +132,9 @@ export default () => (
 			</a>{" "}
 			library for creating the animation classes.
 		</p>
-		<pre>
-			<code>{`      # toggle menu position
+		<Code
+			value={`
+# toggle menu position
       toggle = -&gt;
         if lastLeft &gt; -menuWidth/2
           # close it
@@ -145,16 +142,17 @@ export default () => (
         else
           # open it
           $menu.velocity({translateX: [0, -menuWidth], translateZ: [0, 0]}, {duration: 400, easing: 'ease-in-out', complete: -&gt; animatingStream.set(false)})
-`}</code>
-		</pre>
+`}
+		/>
 		<p>
 			When the swiping ends, we call this resolve function. This takes care of
 			calling toggle if necessary and otherwise calculated the position of the
 			menu using momentum and animates the menu closed based on the speed of the
 			flick!
 		</p>
-		<pre>
-			<code>{`      # resolve menu position
+		<Code
+			value={`
+# resolve menu position
       resolve = -&gt;
         animatingStream.set(true)
         # wait for animation to finish
@@ -171,16 +169,17 @@ export default () => (
           momentum = Math.abs(momentum)
           duration = Math.min((200-lastLeft)/momentum*100, 400)
           $menu.velocity({translateX: -menuWidth, translateZ: 0}, {duration: duration, easing: 'ease-out', complete: -&gt; animatingStream.set(false)})
-`}</code>
-		</pre>
+`}
+		/>
 		<p>
 			The utilize the previous two functions here. On every startStream event,
 			we listen to the moveStream until the endStream first in which we call the
 			resolve function. For each move, we simply update the position of the
 			element, and update the variables for the position and the velocity.
 		</p>
-		<pre>
-			<code>{`      moveStream
+		<Code
+			value={`
+moveStream
         .takeUntil(endStream, resolve)
         .forEach (x) -&gt;
           # wait for animation to finish
@@ -188,8 +187,8 @@ export default () => (
           velocity = left - lastLeft
           lastLeft = left
           $menu.velocity({translateX: left, translateZ: 0}, {duration: 0})
-`}</code>
-		</pre>
+`}
+		/>
 		<p>
 			Anyways, that’s it. Pretty slick right?! My mind was blown once I realized
 			how useful observable streams are for abstracting the state of UI events.{" "}

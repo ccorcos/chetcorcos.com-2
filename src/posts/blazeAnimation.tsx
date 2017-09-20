@@ -1,4 +1,5 @@
 import * as React from "react"
+import Code from "../components/Code"
 
 export default () => (
 	<div>
@@ -27,15 +28,15 @@ export default () => (
 			package that allows you to wrap an element with a block helper that
 			specifies the UI Pack animation.
 		</p>
-		<pre>
-			<code>
-				{`{% raw %}
+		<Code
+			value={`
+{% raw %}
 {{#animate in='transitions.fadeIn' out='transitions.fadeOut'}}
   ...
 {{/animate}}
-{% endraw %}`}
-			</code>
-		</pre>
+{% endraw %}
+`}
+		/>
 		<p>
 			And you can create your own animations using{" "}
 			<code>$.Velocity.RegisterEffect</code>!

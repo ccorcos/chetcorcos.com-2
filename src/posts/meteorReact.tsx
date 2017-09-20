@@ -1,9 +1,8 @@
 import * as React from "react"
+import Code from "../components/Code"
 
 export default () => (
 	<div>
-		<hr />
-		<h2>layout: post title: Meteor and React</h2>
 		<p>
 			After learning about{" "}
 			<a href="http://jlongster.com/First-Impressions-using-React-Native">
@@ -20,8 +19,9 @@ export default () => (
 			created some syntax jazz that allowed me be very expressive in the DOM
 			layout in Coffeescript, without having to use JSX. Check it out:
 		</p>
-		<pre>
-			<code>{`  (Header  [
+		<Code
+			value={`
+(Header  [
     (Title 'Signup')
   ])
   (Content {header: true}, [
@@ -43,8 +43,8 @@ export default () => (
       ])
     ])
   ])
-`}</code>
-		</pre>
+`}
+		/>
 		<p>
 			To do this, I did two things. Every component your create returns a
 			function that wraps the <code>createElement</code> function so you can use
@@ -58,15 +58,16 @@ export default () => (
 			the component and reactively update the state of the component using
 			Meteor’s built in reactivity.
 		</p>
-		<pre>
-			<code>{`getMeteorState:
+		<Code
+			value={`
+getMeteorState:
   players:        -&gt; Meteor.users.find({}, { sort: { 'profile.score': -1, username: 1 } }).fetch()
   selectedPlayer: -&gt; Meteor.users.findOne(Session.get('selectedPlayerId'))
 
 subscribe: -&gt;
   Reactor.subscribe('players')
-`}</code>
-		</pre>
+`}
+		/>
 		<p>
 			Lastly, I created a new namespace and a{" "}
 			<a href="https://github.com/ccorcos/meteor-reactor">
