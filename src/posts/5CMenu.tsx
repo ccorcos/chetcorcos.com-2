@@ -29,15 +29,15 @@ export default () => (
 			You can find this app on the{" "}
 			<a href="https://itunes.apple.com/us/app/5c-menu/id512440171">
 				App Store
-			</a>, but it hasn’t been working lately – apparently the dining hall
-			websites have changed causing the parser to break. I haven’t dealt with it
+			</a>, but it hasn't been working lately – apparently the dining hall
+			websites have changed causing the parser to break. I haven't dealt with it
 			since. If you are interested in helping on this front, feel free to
 			contact me.
 		</p>
 		<p>
 			If I were to rewrite this app, I would make a web app using{" "}
 			<a href="https://github.com/meteor/meteor/wiki/Meteor-Cordova-Phonegap-integration">
-				Meteor’s epic Cordova integration
+				Meteor's epic Cordova integration
 			</a>{" "}
 			to port over to all mobile platforms. I would also use{" "}
 			<a href="http://import.io">Import.io</a> to extract the data because the

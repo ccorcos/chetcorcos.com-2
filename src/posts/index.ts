@@ -97,7 +97,7 @@ export const mediumPosts: Array<Post> = [
 			"https://medium.com/@chetcorcos/elmish-functional-programming-in-javascript-50995f1d4b9e",
 	},
 	{
-		title: "What’s the Point of GraphQL and Falcor?",
+		title: "What's the Point of GraphQL and Falcor?",
 		date: "December 1, 2015",
 		url:
 			"https://medium.com/@chetcorcos/what-s-the-point-of-graphql-and-falcor-cdd0f35960c0",

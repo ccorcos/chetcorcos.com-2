@@ -85,7 +85,7 @@ export default () => (
 			purple (quickly typed) samples always occur on the left side. Without
 			accounting for this covariance, we could type the password faster, then
 			slower, then faster again without failing authentication resulting in a
-			rhythm that doesn’t quite resemble the intended rhythm.
+			rhythm that doesn't quite resemble the intended rhythm.
 		</p>
 		<h2>Training</h2>
 		<p>
@@ -172,12 +172,12 @@ export default () => (
 		<h2>Security</h2>
 		<p>
 			In terms of security, it is not easy to analytically determine the
-			additional amount of security but here’s an attempt to make a cracker user
+			additional amount of security but here's an attempt to make a cracker user
 			a reasonable heuristics.
 		</p>
 		<p>
 			This is a very basic 8 letter password which, using a password dictionary,
-			wouldn’t be terribly difficult to crack. However, there are now 7
+			wouldn't be terribly difficult to crack. However, there are now 7
 			additional numbers needed for verification. A heuristic of intelligently
 			cracking these rhythm features would first start of with an assumption of
 			the precision of the rhythm. In the case of <code>goalie12</code>, we can
@@ -199,7 +199,7 @@ export default () => (
 		</p>
 		<p>
 			There are a few things to realize here. There were a lot of rhythms that
-			aren’t even humanly typable that passed authentication. This is due to the
+			aren't even humanly typable that passed authentication. This is due to the
 			loss of dimensionality when reducing the feature set. However, on a
 			positive note, these were rather similar rhythms nonetheless.
 		</p>

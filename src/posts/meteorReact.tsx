@@ -50,13 +50,13 @@ export default () => (
 			function that wraps the <code>createElement</code> function so you can use
 			them directly without having to call <code>createElement</code> every
 			time. Also, the first argument (the props) is optional, and the second
-			argument is either one elemnt, or an array of elements. Thus we don’t need
+			argument is either one elemnt, or an array of elements. Thus we don't need
 			a bunch of awkward commas.
 		</p>
 		<p>
 			Next, I created some mixins that allow you to define subscriptions within
 			the component and reactively update the state of the component using
-			Meteor’s built in reactivity.
+			Meteor's built in reactivity.
 		</p>
 		<Code
 			value={`
@@ -77,9 +77,9 @@ subscribe: -&gt;
 			different routes.
 		</p>
 		<p>
-			In conclusion, I’m really impressed with React. I absolutely love how I
+			In conclusion, I'm really impressed with React. I absolutely love how I
 			can use all abstraction powers I could possibly want. No longer do I feel
-			like I’m fighting the framework or markup language. I really hope Meteor
+			like I'm fighting the framework or markup language. I really hope Meteor
 			seriously considers React instead of Blaze.
 		</p>
 	</div>

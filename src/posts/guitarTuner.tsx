@@ -16,13 +16,13 @@ export default () => (
 		</p>
 		<p>
 			One thing I like about this kind of tuner is that you have finer-grained
-			tuning in some sense. While the sample rate isn’t phenomenal, you get
+			tuning in some sense. While the sample rate isn't phenomenal, you get
 			harmonic information to tune from. In the image above, you can see the A
 			frequency on the left, but you can also see the first harmonic (the
 			octive) and the second harmonic (the high-E). You might notice that the
-			high-E harmonic isn’t perfect. That because, mathematically,{" "}
+			high-E harmonic isn't perfect. That because, mathematically,{" "}
 			<a href="http://blogs.scientificamerican.com/roots-of-unity/2014/11/30/the-saddest-thing-i-know-about-the-integers/">
-				we can’t have perfect fifths
+				we can't have perfect fifths
 			</a>! Mind-blowing, if you ask me.
 		</p>
 		<p>

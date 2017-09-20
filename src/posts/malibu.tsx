@@ -11,16 +11,16 @@ export default () => (
 	<div>
 		<p>
 			The summer after my freshman year of high school, I was only 6 months away
-			from getting my driver’s license. My dad has always been a gearhead and
+			from getting my driver's license. My dad has always been a gearhead and
 			enjoys working on cars in his free time. I had taken on his affinity of
 			classic cars and he proposed that I work on a car all summer with him for
 			my first car. We spend about 4-6 hours a day, 5 days a week for the entire
-			summer. I can’t thank my dad enough for not only the car, but the
+			summer. I can't thank my dad enough for not only the car, but the
 			experiences along the way.
 		</p>
 		<p>
 			Picked up the car for $4,000. It is a 1965 Chevrolet Malibu, small block
-			283. Interior was a wreck. The engine started but wasn’t running well.
+			283. Interior was a wreck. The engine started but wasn't running well.
 		</p>
 		<p>
 			<img src={before} />
@@ -29,7 +29,7 @@ export default () => (
 			First, we took the whole car apart. We pulled out the power train, the
 			interior, and all the trim. We sent it out to get sand-blasted to get all
 			the paint off. We also had the automatic transmission rebuilt by a
-			professional because they’re incredibly complicated.
+			professional because they're incredibly complicated.
 		</p>
 		<p>
 			<img src={beforeEngine} />
@@ -54,7 +54,7 @@ export default () => (
 		<p>
 			My dad and I did all the body work and painting ourselves for our first
 			time. We vastly underestimated the amount of time it was going to take.
-			Luckily, this car didn’t need much bondo and there wasn’t any rust.
+			Luckily, this car didn't need much bondo and there wasn't any rust.
 		</p>
 		<p>
 			We had to wait about 2 weeks before we could start wet sanding the paint.
@@ -70,7 +70,7 @@ export default () => (
 			cleaned it, painted, and rewired some of it. We replaced the door panels
 			but reused most things like door handles and the rear view mirror that
 			cleaned up nicely with some steel wool. We installed seat belts which
-			didn’t originally come with the car. Mounted an oil and temperature gauge
+			didn't originally come with the car. Mounted an oil and temperature gauge
 			under the dash along with a stereo system. We got the ignition and doors
 			rekeyed and threw the seats in.
 		</p>
@@ -90,7 +90,7 @@ export default () => (
 		<p>
 			<img src={fixHeaders} />
 		</p>
-		<p>And here’s the finished product.</p>
+		<p>And here's the finished product.</p>
 		<p>
 			<img src={done} />
 		</p>

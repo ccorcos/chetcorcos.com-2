@@ -3,7 +3,7 @@ import * as React from "react"
 export default () => (
 	<div>
 		<p>
-			With my signals background, I’ve always been interested in the concept of
+			With my signals background, I've always been interested in the concept of
 			room tuning. Have you ever been in a loud bar with terrible sound quality?
 			Maybe the sound echos off of every wall before you hear it. Maybe the
 			trebble is way to loud and its ripping your ear drums?
@@ -28,7 +28,7 @@ export default () => (
 			avaiable on Firefox and Chrome, we can create a spectrum analyzer in our
 			web browser. After reading and experimenting for a couple hours, I was
 			able to get a simple spectrum analyzer up and running.{" "}
-			<a href="https://github.com/ccorcos/room-tuner">Here’s the code</a> and{" "}
+			<a href="https://github.com/ccorcos/room-tuner">Here's the code</a> and{" "}
 			<a href="http://room-tuner.meteor.com">demo</a>! This app plays{" "}
 			<a href="http://hyperphysics.phy-astr.gsu.edu/hbase/audio/equal.html">
 				pink noise
@@ -53,12 +53,12 @@ export default () => (
 				<p>
 					The microphone on your Mac is probably terrible. Not to mention the
 					location of the microphone is right next to a big reflective screen.
-					So you’ll probably want to use an external microphone.
+					So you'll probably want to use an external microphone.
 				</p>
 			</li>
 		</ol>
 		<p>
-			These problems aren’t unsurmountable though.{" "}
+			These problems aren't unsurmountable though.{" "}
 			<a href="mailto:ccorcos@gmail.com">Let me know how it works for you</a>!
 		</p>
 	</div>

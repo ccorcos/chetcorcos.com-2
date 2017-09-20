@@ -15,7 +15,7 @@ export default () => (
 			spoken words from an audio signal. Whenever you speak to Siri, this
 			algorithm is running. In music, the FFT is used for filtering and
 			visualizing sound. And as far as art, you can make cool visualizations of
-			sound. For example, here’s a screenshot from listing to{" "}
+			sound. For example, here's a screenshot from listing to{" "}
 			<a href="https://www.youtube.com/watch?v=tPqLfsmL0bM">
 				GRiZ - The Future Is Now
 			</a>.

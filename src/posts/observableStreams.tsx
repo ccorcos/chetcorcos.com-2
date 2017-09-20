@@ -4,8 +4,8 @@ import Code from "../components/Code"
 export default () => (
 	<div>
 		<p>
-			Observable streams are one of the coolest programming patterns I’ve read
-			about in a long time. If you don’t know about them, check out{" "}
+			Observable streams are one of the coolest programming patterns I've read
+			about in a long time. If you don't know about them, check out{" "}
 			<a href="https://www.youtube.com/watch?v=XRYN2xt11Ek">
 				this awesome talk
 			</a>{" "}
@@ -15,7 +15,7 @@ export default () => (
 			</a>.
 		</p>
 		<p>
-			Being a huge meteor fan, I’ve come to love{" "}
+			Being a huge meteor fan, I've come to love{" "}
 			<a href="https://www.meteor.com/tracker">Tracker</a>. It is the heart and
 			soul of any meteor app and its only{" "}
 			<a href="https://github.com/meteor/meteor/blob/devel/packages/tracker/tracker.js">
@@ -24,7 +24,7 @@ export default () => (
 			<a href="http://manual.meteor.com/#deps">learn how it works</a>.
 		</p>
 		<p>
-			The reason I want to bring up Tracker is because that’s how we integrate
+			The reason I want to bring up Tracker is because that's how we integrate
 			reactivity into Meteor. Observable streams are another way of integrating
 			reactivity into your app. I want to show you a perfect example of why
 			observable streams can be very useful.
@@ -58,7 +58,7 @@ export default () => (
 		</ol>
 		<p>
 			Using Tracker, we can define observable streams within our Template
-			helpers and they’ll reactively update!
+			helpers and they'll reactively update!
 		</p>
 		<p>
 			So whats the big hype? Check out this{" "}
@@ -67,7 +67,7 @@ export default () => (
 			</a>{" "}
 			and notice how smooth the physics are, it works on desktop or mobile, and
 			it has no jank. This slide menu was created in only 50 lines of code.
-			Here’s how:
+			Here's how:
 		</p>
 		<p>
 			Everything is defined within the <code>menu.rendered</code> function:
@@ -102,7 +102,7 @@ export default () => (
 			`}
 		/>
 		<p>
-			We also keep track of when the menu is animating so we don’t interrupt any
+			We also keep track of when the menu is animating so we don't interrupt any
 			animations with a new animation.
 		</p>
 		<Code
@@ -190,10 +190,10 @@ moveStream
 `}
 		/>
 		<p>
-			Anyways, that’s it. Pretty slick right?! My mind was blown once I realized
+			Anyways, that's it. Pretty slick right?! My mind was blown once I realized
 			how useful observable streams are for abstracting the state of UI events.{" "}
 			<a href="https://github.com/ccorcos/meteor-tracker-streams/tree/master/examples/slide-menu">
-				Here’s the code for the menu
+				Here's the code for the menu
 			</a>{" "}
 			and <a href="mailto:ccorcos@gmail.com">let me know what you think</a>!
 		</p>

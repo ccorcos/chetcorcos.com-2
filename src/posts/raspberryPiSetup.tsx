@@ -4,8 +4,8 @@ import Code from "../components/Code"
 export default () => (
 	<div>
 		<p>
-			I have a few Raspberry Pi’s now, but my favorite thing to do with them is
-			hardwire them to the ethernet run cron jobs. So I thought I’d give a quick
+			I have a few Raspberry Pi's now, but my favorite thing to do with them is
+			hardwire them to the ethernet run cron jobs. So I thought I'd give a quick
 			introduction on how to setup your Pi.
 		</p>
 		<h2>Setup</h2>
@@ -27,12 +27,12 @@ export default () => (
 		<p>Now you can ssh into your Pi using the hostname.</p>
 		<Code value={`$ ssh pi@raspberrypi.local`} />
 		<p>
-			If you’re me, you’ll add an alias to your <code>.bashrc</code> (not on
+			If you're me, you'll add an alias to your <code>.bashrc</code> (not on
 			your Pi stupid!).
 		</p>
 		<Code value={`alias pi="ssh pi@raspberrypi.local"`} />
 		<p>
-			I also like using Vim because I’m most familiar with it. But you have to
+			I also like using Vim because I'm most familiar with it. But you have to
 			install it!
 		</p>
 		<Code
@@ -116,12 +116,12 @@ export default () => (
 		<Code value={`$ sudo raspi-config`} />
 		<p>
 			Go to internationalization options &gt; timezone and set it to your
-			timezone. Now you’re good to go! Have fun, and let me know of any awesome
+			timezone. Now you're good to go! Have fun, and let me know of any awesome
 			cron jobs your set up on your Raspberry Pi!
 		</p>
 		<p>
-			If you are having any trouble and it seems the jobs aren’t running as
-			you’d expect them to, then check out the logs.
+			If you are having any trouble and it seems the jobs aren't running as
+			you'd expect them to, then check out the logs.
 		</p>
 		<Code value={`$ cat /var/log/syslog`} />
 	</div>

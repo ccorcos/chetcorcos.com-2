@@ -3,7 +3,7 @@ import * as React from "react"
 export default () => (
 	<div>
 		<p>
-			I’m looking for a new apartment and its just such a hassle here in LA.
+			I'm looking for a new apartment and its just such a hassle here in LA.
 			Housing prices are so expensive and the good places are swooped up the
 			same day the go up. Another big frustration is having to go through heaps
 			of spam on Craigslist and the inadequate search tools and filtering. So I

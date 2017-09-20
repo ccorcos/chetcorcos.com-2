@@ -3,19 +3,19 @@ import * as React from "react"
 export default () => (
 	<div>
 		<p>
-			Over past year, I’ve learned a lot about anonymity on the internet so I
-			thought I’d share.
+			Over past year, I've learned a lot about anonymity on the internet so I
+			thought I'd share.
 		</p>
 		<ul>
 			<li>
 				<p>
-					Install a VPN. I’ve found{" "}
+					Install a VPN. I've found{" "}
 					<a href="https://privateinternetaccess.com">
 						privateinternetaccess.com
 					</a>{" "}
-					to be the best. Its $40/yr and it doesn’t seem to hinder my internet
+					to be the best. Its $40/yr and it doesn't seem to hinder my internet
 					speed. What this does is route all of your internet traffic through
-					one of their servers so the outside world doesn’t see your IP address.
+					one of their servers so the outside world doesn't see your IP address.
 				</p>
 			</li>
 			<li>
@@ -25,12 +25,12 @@ export default () => (
 					service, but encrypt your emails yourself using PGP. The most simple
 					solution is <a href="http://ppgp.sourceforge.net/">Portable PGP</a>.
 					Its simple and you have to handle your own keys and copy paste into
-					emails, but you know what you’re getting. I mostly just use{" "}
+					emails, but you know what you're getting. I mostly just use{" "}
 					<a href="https://gpgtools.org/">GPGTools for Mac Mail</a>. It gives
 					you some nice buttons in Mail for doing all this stuff and encrypts /
 					decrypts everything for you. Last but not least,{" "}
 					<a href="https://code.google.com/p/end-to-end/">
-						Google’s end-to-end
+						Google's end-to-end
 					</a>{" "}
 					is brand new and not fully supported but its something to keep an eye
 					on.
@@ -64,7 +64,7 @@ export default () => (
 					<a href="https://www.torproject.org/download/download.html">
 						Vidalia Tor browser
 					</a>{" "}
-					which is built off of Firefox. I’d recommend using this.
+					which is built off of Firefox. I'd recommend using this.
 				</p>
 			</li>
 			<li>
@@ -81,7 +81,7 @@ export default () => (
 			</li>
 			<li>
 				<p>
-					For just normal web browsing, I’d also recommend installing the{" "}
+					For just normal web browsing, I'd also recommend installing the{" "}
 					<a href="https://disconnect.me/">Disconnect Me</a> browser extension
 					which prevents 3rd party websites from tracking you across the web.
 				</p>

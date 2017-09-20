@@ -6,26 +6,26 @@ export default () => (
 		<p>
 			Every year, when the new OS X operating system comes out, I like to do a
 			clean install, getting rid of all the junk on my computer that accumulated
-			over the past year. Over the years, I’ve created some scripts to help me
+			over the past year. Over the years, I've created some scripts to help me
 			automate the process of setting up my new machine the way I like it.{" "}
 			<a href="https://github.com/ccorcos/mac-setup">
-				I’ve create a repository on my Github elaborating on this process and
+				I've create a repository on my Github elaborating on this process and
 				providing some useful scripts
 			</a>.
 		</p>
 		<p>
-			There are a few things you have to do manually first. You’ll need to
+			There are a few things you have to do manually first. You'll need to
 			install the Xcode commandline tools which you can do directly from the
 			commandline without installing Xcode.
 		</p>
 		<Code value={`$ xcode-select --install`} />
 		<p>
-			Next, you’ll want to install any apps you have already purchased from the
-			App Store. You’ll probably want to install Xcode anyways.
+			Next, you'll want to install any apps you have already purchased from the
+			App Store. You'll probably want to install Xcode anyways.
 		</p>
 		<h2>Homebrew</h2>
 		<p>
-			Then you’ll want to install <a href="http://brew.sh/">homebrew</a>, a
+			Then you'll want to install <a href="http://brew.sh/">homebrew</a>, a
 			commandline tool to manage installations on your Mac. Checkout my{" "}
 			<a href="https://github.com/ccorcos/mac-setup/blob/master/install.sh">
 				<code>install.sh</code>
@@ -46,7 +46,7 @@ export default () => (
 		</p>
 		<Code value={`$ brew install zsh`} />
 		<p>
-			Then open zsh, don’t worry about the initial configuration it asks you
+			Then open zsh, don't worry about the initial configuration it asks you
 			for.
 		</p>
 		<Code value={`$ zsh`} />

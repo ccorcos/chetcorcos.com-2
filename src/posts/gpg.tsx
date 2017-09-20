@@ -5,11 +5,11 @@ export default () => (
 	<div>
 		<p>
 			<a href="https://www.gnupg.org/">GnuPG</a> is one of the most widely
-			distributed encryption tools. I’ve used{" "}
+			distributed encryption tools. I've used{" "}
 			<a href="https://gpgtools.org/">GPGTools</a> before but I like being at
-			the commandline and knowing what I’m getting. Something about going
-			through the Mail application makes me think it can’t possibly be secure.
-			Anyways, I like to take notes when I try new things so here’s a getting
+			the commandline and knowing what I'm getting. Something about going
+			through the Mail application makes me think it can't possibly be secure.
+			Anyways, I like to take notes when I try new things so here's a getting
 			started for you.
 		</p>
 		<p>

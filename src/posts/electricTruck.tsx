@@ -29,7 +29,7 @@ export default () => (
 			<a href="http://www.canev.com">Canada Electric Vehicles Ltd.</a>
 		</p>
 		<p>
-			First, we stripped the car of anything that wasn’t needed: the gas tank,
+			First, we stripped the car of anything that wasn't needed: the gas tank,
 			exhaust pipes, engine, etc.
 		</p>
 		<p>
@@ -87,9 +87,9 @@ export default () => (
 		</p>
 		<p>
 			Eventually, it powered up. Luckily, we had the truck on stands because the
-			potentiometer for the accelerator was backwards. We hadn’t wired it wrong
+			potentiometer for the accelerator was backwards. We hadn't wired it wrong
 			– the internal throttle spring pulls the lever in the full throttle
-			direction! Once we fixed that, the truck was ready for it’s maiden voyage.
+			direction! Once we fixed that, the truck was ready for it's maiden voyage.
 		</p>
 		<div>
 			<iframe

@@ -4,19 +4,19 @@ import Code from "../components/Code"
 export default () => (
 	<div>
 		<p>
-			Learning git was difficult for me because I couldn’t find any good
+			Learning git was difficult for me because I couldn't find any good
 			tutorials by example. So this is my attempt.
 		</p>
 		<p>
 			First, I will start with an overview of some commands and what they do.
-			You’ll likely be confused, but I will then show by example how to use them
+			You'll likely be confused, but I will then show by example how to use them
 			in your workflow.
 		</p>
 		<h2>Basic Commands</h2>
 		<p>
 			When browsing around <a href="http://www.github.com">Github</a>, you may
 			find some code that looks useful that you want to play with. To copy a git
-			repository (a git version-controlled directory), you’ll use{" "}
+			repository (a git version-controlled directory), you'll use{" "}
 			<code>clone</code>.
 		</p>
 		<Code value={`$ git clone durl/path to git repo&gt;`} />
@@ -49,11 +49,11 @@ export default () => (
 		<p>
 			Watch out for training spaces and use <code>**</code> to use this pattern
 			for all directories and subdirectories. I dont know what .DS_Store is, but
-			its really annoying on Macs. And you’ll never need to version control
+			its really annoying on Macs. And you'll never need to version control
 			compiled python files.
 		</p>
 		<p>
-			To save a version of the files you just addes, you’ll use the{" "}
+			To save a version of the files you just addes, you'll use the{" "}
 			<code>commit</code> command.
 		</p>
 		<Code
@@ -63,7 +63,7 @@ export default () => (
 		/>
 		<p>
 			These changes are only committed to the local git repository. If you
-			cloned the repository from somewhere else, you’ll need to{" "}
+			cloned the repository from somewhere else, you'll need to{" "}
 			<code>push</code> the changes to the remote “origin” repository.
 		</p>
 		<Code value={`$ git push origin dbranch&gt;`} />
@@ -72,7 +72,7 @@ export default () => (
 			you to develop multiple versions of your code. You may have a different
 			branch for each of several different designs. Branching allows you to keep
 			track of the the differences in these designs and quickly change between
-			the designs. To make a new branch, you’ll use the <code>branch</code>{" "}
+			the designs. To make a new branch, you'll use the <code>branch</code>{" "}
 			command.
 		</p>
 		<Code value={`$ git branch dname&gt;`} />
@@ -135,8 +135,8 @@ export default () => (
 		</p>
 		<Code value={`$ git clone dgithub url or path&gt;`} />
 		<p>
-			Now that you have the repo, you you’ll want to create a branch to start
-			writing your own code. You’ll probably want to always branch from master
+			Now that you have the repo, you you'll want to create a branch to start
+			writing your own code. You'll probably want to always branch from master
 			because master should be guaranteed to be workable code, but if you are
 			extending another branch, you can branch from whatever branch you want.
 			Checkout the branch you want to branch from, pull the most recent commits
@@ -177,7 +177,7 @@ export default () => (
 		<p>
 			Or, suppose I am finished with this branch, its workable code, and no one
 			else will ever need to see this branch. In this case, I want to push it to
-			origin master. But first, I’ll want to make sure I have the latest master
+			origin master. But first, I'll want to make sure I have the latest master
 			branch.
 		</p>
 		<Code
@@ -241,7 +241,7 @@ export default () => (
 			to add all of the files and subdirectories of the project folder to the
 			git repo using the <code>add</code> command. A period signifies all files
 			and subdirectories. You could add individual files if you wanted but I
-			just use the <code>.gitignore</code> file to ignore all files I don’t want
+			just use the <code>.gitignore</code> file to ignore all files I don't want
 			to add. Then you want to commit the change to the repo using a descriptive
 			message of what you did. The message can be as long as you want it. For
 			the sake of this work through, I will use simple messages though. Then to
@@ -264,7 +264,7 @@ export default () => (
 		</p>
 		<Code value={`$ git status $ git log`} />
 		<p>
-			You’ll see that we are on the master branch, everything is updated and we
+			You'll see that we are on the master branch, everything is updated and we
 			have one commit, the “first commit”. Now try this command.
 		</p>
 		<Code value={`$ git remote show origin`} />
@@ -282,7 +282,7 @@ export default () => (
 			If we want to work on the code to perhaps add a feature, we are going to
 			want to first make a branch off of master. The point of branching is that
 			the master branch should always have workable code. Thus if you are
-			working on something which may have several commits where the code isn’t
+			working on something which may have several commits where the code isn't
 			workable, then you definitely want to branch. You want to commit often,
 			with descriptive messages to leave a trail of what was done. If you are
 			simply changing a minor bug which will only require one commit, then you
@@ -297,7 +297,7 @@ export default () => (
 			Lets make a new branch.
 		</p>
 		<Code value={`$ git branch making_some_change`} />
-		<p>You’ll see that we are still on master branch though.</p>
+		<p>You'll see that we are still on master branch though.</p>
 		<Code value={`$ git branch`} />
 		<p>
 			To change branches, you have to <code>checkout</code> that branch.
@@ -360,8 +360,8 @@ export default () => (
 		</p>
 		<Code value={`$ git pull origin master`} />
 		<p>
-			You will see that your master branch is already up-to-date. If it wasn’t,
-			you’d want check the log to see what was added. So lets make another
+			You will see that your master branch is already up-to-date. If it wasn't,
+			you'd want check the log to see what was added. So lets make another
 			change.
 		</p>
 		<Code
@@ -441,8 +441,8 @@ export default () => (
 		</p>
 		<Code value={`$ git branch $ git status $ git log $ cat file.txt`} />
 		<p>
-			Note that your repo has no knowledge of someone’s commit because the local
-			repo hasn’t been updated. Now, here we can do one of two things. We can
+			Note that your repo has no knowledge of someone's commit because the local
+			repo hasn't been updated. Now, here we can do one of two things. We can
 			merge to master, then push to origin master, deal with the conflict then
 			and push back to origin master (which is what I will do), or pull the most
 			recent origin master, merge to master, deal with the conflicts, and then
@@ -476,16 +476,16 @@ export default () => (
 		</p>
 		<p>
 			Where it says head, we will see the changes that we made on out local git
-			repo that hasn’t been added to master. Then under ===== we will see the
-			changes that we don’t have in our repo that is on origin master along with
+			repo that hasn't been added to master. Then under ===== we will see the
+			changes that we don't have in our repo that is on origin master along with
 			the commit id.
 		</p>
 		<p>
 			This is where we manually fix the changes. In practice, we want to make
 			sure everything is functional. Remember, master is always going to have
-			workable code. Notice that this merge is only local, so we don’t have to
+			workable code. Notice that this merge is only local, so we don't have to
 			worry about messing it up so long as we don;t push back to origin master.
-			If we fuck up, we still have our code on the other branch, and if we don’t
+			If we fuck up, we still have our code on the other branch, and if we don't
 			like what we did and someone already fixed it, we can just delete the
 			branch.
 		</p>
@@ -505,22 +505,22 @@ export default () => (
 			`}
 		/>
 		<p>
-			You’ll see that we are 3 commits ahead of master now. And note the order
+			You'll see that we are 3 commits ahead of master now. And note the order
 			of the commits. Your commits from “me” we put on top of those from
 			“someone” because “someone” pushed to origin master before you. Then
-			you’ll see your merge success commit.
+			you'll see your merge success commit.
 		</p>
 		<p>
 			Now, you could have done anything you wanted in that merge. You could have
 			deleted the stuff that “someone” did. The point is that you want the code
-			to be workable persisting someone’s work before you push back to origin
+			to be workable persisting someone's work before you push back to origin
 			master. So once you are done working on the code and think it is workable
 			you should push to origin master.
 		</p>
 		<Code value={`$ git push origin master`} />
 		<p>
-			And there ya go. One thing I didn’t mention is that you can push other
-			branches to origin. They do’;t have to be workable, only master does (best
+			And there ya go. One thing I didn't mention is that you can push other
+			branches to origin. They do';t have to be workable, only master does (best
 			practices). Pushing other branches allows other people to work off that
 			branch with you.
 		</p>
@@ -537,7 +537,7 @@ export default () => (
 			branches.
 		</p>
 		<p>
-			You don’t always have to branch to make changes especially if you are not
+			You don't always have to branch to make changes especially if you are not
 			working in a large group. However, I would recommend branching if it is
 			something you may eventually trash or might not work out.
 		</p>
@@ -550,7 +550,7 @@ export default () => (
 		</p>
 		<Code value={`$ git-credential-osxkeychain`} />
 		<h2>Quirks</h2>
-		<p>Some things I’ve learned over the days…</p>
+		<p>Some things I've learned over the days…</p>
 		<h3>Orphaned Repo Files</h3>
 		<p>
 			If you run <code>git status</code> and find that there are changes to be
@@ -569,7 +569,7 @@ export default () => (
 			Then commit with a message like “clean up deleted files”. I found this
 			command online and it has been very useful…
 		</p>
-		<h3>Gitignore Isn’t Working?</h3>
+		<h3>Gitignore Isn't Working?</h3>
 		<p>
 			Sometimes git will not ignore some of the files you specified. Make sure
 			comments are after a <code>#</code>. Also, make sure there are no trailing
@@ -603,12 +603,12 @@ export default () => (
 		</p>
 		<Code value={`$ git reset --hard`} />
 		<p>
-			Sometimes you’ll want to see a previous commit. Run <code>git log</code>,
+			Sometimes you'll want to see a previous commit. Run <code>git log</code>,
 			copy the commit id, then
 		</p>
 		<Code value={`$ git checkout dcommit id&gt;`} />
 		<p>
-			Sometimes you’ll just want to say fuck it and replace the branch with a
+			Sometimes you'll just want to say fuck it and replace the branch with a
 			previous commit.
 		</p>
 		<Code value={`$ git reset --hard dcommit id&gt;`} />

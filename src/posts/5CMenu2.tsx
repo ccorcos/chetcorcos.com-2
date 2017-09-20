@@ -8,9 +8,9 @@ import * as frary2 from "file-loader!../img/frary2.jpeg"
 export default () => (
 	<div>
 		<p>
-			This winter break, I’ve decided to rebuild the old{" "}
+			This winter break, I've decided to rebuild the old{" "}
 			<a href="/projects/2012/06/02/5c-menu-app.html">5C Menu iPhone App</a>.
-			I’ve learned some lessons the the past few years and I figured I could
+			I've learned some lessons the the past few years and I figured I could
 			make it much quicker this time.
 		</p>
 		<p>
