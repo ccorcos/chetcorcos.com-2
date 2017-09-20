@@ -80,24 +80,24 @@ export default () => (
 		<Code
 			value={`
 				# start stream of x position values toushStart =
-				@eventStream(&quot;touchstart&quot;, &quot;.handle&quot;) .map (e) -&gt;
+				@eventStream("touchstart", ".handle") .map (e) -&gt;
 				e.originalEvent.touches[0].pageX mouseDown =
-				@eventStream(&quot;mousedown&quot;, &quot;.handle&quot;) .map (e) -&gt;
+				@eventStream("mousedown", ".handle") .map (e) -&gt;
 				e.pageX startStream = Tracker.mergeStreams(toushStart, mouseDown) #
 				cancel on a variety of annoying events touchEnd =
-				self.eventStream(&quot;touchend&quot;, &quot;.page&quot;, true)
-				touchCancel = self.eventStream(&quot;touchcancel&quot;,
-				&quot;.page&quot;, true) touchLeave =
-				self.eventStream(&quot;touchleave&quot;, &quot;.page&quot;, true)
-				mouseUp = self.eventStream(&quot;mouseup&quot;, &quot;.page&quot;, true)
-				mouseOut = self.eventStream(&quot;mouseout&quot;, &quot;.page&quot;,
+				self.eventStream("touchend", ".page", true)
+				touchCancel = self.eventStream("touchcancel",
+				".page", true) touchLeave =
+				self.eventStream("touchleave", ".page", true)
+				mouseUp = self.eventStream("mouseup", ".page", true)
+				mouseOut = self.eventStream("mouseout", ".page",
 				true) mouseOffPage = mouseOut .filter (e) -&gt; (e.relatedTarget or
 				e.toElement) is undefined endStream = Tracker.mergeStreams(mouseUp,
 				mouseOffPage, touchEnd, touchCancel, touchLeave) # create a move stream
 				on demand returning the x position values mouseMove =
-				self.eventStream(&quot;mousemove&quot;, &quot;.page&quot;, true) .map
-				(e) -&gt; e.pageX touchMove = self.eventStream(&quot;touchmove&quot;,
-				&quot;.page&quot;, true) .map (e) -&gt; e.originalEvent.touches[0].pageX
+				self.eventStream("mousemove", ".page", true) .map
+				(e) -&gt; e.pageX touchMove = self.eventStream("touchmove",
+				".page", true) .map (e) -&gt; e.originalEvent.touches[0].pageX
 				moveStream = Tracker.mergeStreams(mouseMove, touchMove)
 			`}
 		/>

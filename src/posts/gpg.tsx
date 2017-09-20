@@ -19,21 +19,21 @@ export default () => (
 		<p>Create a key pair</p>
 		<Code value={`gpg --gen-key`} />
 		<p>You can get a copy of the public key like this</p>
-		<Code value={`gpg -a --export &quot;Name or email&quot;`} />
+		<Code value={`gpg -a --export "Name or email"`} />
 		<p>
 			You can also publish your public key to a key server. First get the
 			fingerprint of the key you want to export:
 		</p>
 		<Code value={`gpg --fingerprint`} />
 		<p>Then send it off like this</p>
-		<Code value={`gpg --send-keys &quot;fingerprint of your key&quot;`} />
+		<Code value={`gpg --send-keys "fingerprint of your key"`} />
 		<p>
 			If someone sent you their public key in a file, you and import it like
 			this
 		</p>
 		<Code value={`gpg --import pub.key`} />
 		<p>Or you can search for them on a public key server</p>
-		<Code value={`gpg --search-keys &quot;name or email address&quot;`} />
+		<Code value={`gpg --search-keys "name or email address"`} />
 		<p>
 			To send a message, first write it up in a text file. Then you can encrypt
 			it with their public key using ASCII armor, and signing it with your

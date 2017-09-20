@@ -116,7 +116,7 @@ export default () => (
 			<code>.DS_Store</code> files on Mac OSX. Then <code>add</code> all the
 			files you want to track and <code>commit</code> the changes.
 		</p>
-		<Code value={`$ git add . $ git commit -m &quot;first commit&quot;`} />
+		<Code value={`$ git add . $ git commit -m "first commit"`} />
 		<p>
 			You will likely want to put this code on Github so you can share the code
 			with others and develop together. Go onto Github to create a new
@@ -164,7 +164,7 @@ export default () => (
 		</p>
 		<Code
 			value={`
-				$ git add . $ git commit -m &quot;Something very specific was done&quot;
+				$ git add . $ git commit -m "Something very specific was done"
 
 			`}
 		/>
@@ -252,7 +252,7 @@ export default () => (
 		</p>
 		<Code
 			value={`
-				$ git add . $ git commit -m &quot;first commit&quot; $ git push origin
+				$ git add . $ git commit -m "first commit" $ git push origin
 				master
 
 			`}
@@ -315,7 +315,7 @@ export default () => (
 		</p>
 		<Code
 			value={`
-				$ git add . $ git commit -m &quot;me making a change&quot; $ git log
+				$ git add . $ git commit -m "me making a change" $ git log
 
 			`}
 		/>
@@ -382,7 +382,7 @@ export default () => (
 		<p>Then lets commit the change.</p>
 		<Code
 			value={`
-				$ git add . $ git commit -m &quot;me making another change&quot;
+				$ git add . $ git commit -m "me making another change"
 
 			`}
 		/>
@@ -423,7 +423,7 @@ export default () => (
 		<p>Now, lets merge and push…</p>
 		<Code
 			value={`
-				$ git add . $ git commit -m &quot;someone making a change&quot; $ git
+				$ git add . $ git commit -m "someone making a change" $ git
 				checkout master $ git merge someone_making_some_change $ git push origin
 				master
 
@@ -499,7 +499,7 @@ export default () => (
 		<p>Lets commit our work.</p>
 		<Code
 			value={`
-				$ git add . $ git commit -m &quot;merge success&quot; $ git status $ git
+				$ git add . $ git commit -m "merge success" $ git status $ git
 				log
 
 			`}
@@ -578,8 +578,8 @@ export default () => (
 		</p>
 		<Code
 			value={`
-				$ git rm -r --cached $ git add . $ git commit -m &quot;fixed
-				gitignore&quot;
+				$ git rm -r --cached $ git add . $ git commit -m "fixed
+				gitignore"
 
 			`}
 		/>
@@ -589,7 +589,7 @@ export default () => (
 		</p>
 		<Code
 			value={`
-				alias gitclean=&quot;git rm -r --cached . &amp;&amp; git add .&quot;
+				alias gitclean="git rm -r --cached . &amp;&amp; git add ."
 
 			`}
 		/>

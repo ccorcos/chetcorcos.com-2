@@ -30,16 +30,16 @@ export default () => (
 			If you’re me, you’ll add an alias to your <code>.bashrc</code> (not on
 			your Pi stupid!).
 		</p>
-		<Code value={`alias pi=&quot;ssh pi@raspberrypi.local&quot;`} />
+		<Code value={`alias pi="ssh pi@raspberrypi.local"`} />
 		<p>
 			I also like using Vim because I’m most familiar with it. But you have to
 			install it!
 		</p>
 		<Code
 			value={`
-				$ sudo apt-get install vim $ echo &quot;set nocompatible&quot; &gt;
-				~/.vimrc $ echo &quot;export VISUAL=vim&quot; &gt; ~/.bashrc $ echo
-				&quot;export EDITOR=$VISUAL&quot; &gt; ~/.bashrc
+				$ sudo apt-get install vim $ echo "set nocompatible" &gt;
+				~/.vimrc $ echo "export VISUAL=vim" &gt; ~/.bashrc $ echo
+				"export EDITOR=$VISUAL" &gt; ~/.bashrc
 			`}
 		/>
 		<p>
