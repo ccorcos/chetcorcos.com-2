@@ -73,13 +73,13 @@ export default () => (
 		<Code
 			value={`
 				# Craigslist Script 0 18 * * * cd /home/pi/programs/craigslist-watch/
-				&amp;&amp; python craigslist.py
+				&& python craigslist.py
 			`}
 		/>
 		<p>
 			Note that its a good idea to{" "}
-			<code>cd /path/to/dir/ &amp;&amp; python program.py</code> just in case
-			your program is importing any files from the same directory.
+			<code>cd /path/to/dir/ && python program.py</code> just in case your
+			program is importing any files from the same directory.
 		</p>
 		<p>
 			You can also setup an{" "}
@@ -92,7 +92,7 @@ export default () => (
 		<Code
 			value={`
 				# Speedtest 0 * * * * cd /home/pi/programs/internet-speed-log/
-				&amp;&amp; python speedtest.py
+				&& python speedtest.py
 			`}
 		/>
 		<p>

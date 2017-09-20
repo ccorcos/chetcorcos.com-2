@@ -613,7 +613,7 @@ $ git commit -m "fixed gitignore"
 		</p>
 		<Code
 			value={`
-				alias gitclean="git rm -r --cached . &amp;&amp; git add ."
+				alias gitclean="git rm -r --cached . && git add ."
 			`}
 		/>
 		<p>
