@@ -19,7 +19,7 @@ export default class PostItem extends React.PureComponent<PostItemProps, {}> {
 							style={{
 								width: 65,
 								height: 65,
-								background: `url(${this.props.img})`,
+								backgroundImage: `url(${this.props.img})`,
 								backgroundSize: "cover",
 								backgroundPosition: "center",
 								borderRadius: 6,
