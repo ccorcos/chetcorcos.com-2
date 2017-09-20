@@ -116,7 +116,12 @@ export default () => (
 			<code>.DS_Store</code> files on Mac OSX. Then <code>add</code> all the
 			files you want to track and <code>commit</code> the changes.
 		</p>
-		<Code value={`$ git add . $ git commit -m "first commit"`} />
+		<Code
+			value={`
+$ git add .
+$ git commit -m "first commit"
+`}
+		/>
 		<p>
 			You will likely want to put this code on Github so you can share the code
 			with others and develop together. Go onto Github to create a new
@@ -165,8 +170,8 @@ $ git branch adding_login
 		</p>
 		<Code
 			value={`
-				$ git add . $ git commit -m "Something very specific was done"
-
+$ git add .
+$ git commit -m "Something very specific was done"
 			`}
 		/>
 		<p>
@@ -183,9 +188,10 @@ $ git branch adding_login
 		</p>
 		<Code
 			value={`
-				$ git checkout master $ git pull origin master $ git merge master $ git
-				push origin master
-
+$ git checkout master
+$ git pull origin master
+$ git merge master
+$ git push origin master
 			`}
 		/>
 		<p>
@@ -211,9 +217,12 @@ $ git branch adding_login
 		</p>
 		<Code
 			value={`
-				$ cd ~/Desktop/ $ mkdir github $ cd github $ mkdir project $ cd project
-				$ git init --bare
-
+$ cd ~/Desktop/
+$ mkdir github
+$ cd github
+$ mkdir project
+$ cd project
+$ git init --bare
 			`}
 		/>
 		<p>
@@ -225,7 +234,10 @@ $ git branch adding_login
 		<p>Now we want to copy this git repo over from “github”.</p>
 		<Code
 			value={`
-				$ cd ~/Desktop/ $ mkdir me $ cd me $ git clone ~/Desktop/github/project
+$ cd ~/Desktop/
+$ mkdir me
+$ cd me
+$ git clone ~/Desktop/github/project
 
 			`}
 		/>
@@ -236,7 +248,12 @@ $ git branch adding_login
 			that you just copied an empty repo, so lets make a file and add it to the
 			repo.
 		</p>
-		<Code value={`$ cd project $ touch file.txt`} />
+		<Code
+			value={`
+$ cd project
+$ touch file.txt
+`}
+		/>
 		<p>
 			In <code>file.txt</code>, write, “this is the initial file”. Then we want
 			to add all of the files and subdirectories of the project folder to the
@@ -253,9 +270,9 @@ $ git branch adding_login
 		</p>
 		<Code
 			value={`
-				$ git add . $ git commit -m "first commit" $ git push origin
-				master
-
+$ git add .
+$ git commit -m "first commit"
+$ git push origin master
 			`}
 		/>
 		<p>
@@ -263,7 +280,11 @@ $ git branch adding_login
 			made a file, added it to the local repo, committed the change locally, and
 			pushed the commit to origin/master. Now play with the following commands.
 		</p>
-		<Code value={`$ git status $ git log`} />
+		<Code
+			value={`
+$ git status
+$ git log`}
+		/>
 		<p>
 			You'll see that we are on the master branch, everything is updated and we
 			have one commit, the “first commit”. Now try this command.
@@ -316,7 +337,9 @@ $ git branch adding_login
 		</p>
 		<Code
 			value={`
-				$ git add . $ git commit -m "me making a change" $ git log
+$ git add .
+$ git commit -m "me making a change"
+$ git log
 
 			`}
 		/>
@@ -325,13 +348,21 @@ $ git branch adding_login
 			workable, we will then want to merge back to master before we push to
 			origin/master. So switch to the master branch.
 		</p>
-		<Code value={`$ git checkout master $ git log`} />
+		<Code
+			value={`
+$ git checkout master
+$ git log`}
+		/>
 		<p>
 			Verify that the commit made on <code>making_some_change</code> is not on
 			the master branch. Try opening up the <code>file.txt</code> and you will
 			see it is the old file. Then merge the branch back to master.
 		</p>
-		<Code value={`$ git merge making_some_change $ git log`} />
+		<Code
+			value={`
+$ git merge making_some_change
+$ git log`}
+		/>
 		<p>
 			You will now see that that commit was added to the file and that file has
 			been changed. Then try:
@@ -399,21 +430,29 @@ $ git commit -m "me making another change"
 		</p>
 		<Code
 			value={`
-				$ cd ~/Desktop/ $ mkdir someone $ cd someone $ git clone
-				~/Desktop/github/project $ cd project
+$ cd ~/Desktop/
+$ mkdir someone
+$ cd someone
+$ git clone	~/Desktop/github/project
+$ cd project
 
 			`}
 		/>
 		<p>Try the following.</p>
-		<Code value={`$ git log $ git status $ cat file.txt`} />
+		<Code
+			value={`
+$ git log
+$ git status
+$ cat file.txt`}
+		/>
 		<p>
 			Verify that we just copied the same file over from origin master. Now lets
 			assume that someone wants to make a change so they create a branch, etc…
 		</p>
 		<Code
 			value={`
-				$ git branch someone_making_some_change $ git checkout
-				someone_making_some_change
+$ git branch someone_making_some_change
+$ git checkout someone_making_some_change
 
 			`}
 		/>

@@ -20,8 +20,9 @@ export default () => (
 		</p>
 		<Code
 			value={`
-				$ sudo apt-get update $ sudo apt-get upgrade $ sudo apt-get install
-				avahi-daemon
+$ sudo apt-get update
+$ sudo apt-get upgrade
+$ sudo apt-get install avahi-daemon
 			`}
 		/>
 		<p>Now you can ssh into your Pi using the hostname.</p>
@@ -37,9 +38,10 @@ export default () => (
 		</p>
 		<Code
 			value={`
-				$ sudo apt-get install vim $ echo "set nocompatible" >
-				~/.vimrc $ echo "export VISUAL=vim" > ~/.bashrc $ echo
-				"export EDITOR=$VISUAL" > ~/.bashrc
+$ sudo apt-get install vim
+$ echo "set nocompatible" > ~/.vimrc
+$ echo "export VISUAL=vim" > ~/.bashrc
+$ echo "export EDITOR=$VISUAL" > ~/.bashrc
 			`}
 		/>
 		<p>
