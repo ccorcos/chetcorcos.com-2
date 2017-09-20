@@ -12,7 +12,7 @@ export interface PostItemProps {
 export default class PostItem extends React.PureComponent<PostItemProps, {}> {
 	render() {
 		return (
-			<Link href={this.props.url}>
+			<Link href={this.props.url} style={{ color: "#444" }}>
 				<div style={{ padding: 8, display: "flex" }}>
 					{this.props.img && (
 						<div
