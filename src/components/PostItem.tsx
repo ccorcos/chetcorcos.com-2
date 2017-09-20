@@ -12,17 +12,26 @@ export interface PostItemProps {
 export default class PostItem extends React.PureComponent<PostItemProps, {}> {
 	render() {
 		return (
-			<div style={{ padding: 8 }}>
-				<Link href={this.props.url}>
+			<Link href={this.props.url}>
+				<div style={{ padding: 8, display: "flex" }}>
 					{this.props.img && (
-						<div style={{ width: "100%", maxWidth: 300 }}>
-							<Image src={this.props.img} />
-						</div>
+						<div
+							style={{
+								width: 65,
+								height: 65,
+								background: `url(${this.props.img})`,
+								backgroundSize: "cover",
+								backgroundPosition: "center",
+								borderRadius: 6,
+							}}
+						/>
 					)}
-					<div style={{ fontSize: 18 }}>{this.props.title}</div>
-					<div style={{ fontSize: 14, color: "gray" }}>{this.props.date}</div>
-				</Link>
-			</div>
+					<div style={{ flex: 1, paddingLeft: 8 }}>
+						<div style={{ fontSize: 18 }}>{this.props.title}</div>
+						<div style={{ fontSize: 14, color: "gray" }}>{this.props.date}</div>
+					</div>
+				</div>
+			</Link>
 		)
 	}
 }

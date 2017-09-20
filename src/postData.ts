@@ -1,3 +1,13 @@
+import * as malibuCover from "file-loader!./img/malibu/done.jpg"
+import * as electricTruckCover from "file-loader!./img/etruck/done.jpg"
+import * as blazerCover from "file-loader!./img/blazer.jpg"
+import * as hendrixCover from "file-loader!./img/hendrix/4.jpg"
+import * as claremontMenuCover from "file-loader!./img/mudd.jpg"
+import * as claremontMenuCover2 from "file-loader!./img/mudd2.jpeg"
+import * as facebookGraphCover from "file-loader!./img/facebook-me.png"
+import * as rsaCover from "file-loader!./img/rsa.png"
+import * as passwordRhythmCover from "file-loader!./img/password/test-sample.png"
+
 export interface Post {
 	title: string
 	date: string
@@ -31,6 +41,8 @@ export const mediumPosts: Array<Post> = [
 		title: "Introduction to Parsers",
 		date: "March 3, 2017",
 		url: "https://medium.com/@chetcorcos/introduction-to-parsers-644d1b5d7f3d",
+		img:
+			"https://cdn-images-1.medium.com/max/1600/1*C3YpuL_Fo4K5rYyeAJul2w.png",
 	},
 	{
 		title: "Getting started with Docker in 2 minutes",
@@ -105,66 +117,88 @@ export const mediumPosts: Array<Post> = [
 	{
 		title: "Shindig: Deployment and DevOps",
 		date: "November 23, 2015",
+		img:
+			"https://cdn-images-1.medium.com/max/2000/1*tuHNFifrlokBT0Ixmphtgw.png",
 		url:
 			"https://medium.com/@chetcorcos/shindig-deployment-and-devops-a06db26aa833",
 	},
 	{
 		title: "Shindig: Patterns and Best Practices",
 		date: "November 23, 2015",
+		img:
+			"https://cdn-images-1.medium.com/max/2000/1*tuHNFifrlokBT0Ixmphtgw.png",
 		url:
 			"https://medium.com/@chetcorcos/shindig-patterns-and-best-practices-3baffa406a75",
 	},
 	{
 		title: "Shindig: React Data Component",
 		date: "November 23, 2015",
+		img:
+			"https://cdn-images-1.medium.com/max/2000/1*tuHNFifrlokBT0Ixmphtgw.png",
 		url:
 			"https://medium.com/@chetcorcos/shindig-react-data-component-aa0d2c82059e",
 	},
 	{
 		title: "Shindig: React Transitions with Stylus",
 		date: "November 23, 2015",
+		img:
+			"https://cdn-images-1.medium.com/max/2000/1*tuHNFifrlokBT0Ixmphtgw.png",
 		url:
 			"https://medium.com/@chetcorcos/shindig-react-transitions-with-stylus-fab08e40818e",
 	},
 	{
 		title: "Shindig: React Nav View Controller",
 		date: "November 23, 2015",
+		img:
+			"https://cdn-images-1.medium.com/max/2000/1*tuHNFifrlokBT0Ixmphtgw.png",
 		url:
 			"https://medium.com/@chetcorcos/shindig-react-nav-view-controller-414328034e6a",
 	},
 	{
 		title: "Shindig: React Proxy Component",
 		date: "November 23, 2015",
+		img:
+			"https://cdn-images-1.medium.com/max/2000/1*tuHNFifrlokBT0Ixmphtgw.png",
 		url:
 			"https://medium.com/@chetcorcos/shindig-react-proxy-component-bb368510aad4",
 	},
 	{
 		title: "Shindig: React Tab View Controller",
 		date: "November 23, 2015",
+		img:
+			"https://cdn-images-1.medium.com/max/2000/1*tuHNFifrlokBT0Ixmphtgw.png",
 		url:
 			"https://medium.com/@chetcorcos/shindig-react-tab-view-controller-48af935a5cd9",
 	},
 	{
 		title: "Shindig: React Component Instances",
 		date: "November 23, 2015",
+		img:
+			"https://cdn-images-1.medium.com/max/2000/1*tuHNFifrlokBT0Ixmphtgw.png",
 		url:
 			"https://medium.com/@chetcorcos/shindig-react-component-instances-e8b68bf398f4",
 	},
 	{
 		title: "Shindig: React.js + Coffeescript",
 		date: "November 23, 2015",
+		img:
+			"https://cdn-images-1.medium.com/max/2000/1*tuHNFifrlokBT0Ixmphtgw.png",
 		url:
 			"https://medium.com/@chetcorcos/shindig-react-js-coffeescript-c79d01197203",
 	},
 	{
 		title: "Shindig: Subscription Caching and Latency Compensation",
 		date: "November 23, 2015",
+		img:
+			"https://cdn-images-1.medium.com/max/2000/1*tuHNFifrlokBT0Ixmphtgw.png",
 		url:
 			"https://medium.com/@chetcorcos/shindig-subscription-caching-and-latency-compensation-d2e01e708f31",
 	},
 	{
 		title: "Shindig: Reactive Meteor Publish/Subscribe with Any Database",
 		date: "November 23, 2015",
+		img:
+			"https://cdn-images-1.medium.com/max/2000/1*tuHNFifrlokBT0Ixmphtgw.png",
 		url:
 			"https://medium.com/@chetcorcos/shindig-reactive-meteor-publish-subscribe-with-any-database-feb09105c343",
 	},
@@ -172,7 +206,7 @@ export const mediumPosts: Array<Post> = [
 		title: "Shindig: Integrating Neo4j with Meteor",
 		date: "November 23, 2015",
 		img:
-			"https://cdn-images-1.medium.com/max/2000/1*OFtES_T_6COaiynIUWgQUA.png",
+			"https://cdn-images-1.medium.com/max/2000/1*tuHNFifrlokBT0Ixmphtgw.png",
 		url:
 			"https://medium.com/@chetcorcos/shindig-integrating-neo4j-with-meteor-17b0fce644d",
 	},
@@ -197,6 +231,7 @@ export const claremontMenu: Post = {
 	title: "5C Menu iPhone App",
 	date: "June 2, 2012",
 	url: "/posts/5cmenu",
+	img: claremontMenuCover,
 	component: () => import("./posts/5cMenu").then(m => m.default),
 }
 
@@ -204,6 +239,7 @@ export const claremontMenu2: Post = {
 	title: "5C Menu iPhone App - Round 2",
 	date: "December 18, 2014",
 	url: "/posts/5c-menu-2",
+	img: claremontMenuCover2,
 	component: () => import("./posts/5cMenu2").then(m => m.default),
 }
 
@@ -225,6 +261,7 @@ export const blazer: Post = {
 	title: "1971 Blazer Restoration",
 	date: "January 1, 2010",
 	url: "/posts/blazer",
+	img: blazerCover,
 	component: () => import("./posts/blazer").then(m => m.default),
 }
 
@@ -246,6 +283,7 @@ export const electricTruck: Post = {
 	title: "Electric Truck Conversion",
 	date: "September 1, 2008",
 	url: "/posts/electric-truck",
+	img: electricTruckCover,
 	component: () => import("./posts/electricTruck").then(m => m.default),
 }
 
@@ -253,6 +291,7 @@ export const fbGraph: Post = {
 	title: "Facebook Social Network Visualization",
 	date: "October 10, 2013",
 	url: "/posts/fb-graph",
+	img: facebookGraphCover,
 	component: () => import("./posts/facebookGraph").then(m => m.default),
 }
 
@@ -274,6 +313,8 @@ export const guitarTuner: Post = {
 	title: "Raw Guitar Tuner",
 	date: "January 5, 2015",
 	url: "/posts/guitar-tuner",
+	img:
+		"https://raw.githubusercontent.com/ccorcos/webaudio-guitar-tuner/master/public/screenshot.png",
 	component: () => import("./posts/guitarTuner").then(m => m.default),
 }
 
@@ -281,6 +322,7 @@ export const hendrixMural: Post = {
 	title: "Jimi Hendrix Mural",
 	date: "August 29, 2011",
 	url: "/posts/hendrix",
+	img: hendrixCover,
 	component: () => import("./posts/hendrix").then(m => m.default),
 }
 
@@ -295,6 +337,7 @@ export const malibu: Post = {
 	title: "1965 Malibu Restoration",
 	date: "September 1, 2007",
 	url: "/posts/malibu",
+	img: malibuCover,
 	component: () => import("./posts/malibu").then(m => m.default),
 }
 
@@ -316,6 +359,7 @@ export const passwordRhythm: Post = {
 	title: "Password Rhythm Authentication",
 	date: "March 11, 2014",
 	url: "/posts/password-rhythm",
+	img: passwordRhythmCover,
 	component: () => import("./posts/passwordRhythm").then(m => m.default),
 }
 
@@ -337,6 +381,8 @@ export const roomTuner: Post = {
 	title: "Room Tuner",
 	date: "December 16, 2014",
 	url: "/posts/room-tuner",
+	img:
+		"https://raw.githubusercontent.com/ccorcos/room-tuner/master/public/screenshot.png",
 	component: () => import("./posts/roomTuner").then(m => m.default),
 }
 
@@ -344,6 +390,7 @@ export const rsa: Post = {
 	title: "RSA Encryption Tutorial",
 	date: "February 22, 2014",
 	url: "/posts/rsa",
+	img: rsaCover,
 	component: () => import("./posts/rsa").then(m => m.default),
 }
 
@@ -351,6 +398,8 @@ export const waterfall: Post = {
 	title: "Web Audio API Waterfall",
 	date: "December 28, 2014",
 	url: "/posts/waterfall",
+	img:
+		"https://raw.githubusercontent.com/ccorcos/webaudio-waterfall/master/public/screenshot.png",
 	component: () => import("./posts/webAudioWaterfall").then(m => m.default),
 }
 

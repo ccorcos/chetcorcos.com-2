@@ -1,7 +1,7 @@
 import * as React from "react"
 import * as ReactDOM from "react-dom"
 import { BrowserRouter, Route, Link } from "react-router-dom"
-import Posts from "./pages/posts"
+import Posts from "./components/Posts"
 import { css } from "glamor"
 import { myPosts } from "./postData"
 import Loader from "./components/Loader"

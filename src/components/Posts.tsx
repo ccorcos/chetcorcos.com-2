@@ -4,6 +4,7 @@ import * as _ from "lodash"
 import * as moment from "moment"
 import PostItem from "../components/PostItem"
 import { myPosts, mediumPosts } from "../postData"
+import Layout from "../components/Layout"
 
 const allPosts = [...myPosts, ...mediumPosts]
 const orderedPosts = _.sortBy(allPosts, post => {
@@ -14,9 +15,13 @@ const orderedPosts = _.sortBy(allPosts, post => {
 export default class Posts extends React.PureComponent<{}, {}> {
 	render() {
 		return (
-			<div>
-				{orderedPosts.map((post, index) => <PostItem key={index} {...post} />)}
-			</div>
+			<Layout>
+				<div style={{ width: "100%", maxWidth: "30em", margin: "0 auto" }}>
+					{orderedPosts.map((post, index) => (
+						<PostItem key={index} {...post} />
+					))}
+				</div>
+			</Layout>
 		)
 	}
 }
