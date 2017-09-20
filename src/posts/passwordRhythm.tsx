@@ -7,6 +7,7 @@ import * as reducedTransformedData from "file-loader!../img/password/reduced-tra
 import * as trainingData from "file-loader!../img/password/training-data.png"
 import * as testSample from "file-loader!../img/password/test-sample.png"
 import * as crackedRhythms from "file-loader!../img/password/cracked-rhythms.png"
+import Link from "../components/Link"
 
 export default () => (
 	<div>
@@ -15,9 +16,9 @@ export default () => (
 			– recognizing a user based on the rhythm they type. I figured this could
 			be useful for additional password security so I wrote a program to
 			investigate the idea.{" "}
-			<a href="https://github.com/ccorcos/password-rhythm-authentication">
+			<Link href="https://github.com/ccorcos/password-rhythm-authentication">
 				The code for the project is available here
-			</a>.
+			</Link>.
 		</p>
 		<h2>How it works</h2>
 		<p>

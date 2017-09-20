@@ -196,161 +196,161 @@ export const mediumPosts: Array<Post> = [
 export const claremontMenu: Post = {
 	title: "5C Menu iPhone App",
 	date: "June 2, 2012",
-	url: "/5cmenu",
+	url: "/posts/5cmenu",
 	component: () => import("./5cMenu").then(m => m.default),
 }
 
 export const claremontMenu2: Post = {
 	title: "5C Menu iPhone App - Round 2",
 	date: "December 18, 2014",
-	url: "/5c-menu-2",
+	url: "/posts/5c-menu-2",
 	component: () => import("./5cMenu2").then(m => m.default),
 }
 
 export const anonymity: Post = {
 	title: "Anonymity on the Internet",
 	date: "September 10, 2014",
-	url: "/anonymity",
+	url: "/posts/anonymity",
 	component: () => import("./anonymity").then(m => m.default),
 }
 
 export const blazeAnimation: Post = {
 	title: "Animation with Meteor",
 	date: "November 20, 2014",
-	url: "/blaze-animation",
+	url: "/posts/blaze-animation",
 	component: () => import("./blazeAnimation").then(m => m.default),
 }
 
 export const blazer: Post = {
 	title: "1971 Blazer Restoration",
 	date: "January 1, 2010",
-	url: "blazer",
+	url: "/posts/blazer",
 	component: () => import("./blazer").then(m => m.default),
 }
 
 export const craigslistWatch: Post = {
 	title: "Craigslist Watch",
 	date: "October 24, 2014",
-	url: "/craigslist-watch",
+	url: "/posts/craigslist-watch",
 	component: () => import("./craigslistWatch").then(m => m.default),
 }
 
 export const dns: Post = {
 	title: "Configuring Your DNS",
 	date: "June 6, 2014",
-	url: "/configure-dns",
+	url: "/posts/configure-dns",
 	component: () => import("./dns").then(m => m.default),
 }
 
 export const electricTruck: Post = {
 	title: "Electric Truck Conversion",
 	date: "September 1, 2008",
-	url: "/electric-truck",
+	url: "/posts/electric-truck",
 	component: () => import("./electricTruck").then(m => m.default),
 }
 
 export const fbGraph: Post = {
 	title: "Facebook Social Network Visualization",
 	date: "October 10, 2013",
-	url: "/fb-graph",
+	url: "/posts/fb-graph",
 	component: () => import("./facebookGraph").then(m => m.default),
 }
 
 export const gitTutorial: Post = {
 	title: "Git Tutorial",
 	date: "May 21, 2012",
-	url: "/git-tutorial",
+	url: "/posts/git-tutorial",
 	component: () => import("./gitTutorial").then(m => m.default),
 }
 
 export const gpg: Post = {
 	title: "GNU Privacy Guard Tutorial",
 	date: "February 10, 2014",
-	url: "/gpg",
+	url: "/posts/gpg",
 	component: () => import("./gpg").then(m => m.default),
 }
 
 export const guitarTuner: Post = {
 	title: "Raw Guitar Tuner",
 	date: "January 5, 2015",
-	url: "/guitar-tuner",
+	url: "/posts/guitar-tuner",
 	component: () => import("./guitarTuner").then(m => m.default),
 }
 
 export const hendrixMural: Post = {
 	title: "Jimi Hendrix Mural",
 	date: "August 29, 2011",
-	url: "/hendrix",
+	url: "/posts/hendrix",
 	component: () => import("./hendrix").then(m => m.default),
 }
 
 export const macSetup: Post = {
 	title: "Mac Development Setup",
 	date: "October 17, 2014",
-	url: "/mac-dev-setup",
+	url: "/posts/mac-dev-setup",
 	component: () => import("./macSetup").then(m => m.default),
 }
 
 export const malibu: Post = {
 	title: "1965 Malibu Restoration",
 	date: "September 1, 2007",
-	url: "/malibu",
+	url: "/posts/malibu",
 	component: () => import("./malibu").then(m => m.default),
 }
 
 export const meteorReact: Post = {
 	title: "Meteor and React",
 	date: "February 20, 2015",
-	url: "/meteor-react",
+	url: "/posts/meteor-react",
 	component: () => import("./meteorReact").then(m => m.default),
 }
 
 export const observableStreams: Post = {
 	title: "Observable Streams",
 	date: "February 7, 2015",
-	url: "/observable-streams",
+	url: "/posts/observable-streams",
 	component: () => import("./observableStreams").then(m => m.default),
 }
 
 export const passwordRhythm: Post = {
 	title: "Password Rhythm Authentication",
 	date: "March 11, 2014",
-	url: "/password-rhythm",
+	url: "/posts/password-rhythm",
 	component: () => import("./passwordRhythm").then(m => m.default),
 }
 
 export const raspberryPiSetup: Post = {
 	title: "Raspberry Pi Setup",
 	date: "October 25, 2014",
-	url: "/raspberry-pi-setup",
+	url: "/posts/raspberry-pi-setup",
 	component: () => import("./raspberryPiSetup").then(m => m.default),
 }
 
 export const reactiveCss: Post = {
 	title: "Reactive CSS",
 	date: "February 16, 2015",
-	url: "/reactive-css",
+	url: "/posts/reactive-css",
 	component: () => import("./reactiveCss").then(m => m.default),
 }
 
 export const roomTuner: Post = {
 	title: "Room Tuner",
 	date: "December 16, 2014",
-	url: "/room-tuner",
+	url: "/posts/room-tuner",
 	component: () => import("./roomTuner").then(m => m.default),
 }
 
 export const rsa: Post = {
 	title: "RSA Encryption Tutorial",
 	date: "February 22, 2014",
-	url: "/rsa",
+	url: "/posts/rsa",
 	component: () => import("./rsa").then(m => m.default),
 }
 
 export const waterfall: Post = {
 	title: "Web Audio API Waterfall",
 	date: "December 28, 2014",
-	url: "/waterfall",
+	url: "/posts/waterfall",
 	component: () => import("./webAudioWaterfall").then(m => m.default),
 }
 

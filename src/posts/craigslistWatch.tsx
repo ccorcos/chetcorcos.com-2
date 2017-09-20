@@ -1,4 +1,5 @@
 import * as React from "react"
+import Link from "../components/Link"
 
 export default () => (
 	<div>
@@ -12,17 +13,17 @@ export default () => (
 		</p>
 		<p>
 			I also recently discovered an awesome free “data extrator” service called{" "}
-			<a href="https://import.io/">Import.io</a>. Their app allows you to create
-			an API using a GUI and an intelligent parsing algorithm to get all the
-			data you want. Then you can just cURL an API to get a JSON string of the
-			results. This saved a ton of time.
+			<Link href="https://import.io/">Import.io</Link>. Their app allows you to
+			create an API using a GUI and an intelligent parsing algorithm to get all
+			the data you want. Then you can just cURL an API to get a JSON string of
+			the results. This saved a ton of time.
 		</p>
 		<p>
 			Lastly, I setup a cron job on my Raspberry Pi to check for results, filter
 			them, and send me an email every day at 6pm. Its working great.{" "}
-			<a href="https://github.com/ccorcos/craigslist-watch">
+			<Link href="https://github.com/ccorcos/craigslist-watch">
 				The code is available on Github
-			</a>{" "}
+			</Link>{" "}
 			and you may want to check out my blog post about setting up your Raspberry
 			Pi to run the cron job for you.
 		</p>

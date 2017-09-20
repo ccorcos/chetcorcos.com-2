@@ -1,19 +1,20 @@
 import * as React from "react"
 import Code from "../components/Code"
+import Link from "../components/Link"
 
 export default () => (
 	<div>
 		<p>
-			<a href="https://www.gnupg.org/">GnuPG</a> is one of the most widely
+			<Link href="https://www.gnupg.org/">GnuPG</Link> is one of the most widely
 			distributed encryption tools. I've used{" "}
-			<a href="https://gpgtools.org/">GPGTools</a> before but I like being at
-			the commandline and knowing what I'm getting. Something about going
+			<Link href="https://gpgtools.org/">GPGTools</Link> before but I like being
+			at the commandline and knowing what I'm getting. Something about going
 			through the Mail application makes me think it can't possibly be secure.
 			Anyways, I like to take notes when I try new things so here's a getting
 			started for you.
 		</p>
 		<p>
-			Install with <a href="http://brew.sh/">Homebrew</a>.
+			Install with <Link href="http://brew.sh/">Homebrew</Link>.
 		</p>
 		<Code value={`brew install gnupg`} />
 		<p>Create a key pair</p>

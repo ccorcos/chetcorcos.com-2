@@ -58,10 +58,5 @@ export default () => (
 			fingers, you realize how weird this image is. But when you step away, it
 			all looks great.
 		</p>
-		<p>
-			And, by the way, my friend{" "}
-			<a href="http://www.amandalipp.com/crayon-art">Amanda Lipp</a> does art as
-			well. Go check out her crayon art.
-		</p>
 	</div>
 )

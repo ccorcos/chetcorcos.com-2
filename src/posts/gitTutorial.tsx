@@ -1,5 +1,6 @@
 import * as React from "react"
 import Code from "../components/Code"
+import Link from "../components/Link"
 
 export default () => (
 	<div>
@@ -14,9 +15,9 @@ export default () => (
 		</p>
 		<h2>Basic Commands</h2>
 		<p>
-			When browsing around <a href="http://www.github.com">Github</a>, you may
-			find some code that looks useful that you want to play with. To copy a git
-			repository (a git version-controlled directory), you'll use{" "}
+			When browsing around <Link href="http://www.github.com">Github</Link>, you
+			may find some code that looks useful that you want to play with. To copy a
+			git repository (a git version-controlled directory), you'll use{" "}
 			<code>clone</code>.
 		</p>
 		<Code value={`$ git clone <url/path to git repo>`} />

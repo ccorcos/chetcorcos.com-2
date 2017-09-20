@@ -1,5 +1,6 @@
 import * as React from "react"
 import Code from "../components/Code"
+import Link from "../components/Link"
 
 export default () => (
 	<div>
@@ -11,20 +12,20 @@ export default () => (
 		</p>
 		<p>
 			I created a{" "}
-			<a href="https://github.com/ccorcos/meteor-blaze-animations">
+			<Link href="https://github.com/ccorcos/meteor-blaze-animations">
 				repo and started playing around
-			</a>. My big insight from this is that we can use{" "}
-			<a href="http://julian.com/research/velocity/#uiPack">
+			</Link>. My big insight from this is that we can use{" "}
+			<Link href="http://julian.com/research/velocity/#uiPack">
 				VelocityJS UI Pack animations
-			</a>{" "}
+			</Link>{" "}
 			to call animations via a block helper.
 		</p>
 		<p>This lead to two packages that I find immensely useful.</p>
 		<p>
 			First, there is the bare-bones{" "}
-			<a href="https://github.com/ccorcos/meteor-animate">
+			<Link href="https://github.com/ccorcos/meteor-animate">
 				ccorcos:animate
-			</a>{" "}
+			</Link>{" "}
 			package that allows you to wrap an element with a block helper that
 			specifies the UI Pack animation.
 		</p>
@@ -43,9 +44,9 @@ export default () => (
 		</p>
 		<p>
 			A more popular package{" "}
-			<a href="https://github.com/ccorcos/meteor-transitioner">
+			<Link href="https://github.com/ccorcos/meteor-transitioner">
 				ccorcos:transitioner
-			</a>{" "}
+			</Link>{" "}
 			integrates with Iron Router to specify transitions between routes! It
 			basically the same package with an autorun to specify the transitions
 			around your <code>{`{% raw %}{{>yeild}}{% endraw %}`}</code> template.

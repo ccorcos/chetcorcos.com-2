@@ -1,27 +1,28 @@
 import * as React from "react"
 import Code from "../components/Code"
+import Link from "../components/Link"
 
 export default () => (
 	<div>
 		<p>
 			Observable streams are one of the coolest programming patterns I've read
 			about in a long time. If you don't know about them, check out{" "}
-			<a href="https://www.youtube.com/watch?v=XRYN2xt11Ek">
+			<Link href="https://www.youtube.com/watch?v=XRYN2xt11Ek">
 				this awesome talk
-			</a>{" "}
+			</Link>{" "}
 			and this{" "}
-			<a href="http://jhusain.github.io/learnrx/">
+			<Link href="http://jhusain.github.io/learnrx/">
 				awesome interactive tutorial
-			</a>.
+			</Link>.
 		</p>
 		<p>
 			Being a huge meteor fan, I've come to love{" "}
-			<a href="https://www.meteor.com/tracker">Tracker</a>. It is the heart and
-			soul of any meteor app and its only{" "}
-			<a href="https://github.com/meteor/meteor/blob/devel/packages/tracker/tracker.js">
+			<Link href="https://www.meteor.com/tracker">Tracker</Link>. It is the
+			heart and soul of any meteor app and its only{" "}
+			<Link href="https://github.com/meteor/meteor/blob/devel/packages/tracker/tracker.js">
 				500 lines of code
-			</a>! It is incredibly elegant and I recommend you{" "}
-			<a href="http://manual.meteor.com/#deps">learn how it works</a>.
+			</Link>! It is incredibly elegant and I recommend you{" "}
+			<Link href="http://manual.meteor.com/#deps">learn how it works</Link>.
 		</p>
 		<p>
 			The reason I want to bring up Tracker is because that's how we integrate
@@ -31,9 +32,9 @@ export default () => (
 		</p>
 		<p>
 			Observable streams are perfect for UI events. Once upon a time, I{" "}
-			<a href="https://github.com/ccorcos/meteor-swipe">
+			<Link href="https://github.com/ccorcos/meteor-swipe">
 				wrote this horrible mess
-			</a>{" "}
+			</Link>{" "}
 			to create a swipable UI. Writing this component with a slew of state
 			variables turned into a giant headache of listening to events and changing
 			state variables appropriately. However, using observable streams, we can
@@ -41,12 +42,13 @@ export default () => (
 		</p>
 		<p>
 			I created a{" "}
-			<a href="https://github.com/ccorcos/meteor-tracker-streams">
+			<Link href="https://github.com/ccorcos/meteor-tracker-streams">
 				meteor package for observable streams that uses Tracker
-			</a>. I could have use <a href="https://baconjs.github.io/">Bacon.js</a>,{" "}
-			<a href="https://github.com/Reactive-Extensions/RxJS">RxJS</a>, or{" "}
-			<a href="http://highlandjs.org/">Highland.js</a> but I chose to implement
-			observable streams with Tracker for two reasons:
+			</Link>. I could have use{" "}
+			<Link href="https://baconjs.github.io/">Bacon.js</Link>,{" "}
+			<Link href="https://github.com/Reactive-Extensions/RxJS">RxJS</Link>, or{" "}
+			<Link href="http://highlandjs.org/">Highland.js</Link> but I chose to
+			implement observable streams with Tracker for two reasons:
 		</p>
 		<ol>
 			<li>
@@ -62,9 +64,9 @@ export default () => (
 		</p>
 		<p>
 			So whats the big hype? Check out this{" "}
-			<a href="http://tracker-streams-menu.meteor.com/">
+			<Link href="http://tracker-streams-menu.meteor.com/">
 				swipe menu I made
-			</a>{" "}
+			</Link>{" "}
 			and notice how smooth the physics are, it works on desktop or mobile, and
 			it has no jank. This slide menu was created in only 50 lines of code.
 			Here's how:
@@ -127,9 +129,8 @@ export default () => (
 		/>
 		<p>
 			If we touch the menu without moving, we must assume its a toggle. We use
-			the amazing <a href="http://julian.com/research/velocity/">
-				VelocityJS
-			</a>{" "}
+			the amazing{" "}
+			<Link href="http://julian.com/research/velocity/">VelocityJS</Link>{" "}
 			library for creating the animation classes.
 		</p>
 		<Code
@@ -192,10 +193,11 @@ moveStream
 		<p>
 			Anyways, that's it. Pretty slick right?! My mind was blown once I realized
 			how useful observable streams are for abstracting the state of UI events.{" "}
-			<a href="https://github.com/ccorcos/meteor-tracker-streams/tree/master/examples/slide-menu">
+			<Link href="https://github.com/ccorcos/meteor-tracker-streams/tree/master/examples/slide-menu">
 				Here's the code for the menu
-			</a>{" "}
-			and <a href="mailto:ccorcos@gmail.com">let me know what you think</a>!
+			</Link>{" "}
+			and{" "}
+			<Link href="mailto:ccorcos@gmail.com">let me know what you think</Link>!
 		</p>
 	</div>
 )

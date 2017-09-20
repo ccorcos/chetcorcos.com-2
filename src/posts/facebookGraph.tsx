@@ -1,21 +1,23 @@
 import * as React from "react"
 import * as fbMe from "file-loader!../img/facebook-me.png"
 import * as fbOthers from "file-loader!../img/facebook-others.png"
+import Link from "../components/Link"
 
 export default () => (
 	<div>
 		<p>
-			I discovered <a href="http://d3js.org/">D3.js</a> the other day and was
-			really impressed with the visualizations produced with it, especially the
-			interactive ones. One of my favorite visualizations is the{" "}
-			<a href="https://github.com/mbostock/d3/wiki/Force-Layout">
+			I discovered <Link href="http://d3js.org/">D3.js</Link> the other day and
+			was really impressed with the visualizations produced with it, especially
+			the interactive ones. One of my favorite visualizations is the{" "}
+			<Link href="https://github.com/mbostock/d3/wiki/Force-Layout">
 				force directed layout
-			</a>{" "}
+			</Link>{" "}
 			so{" "}
-			<a href="https://github.com/ccorcos/meteor-reactive-d3-force">
+			<Link href="https://github.com/ccorcos/meteor-reactive-d3-force">
 				I set out to make a Meteor app that could reactively add and remove
 				nodes and links from this graph
-			</a>. <a href="http://reactive-force.meteor.com/">Here's a live demo!</a>
+			</Link>.{" "}
+			<Link href="http://reactive-force.meteor.com/">Here's a live demo!</Link>
 		</p>
 		<p>
 			I thought it would be really cool to visualize my facebook social network
@@ -23,10 +25,10 @@ export default () => (
 			This proved to be challenging. Facebook makes it very difficult to do this
 			but I found a loophole that allows me to download my mutual friends with
 			all my other friends using their old API.{" "}
-			<a href="https://github.com/ccorcos/facebook-graph-api">
+			<Link href="https://github.com/ccorcos/facebook-graph-api">
 				I made a python library for doing this but I'm not sure this loophole
 				works anymore
-			</a>.
+			</Link>.
 		</p>
 		<p>
 			Anyways, I plugged I plugged in my network with 750+ nodes and 20,000+
@@ -42,9 +44,9 @@ export default () => (
 			approximations don't help very much.
 		</p>
 		<p>
-			<a href={fbMe}>
+			<Link href={fbMe}>
 				<img src={fbMe} />
-			</a>
+			</Link>
 		</p>
 		<p>
 			I ran it again removing myself and you can see the structures spread out a
@@ -53,9 +55,9 @@ export default () => (
 			outline Pitzer College, SpaceX, and USC graduate school.
 		</p>
 		<p>
-			<a href={fbOthers}>
+			<Link href={fbOthers}>
 				<img src={fbOthers} />
-			</a>
+			</Link>
 		</p>
 	</div>
 )

@@ -1,5 +1,6 @@
 import * as React from "react"
 import Code from "../components/Code"
+import Link from "../components/Link"
 
 export default () => (
 	<div>
@@ -12,9 +13,9 @@ export default () => (
 		<p>
 			After installing Raspian on your SD card and booting up your Pi, its
 			helpful to install the{" "}
-			<a href="http://en.wikipedia.org/wiki/Avahi_(software)">
+			<Link href="http://en.wikipedia.org/wiki/Avahi_(software)">
 				avahi-daemon
-			</a>{" "}
+			</Link>{" "}
 			so you can ssh into your Pi over your local network without knowing the IP
 			address.
 		</p>
@@ -57,18 +58,18 @@ $ echo "export EDITOR=$VISUAL" > ~/.bashrc
 		<p>
 			Setting up a cron job on your pi is pretty easy. All the cron jobs on your
 			computer are listed in a single file. The format of the file is{" "}
-			<a href="http://www.raspberrypi.org/documentation/linux/usage/cron.md">
+			<Link href="http://www.raspberrypi.org/documentation/linux/usage/cron.md">
 				explained pretty well here
-			</a>.
+			</Link>.
 		</p>
 		<p>To edit the cron jobs, use the following command.</p>
 		<Code value={`$ crontab -e`} />
 		<p>
 			There are all kinds of fun and useful things you can do with this. For
 			example, you can user my{" "}
-			<a href="https://github.com/ccorcos/craigslist-watch">
+			<Link href="https://github.com/ccorcos/craigslist-watch">
 				Craigslist Watch
-			</a>{" "}
+			</Link>{" "}
 			program to parse through apartments on craigslist every day and send you
 			an email with the results.
 		</p>
@@ -85,9 +86,9 @@ $ echo "export EDITOR=$VISUAL" > ~/.bashrc
 		</p>
 		<p>
 			You can also setup an{" "}
-			<a href="https://github.com/ccorcos/internet-speed-log">
+			<Link href="https://github.com/ccorcos/internet-speed-log">
 				internet speed logger that tests your internet speed every hour
-			</a>. This way, you can call up your internet service provider and get
+			</Link>. This way, you can call up your internet service provider and get
 			your internet bill prorated for the sluggish internet speeds below their
 			quoted rate!
 		</p>
@@ -99,10 +100,10 @@ $ echo "export EDITOR=$VISUAL" > ~/.bashrc
 		/>
 		<p>
 			Or you could setup a cron job to{" "}
-			<a href="https://github.com/ccorcos/southwest-checkin">
+			<Link href="https://github.com/ccorcos/southwest-checkin">
 				check-in to your Southwest Airlines flight exactly 24 hours before the
 				flight so you get an A boarding pass
-			</a>.
+			</Link>.
 		</p>
 		<Code
 			value={`

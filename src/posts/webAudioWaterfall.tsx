@@ -1,4 +1,5 @@
 import * as React from "react"
+import Link from "../components/Link"
 
 export default () => (
 	<div>
@@ -16,20 +17,20 @@ export default () => (
 			algorithm is running. In music, the FFT is used for filtering and
 			visualizing sound. And as far as art, you can make cool visualizations of
 			sound. For example, here's a screenshot from listing to{" "}
-			<a href="https://www.youtube.com/watch?v=tPqLfsmL0bM">
+			<Link href="https://www.youtube.com/watch?v=tPqLfsmL0bM">
 				GRiZ - The Future Is Now
-			</a>.
+			</Link>.
 		</p>
 		<p>
 			<img src="https://raw.githubusercontent.com/ccorcos/webaudio-waterfall/master/public/screenshot.png" />
 		</p>
 		<p>
 			Anyways,{" "}
-			<a href="https://github.com/ccorcos/webaudio-waterfall">
+			<Link href="https://github.com/ccorcos/webaudio-waterfall">
 				play with code
-			</a>, check out the{" "}
-			<a href="http://webaudio-waterfall.meteor.com/">demo</a> and{" "}
-			<a href="mailto:ccorcos@gmail.com">let me know what you think</a>!
+			</Link>, check out the{" "}
+			<Link href="http://webaudio-waterfall.meteor.com/">demo</Link> and{" "}
+			<Link href="mailto:ccorcos@gmail.com">let me know what you think</Link>!
 		</p>
 	</div>
 )

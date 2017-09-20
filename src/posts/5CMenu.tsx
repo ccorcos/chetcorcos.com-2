@@ -4,6 +4,7 @@ import * as scripps from "file-loader!../img/scripps.jpg"
 import * as pitzer from "file-loader!../img/pitzer.jpg"
 import * as cmc from "file-loader!../img/cmc.jpg"
 import * as pomona from "file-loader!../img/pomona.jpg"
+import Link from "../components/Link"
 
 export default () => (
 	<div>
@@ -21,28 +22,28 @@ export default () => (
 			script that parses the dining hall menus periodically, formatting the data
 			into XML and JSON. I used python because there is an awesome library
 			called Beautiful Soup for parsing HTML trees.{" "}
-			<a href="https://github.com/ccorcos/5cmenuparser">
+			<Link href="https://github.com/ccorcos/5cmenuparser">
 				The code is publicly available on Github
-			</a>.
+			</Link>.
 		</p>
 		<p>
 			You can find this app on the{" "}
-			<a href="https://itunes.apple.com/us/app/5c-menu/id512440171">
+			<Link href="https://itunes.apple.com/us/app/5c-menu/id512440171">
 				App Store
-			</a>, but it hasn't been working lately – apparently the dining hall
+			</Link>, but it hasn't been working lately – apparently the dining hall
 			websites have changed causing the parser to break. I haven't dealt with it
 			since. If you are interested in helping on this front, feel free to
 			contact me.
 		</p>
 		<p>
 			If I were to rewrite this app, I would make a web app using{" "}
-			<a href="https://github.com/meteor/meteor/wiki/Meteor-Cordova-Phonegap-integration">
+			<Link href="https://github.com/meteor/meteor/wiki/Meteor-Cordova-Phonegap-integration">
 				Meteor's epic Cordova integration
-			</a>{" "}
+			</Link>{" "}
 			to port over to all mobile platforms. I would also use{" "}
-			<a href="http://import.io">Import.io</a> to extract the data because the
-			python parser sadly took the most time of anything and now its basically
-			worthless.
+			<Link href="http://import.io">Import.io</Link> to extract the data because
+			the python parser sadly took the most time of anything and now its
+			basically worthless.
 		</p>
 		<img src={mudd} />
 		<img src={scripps} />

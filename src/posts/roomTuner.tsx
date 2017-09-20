@@ -1,4 +1,5 @@
 import * as React from "react"
+import Link from "../components/Link"
 
 export default () => (
 	<div>
@@ -12,27 +13,29 @@ export default () => (
 			Imagine setting up the sound system for a giant concert. There are a
 			variety of speakers in various places. How so can you make sure all the
 			speakers sound good together? The answer is{" "}
-			<a href="http://hyperphysics.phy-astr.gsu.edu/hbase/audio/equal.html">
+			<Link href="http://hyperphysics.phy-astr.gsu.edu/hbase/audio/equal.html">
 				equalization
-			</a>. Of course you can sit there an listen to the speakers, adjusting the
-			sound as you please, but there is an engineering approach. If you play a
-			known signal through the speakers, you can set up a microphone hooked up
+			</Link>. Of course you can sit there an listen to the speakers, adjusting
+			the sound as you please, but there is an engineering approach. If you play
+			a known signal through the speakers, you can set up a microphone hooked up
 			to a spectrum analyser and make sure you are hearing the appropriate
 			spectrum.
 		</p>
 		<p>
 			With the new{" "}
-			<a href="https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API">
+			<Link href="https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API">
 				Web Audio API
-			</a>{" "}
+			</Link>{" "}
 			avaiable on Firefox and Chrome, we can create a spectrum analyzer in our
 			web browser. After reading and experimenting for a couple hours, I was
 			able to get a simple spectrum analyzer up and running.{" "}
-			<a href="https://github.com/ccorcos/room-tuner">Here's the code</a> and{" "}
-			<a href="http://room-tuner.meteor.com">demo</a>! This app plays{" "}
-			<a href="http://hyperphysics.phy-astr.gsu.edu/hbase/audio/equal.html">
+			<Link href="https://github.com/ccorcos/room-tuner">
+				Here's the code
+			</Link>{" "}
+			and <Link href="http://room-tuner.meteor.com">demo</Link>! This app plays{" "}
+			<Link href="http://hyperphysics.phy-astr.gsu.edu/hbase/audio/equal.html">
 				pink noise
-			</a>{" "}
+			</Link>{" "}
 			and the microphone listens to the response and plots the spectrum
 		</p>
 		<p>
@@ -43,9 +46,9 @@ export default () => (
 			<li>
 				<p>
 					There is no internal Mac equalizer. However, you can use{" "}
-					<a href="https://github.com/RogueAmoeba/Soundflower">
+					<Link href="https://github.com/RogueAmoeba/Soundflower">
 						Soundflower
-					</a>{" "}
+					</Link>{" "}
 					or a hardware equalizer if you have one.
 				</p>
 			</li>
@@ -59,7 +62,9 @@ export default () => (
 		</ol>
 		<p>
 			These problems aren't unsurmountable though.{" "}
-			<a href="mailto:ccorcos@gmail.com">Let me know how it works for you</a>!
+			<Link href="mailto:ccorcos@gmail.com">
+				Let me know how it works for you
+			</Link>!
 		</p>
 	</div>
 )

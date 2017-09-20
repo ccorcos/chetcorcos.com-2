@@ -10,6 +10,7 @@ import * as relays from "file-loader!../img/etruck/relays.jpg"
 import * as controller from "file-loader!../img/etruck/controller.jpg"
 import * as thinking from "file-loader!../img/etruck/thinking.jpg"
 import * as sign from "file-loader!../img/etruck/sign.jpg"
+import Link from "../components/Link"
 
 export default () => (
 	<div>
@@ -26,7 +27,7 @@ export default () => (
 			This was a long and frustrating project. We figured things out my calling
 			up manufacturers of different parts and asking how to use them! Most of
 			the parts came from{" "}
-			<a href="http://www.canev.com">Canada Electric Vehicles Ltd.</a>
+			<Link href="http://www.canev.com">Canada Electric Vehicles Ltd.</Link>
 		</p>
 		<p>
 			First, we stripped the car of anything that wasn't needed: the gas tank,

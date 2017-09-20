@@ -1,18 +1,19 @@
 import * as React from "react"
 import Code from "../components/Code"
+import Link from "../components/Link"
 
 export default () => (
 	<div>
 		<p>
 			After learning about{" "}
-			<a href="http://jlongster.com/First-Impressions-using-React-Native">
+			<Link href="http://jlongster.com/First-Impressions-using-React-Native">
 				React Native
-			</a>{" "}
+			</Link>{" "}
 			and all the hype about{" "}
-			<a href="http://facebook.github.io/react/">React</a>, I decided to give it
-			a serious try. I read the entire documentation (which was actually quite
-			short) and I was suprised about its elegance. My favorite part about it is
-			that you can create your entire UI in Javascript – no markup!
+			<Link href="http://facebook.github.io/react/">React</Link>, I decided to
+			give it a serious try. I read the entire documentation (which was actually
+			quite short) and I was suprised about its elegance. My favorite part about
+			it is that you can create your entire UI in Javascript – no markup!
 		</p>
 		<p>
 			It was very easily to integrate React with Meteor (I love Meteor). I
@@ -70,9 +71,9 @@ subscribe: ->
 		/>
 		<p>
 			Lastly, I created a new namespace and a{" "}
-			<a href="https://github.com/ccorcos/meteor-reactor">
+			<Link href="https://github.com/ccorcos/meteor-reactor">
 				package called Reactor
-			</a>{" "}
+			</Link>{" "}
 			that wraps around Iron Router to render the correct React component for
 			different routes.
 		</p>

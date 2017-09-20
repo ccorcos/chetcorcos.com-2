@@ -1,5 +1,6 @@
 import * as React from "react"
 import Code from "../components/Code"
+import Link from "../components/Link"
 
 export default () => (
 	<div>
@@ -8,10 +9,10 @@ export default () => (
 			clean install, getting rid of all the junk on my computer that accumulated
 			over the past year. Over the years, I've created some scripts to help me
 			automate the process of setting up my new machine the way I like it.{" "}
-			<a href="https://github.com/ccorcos/mac-setup">
+			<Link href="https://github.com/ccorcos/mac-setup">
 				I've create a repository on my Github elaborating on this process and
 				providing some useful scripts
-			</a>.
+			</Link>.
 		</p>
 		<p>
 			There are a few things you have to do manually first. You'll need to
@@ -25,11 +26,11 @@ export default () => (
 		</p>
 		<h2>Homebrew</h2>
 		<p>
-			Then you'll want to install <a href="http://brew.sh/">homebrew</a>, a
-			commandline tool to manage installations on your Mac. Checkout my{" "}
-			<a href="https://github.com/ccorcos/mac-setup/blob/master/install.sh">
+			Then you'll want to install <Link href="http://brew.sh/">homebrew</Link>,
+			a commandline tool to manage installations on your Mac. Checkout my{" "}
+			<Link href="https://github.com/ccorcos/mac-setup/blob/master/install.sh">
 				<code>install.sh</code>
-			</a>{" "}
+			</Link>{" "}
 			script which install homebrew, various applications and some python
 			modules.
 		</p>
@@ -37,10 +38,10 @@ export default () => (
 		<p>
 			Zsh (Z shell) is a modern shell with a handful of perks. Among others, it
 			has excellent fuzzy-autocomplete.{" "}
-			<a href="https://github.com/ccorcos/prezto">
+			<Link href="https://github.com/ccorcos/prezto">
 				I have also forked the amazing Prezto configuration framework to version
 				control my own zsh settings here
-			</a>. This gives you some great perks like <code>cat</code> syntax
+			</Link>. This gives you some great perks like <code>cat</code> syntax
 			highlighting, command highlighting for valid and invalid commands, and git
 			status icons. To get started, install zsh through brew.
 		</p>
@@ -52,21 +53,21 @@ export default () => (
 		<Code value={`$ zsh`} />
 		<p>
 			Then{" "}
-			<a href="https://github.com/ccorcos/prezto">
+			<Link href="https://github.com/ccorcos/prezto">
 				follow the instructions here
-			</a>{" "}
+			</Link>{" "}
 			to clone and symlink all the resource files and finally, set your default
 			shell to zsh.
 		</p>
 		<Code value={`$ chsh -s /bin/zsh`} />
 		<h2>Atom Editor</h2>
 		<p>
-			I prefer to use the <a href="https://atom.io/">Atom Editor</a> as opposed
-			to Sublime Text because it is open source and offers a huge amount of
-			configuration. You can get setup with my atom settings by running my{" "}
-			<a href="https://github.com/ccorcos/mac-setup/blob/master/setup_atom.sh">
+			I prefer to use the <Link href="https://atom.io/">Atom Editor</Link> as
+			opposed to Sublime Text because it is open source and offers a huge amount
+			of configuration. You can get setup with my atom settings by running my{" "}
+			<Link href="https://github.com/ccorcos/mac-setup/blob/master/setup_atom.sh">
 				<code>setup_atom.sh</code>
-			</a>{" "}
+			</Link>{" "}
 			script, or simply the following.
 		</p>
 		<Code
@@ -79,9 +80,9 @@ $ git clone https://github.com/ccorcos/atom-editor-settings.git ~/.atom
 		<h2>OSX Defaults</h2>
 		<p>
 			I also have a{" "}
-			<a href="https://github.com/ccorcos/mac-setup/blob/master/osx_defaults.sh">
+			<Link href="https://github.com/ccorcos/mac-setup/blob/master/osx_defaults.sh">
 				script to setup some default preferences here
-			</a>. I suggest you go through one-by-one and comment out lines to suit
+			</Link>. I suggest you go through one-by-one and comment out lines to suit
 			your taste. Many of these settings cannot be configured through System
 			Preferences like adding spacers to your dock. You may have to restart your
 			computer for some of these configurations to take place.

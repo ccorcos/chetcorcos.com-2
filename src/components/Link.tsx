@@ -11,10 +11,18 @@ export default class Link extends React.PureComponent<LinkProps, {}> {
 	}
 
 	render() {
-		return (
-			<A style={Link.style} href={this.props.href}>
-				{this.props.children}
-			</A>
-		)
+		if (this.props.href.startsWith("/")) {
+			return (
+				<A style={Link.style} to={this.props.href}>
+					{this.props.children}
+				</A>
+			)
+		} else {
+			return (
+				<a style={Link.style} href={this.props.href} target="_blank">
+					{this.props.children}
+				</a>
+			)
+		}
 	}
 }
