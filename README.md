@@ -1,5 +1,7 @@
 # chetcorcos.com
 
+deploy with surge.sh or now.sh
+
 - global layout
 - contact info
 - about
