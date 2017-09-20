@@ -6,15 +6,15 @@ import * as frank2 from "file-loader!../img/frank2.jpeg"
 import * as frary2 from "file-loader!../img/frary2.jpeg"
 import Link from "../components/Link"
 import Image from "../components/Image"
+import { claremontMenu } from "../postData"
 
 export default () => (
 	<div>
 		<p>
 			This winter break, I've decided to rebuild the old{" "}
-			<Link href="/projects/2012/06/02/5c-menu-app.html">
-				5C Menu iPhone App
-			</Link>. I've learned some lessons the the past few years and I figured I
-			could make it much quicker this time.
+			<Link href={claremontMenu.url}>5C Menu iPhone App</Link>. I've learned
+			some lessons the the past few years and I figured I could make it much
+			quicker this time.
 		</p>
 		<p>
 			For one, I used <Link href="https://www.meteor.com/">Meteor</Link> and

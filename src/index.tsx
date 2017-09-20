@@ -3,7 +3,7 @@ import * as ReactDOM from "react-dom"
 import { BrowserRouter, Route, Link } from "react-router-dom"
 import Posts from "./pages/posts"
 import { css } from "glamor"
-import { myPosts } from "./posts"
+import { myPosts } from "./postData"
 import Loader from "./components/Loader"
 import Post from "./components/Post"
 

@@ -3,7 +3,7 @@ import * as ReactDOM from "react-dom"
 import * as _ from "lodash"
 import * as moment from "moment"
 import PostItem from "../components/PostItem"
-import { myPosts, mediumPosts } from "../posts"
+import { myPosts, mediumPosts } from "../postData"
 
 const allPosts = [...myPosts, ...mediumPosts]
 const orderedPosts = _.sortBy(allPosts, post => {
