@@ -1,4 +1,9 @@
 import * as React from "react"
+import * as mudd from "file-loader!../img/mudd.jpg"
+import * as scripps from "file-loader!../img/scripps.jpg"
+import * as pitzer from "file-loader!../img/pitzer.jpg"
+import * as cmc from "file-loader!../img/cmc.jpg"
+import * as pomona from "file-loader!../img/pomona.jpg"
 
 export default () => (
 	<div>
@@ -39,10 +44,10 @@ export default () => (
 			python parser sadly took the most time of anything and now its basically
 			worthless.
 		</p>
-		<img src="/img/mudd.jpg" />
-		<img src="/img/scripps.jpg" />
-		<img src="/img/pitzer.jpg" />
-		<img src="/img/cmc.jpg" />
-		<img src="/img/pomona.jpg" />
+		<img src={mudd} />
+		<img src={scripps} />
+		<img src={pitzer} />
+		<img src={cmc} />
+		<img src={pomona} />
 	</div>
 )
