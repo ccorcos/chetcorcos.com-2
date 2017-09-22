@@ -8,6 +8,7 @@ deploy with surge.sh
 
 - consistent headers for articles with links back to home page
 - previous and next article buttons
+- restore scroll position with push and pop state
 
 - backward compatible urls with old chetcorcos.com
 
@@ -85,6 +86,10 @@ deploy with surge.sh
 	- Work
 	- Affirm, Notion, SpaceX, AuraLabs,
 
+- photography
+- shadertoy projects
+
+- favorites tag?
 
 - image optimization
 - favicon
