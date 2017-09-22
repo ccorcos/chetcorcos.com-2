@@ -2,10 +2,12 @@
 
 deploy with surge.sh
 
+
 - font (light and bold)
 - better colors
 
 - consistent headers for articles with links back to home page
+- previous and next article buttons
 
 - backward compatible urls with old chetcorcos.com
 
