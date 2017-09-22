@@ -6,6 +6,7 @@ import { css } from "glamor"
 import { myPosts } from "./postData"
 import Loader from "./components/Loader"
 import Post from "./components/Post"
+import Home from "./components/Home"
 
 css.global("html, body", {
 	padding: 0,

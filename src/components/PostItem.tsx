@@ -1,6 +1,7 @@
 import * as React from "react"
 import Link from "./Link"
 import Image from "./Image"
+import Component from "reactive-magic/component"
 
 export interface PostItemProps {
 	title: string
@@ -9,8 +10,8 @@ export interface PostItemProps {
 	img?: string
 }
 
-export default class PostItem extends React.PureComponent<PostItemProps, {}> {
-	render() {
+export default class PostItem extends Component<PostItemProps> {
+	view() {
 		return (
 			<Link href={this.props.url} style={{ color: "#444" }}>
 				<div style={{ padding: 8, display: "flex" }}>

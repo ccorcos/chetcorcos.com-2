@@ -4,9 +4,11 @@ import * as _ from "lodash"
 import * as moment from "moment"
 import Component from "reactive-magic/component"
 import { Value } from "reactive-magic"
-import PostItem from "../components/PostItem"
+import PostItem from "./PostItem"
 import { allTags, Tag, myPosts, mediumPosts } from "../postData"
-import Layout from "../components/Layout"
+import Layout from "./Layout"
+import Link from "./Link"
+import Header from "./Header"
 
 const allPosts = [...myPosts, ...mediumPosts]
 const orderedPosts = _.sortBy(allPosts, post => {
@@ -44,8 +46,8 @@ export default class Posts extends Component<{}> {
 			<div
 				style={{
 					display: "flex",
-					justifyContent: "center",
-					marginBottom: "2em",
+					//justifyContent: "center",
+					marginBottom: 16,
 				}}
 			>
 				{allTags.map((tag, index) => {
@@ -53,16 +55,7 @@ export default class Posts extends Component<{}> {
 					return (
 						<div
 							key={tag}
-							style={{
-								padding: "4px 12px",
-								margin: "0 4px",
-								backgroundColor: colors[index],
-								borderRadius: 100,
-								textAlign: "center",
-								lineHeight: 1,
-								opacity: selected ? 1 : 0.3,
-								filter: selected ? undefined : "grayscale(0.5)",
-							}}
+							style={this.getTagStyle(selected, index)}
 							onClick={() => this.handleClick(tag)}
 						>
 							{tag}
@@ -71,6 +64,26 @@ export default class Posts extends Component<{}> {
 				})}
 			</div>
 		)
+	}
+
+	private getTagStyle(selected: boolean, index: number) {
+		const style: React.CSSProperties = {
+			padding: "4px 12px",
+			margin: "0 4px",
+			backgroundColor: colors[index],
+			borderRadius: 100,
+			textAlign: "center",
+			lineHeight: 1,
+		}
+
+		if (selected) {
+			style.opacity = 1
+		} else {
+			style.opacity = 0.3
+			style.filter = "grayscale(0.5)"
+		}
+
+		return style
 	}
 
 	private getPosts() {
@@ -90,7 +103,17 @@ export default class Posts extends Component<{}> {
 	view() {
 		return (
 			<Layout>
-				<div style={{ width: "100%", maxWidth: "30em", margin: "0 auto" }}>
+				<Header
+					title="Chet Corcos"
+					links={[
+						{ url: "http://news.chetcorcos.com/", title: "News" },
+						{ url: "https://www.github.com/ccorcos", title: "Github" },
+						{ url: "https://www.twitter.com/ccorcos", title: "Twitter" },
+						{ url: "https://www.facebook.com/ccorcos", title: "Facebook" },
+						{ url: "mailto:ccorcos@gmail.com", title: "Email" },
+					]}
+				/>
+				<div style={{ width: "100%", maxWidth: "30em" }}>
 					{this.renderTags()}
 					{this.getPosts().map((post, index) => (
 						<PostItem key={index} {...post} />

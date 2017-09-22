@@ -1,6 +1,10 @@
 # chetcorcos.com
 
-deploy with surge.sh or now.sh
+
+
+deploy with surge.sh
+
+image optimization
 
 - global layout
 - contact info
