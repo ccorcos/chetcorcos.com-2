@@ -1,20 +1,14 @@
 import * as React from "react"
 import * as ReactDOM from "react-dom"
 import * as _ from "lodash"
-import * as moment from "moment"
 import Component from "reactive-magic/component"
 import { Value } from "reactive-magic"
 import PostItem from "./PostItem"
-import { allTags, Tag, myPosts, mediumPosts } from "../postData"
 import Layout from "./Layout"
 import Link from "./Link"
 import Header from "./Header"
-
-const allPosts = [...myPosts, ...mediumPosts]
-const orderedPosts = _.sortBy(allPosts, post => {
-	const value = moment(post.date, ["MMM DD, YYYY"]).valueOf()
-	return -1 * value
-})
+import { Tag, allTags } from "../postData"
+import * as world from "../world"
 
 const colors = [
 	"rgb(255, 199, 214)",
@@ -28,23 +22,21 @@ const colors = [
 ]
 
 export default class Posts extends Component<{}> {
-	private selected = new Value<Array<Tag>>([])
-
 	private handleClick = (tag: Tag) => {
-		const tags = this.selected.get()
+		const tags = world.selected.get()
 		if (tags[0] === tag) {
-			this.selected.set([])
+			world.selected.set([])
 		} else {
-			this.selected.set([tag])
+			world.selected.set([tag])
 		}
 	}
 
 	private handleClear = () => {
-		this.selected.set([])
+		world.selected.set([])
 	}
 
 	private renderTags() {
-		const tags = this.selected.get()
+		const tags = world.selected.get()
 		return (
 			<div
 				style={{
@@ -94,20 +86,6 @@ export default class Posts extends Component<{}> {
 		return style
 	}
 
-	private getPosts() {
-		const tags = this.selected.get()
-		const allPosts = [...myPosts, ...mediumPosts]
-		const filterestPosts =
-			tags.length === 0
-				? allPosts
-				: allPosts.filter(post => _.intersection(post.tags, tags).length > 0)
-		const orderedPosts = _.sortBy(filterestPosts, post => {
-			const value = moment(post.date, ["MMM DD, YYYY"]).valueOf()
-			return -1 * value
-		})
-		return orderedPosts
-	}
-
 	view() {
 		return (
 			<Layout>
@@ -123,9 +101,9 @@ export default class Posts extends Component<{}> {
 				/>
 				<div style={{ width: "100%", maxWidth: "30em" }}>
 					{this.renderTags()}
-					{this.getPosts().map((post, index) => (
-						<PostItem key={index} {...post} />
-					))}
+					{world.posts
+						.get()
+						.map((post, index) => <PostItem key={index} {...post} />)}
 				</div>
 			</Layout>
 		)

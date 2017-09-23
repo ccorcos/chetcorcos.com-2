@@ -2,11 +2,9 @@
 
 deploy with surge.sh
 
-
 - font (light and bold)
 - better colors
 
-- consistent headers for articles with links back to home page
 - previous and next article buttons
 - restore scroll position with push and pop state
 
