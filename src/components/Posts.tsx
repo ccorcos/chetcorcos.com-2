@@ -32,12 +32,15 @@ export default class Posts extends Component<{}> {
 
 	private handleClick = (tag: Tag) => {
 		const tags = this.selected.get()
-		if (tags.some(t => t === tag)) {
-			const withoutTag = tags.filter(t => t !== tag)
-			this.selected.set(withoutTag)
+		if (tags[0] === tag) {
+			this.selected.set([])
 		} else {
-			this.selected.set([...tags, tag])
+			this.selected.set([tag])
 		}
+	}
+
+	private handleClear = () => {
+		this.selected.set([])
 	}
 
 	private renderTags() {
@@ -62,6 +65,11 @@ export default class Posts extends Component<{}> {
 						</div>
 					)
 				})}
+				{tags.length > 0 && (
+					<div style={this.getTagStyle(true, 7)} onClick={this.handleClear}>
+						x
+					</div>
+				)}
 			</div>
 		)
 	}
