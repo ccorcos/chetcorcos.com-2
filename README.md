@@ -5,8 +5,6 @@ deploy with surge.sh
 - font (light and bold)
 - better colors
 
-- backward compatible urls with old chetcorcos.com
-
 - move chetcorcos.com to old.chetcorcos.com and point surge to dns
 
 - add more content
@@ -20,18 +18,9 @@ deploy with surge.sh
 - consolidate writing with source code -- make sure they're in the same place
 
 - github projects
-	- https://github.com/ccorcos/robotics-smoothing-and-mapping
-	- https://github.com/ccorcos/interactive-object-recognition
 	- https://github.com/ccorcos/taxes
 	- https://github.com/ccorcos/deep-learning
-	- https://github.com/ccorcos/meteor-track
-	- https://github.com/ccorcos/lazy-tree
-	- https://github.com/ccorcos/functional-decarative-javascript-preso
-	- https://github.com/ccorcos/doug
-	- https://github.com/ccorcos/flavored-markdown
-	- https://github.com/ccorcos/interactive-essays
-	- https://github.com/ccorcos/airtable-blog
-	- https://github.com/ccorcos/cube
+
 	- https://github.com/ccorcos/rURL
 	- https://github.com/ccorcos/elmish
 	- https://github.com/ccorcos/spiral

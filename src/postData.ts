@@ -22,7 +22,7 @@ export interface Post {
 	component?: () => Promise<() => JSX.Element>
 }
 
-export const mediumPosts: Array<Post> = [
+export const externalPosts: Array<Post> = [
 	{
 		title: "Intuitive State Management with Reactive Magic",
 		date: "July 23, 2017",
@@ -261,6 +261,53 @@ export const mediumPosts: Array<Post> = [
 		tags: ["code"],
 		url:
 			"https://medium.com/@chetcorcos/stitching-react-components-effbec3236d4",
+	},
+	{
+		title: "Smoothing and Mapping",
+		date: "December 1, 2014",
+		tags: ["code"],
+		url: "https://github.com/ccorcos/robotics-smoothing-and-mapping",
+		img:
+			"https://raw.githubusercontent.com/ccorcos/robotics-smoothing-and-mapping/master/img/single-dense-after.png",
+	},
+	{
+		title: "Interactive Object Recognition",
+		date: "July 1, 2014",
+		tags: ["code"],
+		url: "https://github.com/ccorcos/towards-interactive-object-recognition",
+		img:
+			"https://github.com/ccorcos/towards-interactive-object-recognition/raw/master/model.png",
+	},
+	{
+		title: "How does Meteor's Tracker work?",
+		date: "April 22, 2015",
+		tags: ["code", "writing"],
+		url: "https://github.com/ccorcos/meteor-track",
+	},
+	{
+		title: "Functional Declarative JavaScript",
+		date: "November 14, 2016",
+		tags: ["code"],
+		url: "https://ccorcos.github.io/functional-decarative-javascript-preso/#/",
+	},
+	{
+		title: "Doug",
+		date: "December 22, 2016",
+		tags: ["code"],
+		url: "https://github.com/ccorcos/doug",
+	},
+	{
+		title: "Airtable Blog",
+		date: "February 20, 2017",
+		tags: ["code"],
+		url: "https://github.com/ccorcos/airtable-blog",
+	},
+	{
+		title: "Cube",
+		date: "March 12, 2017",
+		tags: ["code"],
+		url: "https://github.com/ccorcos/cube",
+		img: "https://raw.githubusercontent.com/ccorcos/cube/master/cube.png",
 	},
 ]
 
