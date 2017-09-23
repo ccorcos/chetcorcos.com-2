@@ -5,9 +5,6 @@ deploy with surge.sh
 - font (light and bold)
 - better colors
 
-- previous and next article buttons
-- restore scroll position with push and pop state
-
 - backward compatible urls with old chetcorcos.com
 
 - move chetcorcos.com to old.chetcorcos.com and point surge to dns

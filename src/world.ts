@@ -1,7 +1,15 @@
 import { Value, DerivedValue } from "reactive-magic"
+import { BrowserRouter } from "react-router-dom"
 import * as _ from "lodash"
 import * as moment from "moment"
 import { allTags, Tag, myPosts, mediumPosts } from "./postData"
+import { History } from "history"
+
+export let history: History = null
+
+export function saveRouter(comp) {
+	history = comp.history
+}
 
 export const windowSize = new Value({
 	width: window.innerWidth,

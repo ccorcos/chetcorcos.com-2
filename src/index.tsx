@@ -10,6 +10,7 @@ import Home from "./components/Home"
 import * as comfortaaRegular from "file-loader!./comfortaa/Comfortaa-Regular.ttf"
 import * as comfortaaLight from "file-loader!./comfortaa/Comfortaa-Light.ttf"
 import * as comfortaaBold from "file-loader!./comfortaa/Comfortaa-Bold.ttf"
+import * as world from "./world"
 
 fontFace({
 	fontFamily: "Comfortaa-Regular",
@@ -45,7 +46,7 @@ css.global("a", {
 })
 
 const App = () => (
-	<BrowserRouter>
+	<BrowserRouter ref={world.saveRouter}>
 		<div>
 			<Route exact path="/" component={Posts} />
 			{myPosts.map(post => (
