@@ -18,5 +18,3 @@ export function saveScrollPosition() {
 	const routeState: RouteState = { scrollTop: document.body.scrollTop }
 	world.history.replace(world.history.location.pathname, routeState)
 }
-
-window.addEventListener("popstate", saveScrollPosition)
