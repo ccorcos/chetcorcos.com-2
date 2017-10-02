@@ -24,7 +24,7 @@ export interface Post {
 
 export const titleToUrl = (title: string) => {
 	return (
-		"/" +
+		"/posts/" +
 		title
 			.toLowerCase()
 			.replace(/[^a-z0-9]/g, " ")
