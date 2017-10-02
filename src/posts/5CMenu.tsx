@@ -46,10 +46,20 @@ export default () => (
 			the python parser sadly took the most time of anything and now its
 			basically worthless.
 		</p>
-		<Image src={mudd} />
-		<Image src={scripps} />
-		<Image src={pitzer} />
-		<Image src={cmc} />
-		<Image src={pomona} />
+		<p>
+			<Image src={mudd} />
+		</p>
+		<p>
+			<Image src={scripps} />
+		</p>
+		<p>
+			<Image src={pitzer} />
+		</p>
+		<p>
+			<Image src={cmc} />
+		</p>
+		<p>
+			<Image src={pomona} />
+		</p>
 	</div>
 )

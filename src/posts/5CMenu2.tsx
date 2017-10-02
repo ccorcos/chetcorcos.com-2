@@ -40,10 +40,20 @@ export default () => (
 			You can also visit the{" "}
 			<Link href="http://5cmenu.com/">5C Menu online</Link>.
 		</p>
-		<Image src={mudd2} />
-		<Image src={scripps2} />
-		<Image src={pitzer2} />
-		<Image src={frank2} />
-		<Image src={frary2} />
+		<p>
+			<Image src={mudd2} />
+		</p>
+		<p>
+			<Image src={scripps2} />
+		</p>
+		<p>
+			<Image src={pitzer2} />
+		</p>
+		<p>
+			<Image src={frank2} />
+		</p>
+		<p>
+			<Image src={frary2} />
+		</p>
 	</div>
 )

@@ -75,8 +75,8 @@ $ echo "export EDITOR=$VISUAL" > ~/.bashrc
 		</p>
 		<Code
 			value={`
-				# Craigslist Script 0 18 * * * cd /home/pi/programs/craigslist-watch/
-				&& python craigslist.py
+# Craigslist Script
+0 18 * * * cd /home/pi/programs/craigslist-watch/ && python craigslist.py
 			`}
 		/>
 		<p>
@@ -94,8 +94,8 @@ $ echo "export EDITOR=$VISUAL" > ~/.bashrc
 		</p>
 		<Code
 			value={`
-				# Speedtest 0 * * * * cd /home/pi/programs/internet-speed-log/
-				&& python speedtest.py
+# Speedtest
+0 * * * * cd /home/pi/programs/internet-speed-log/ && python speedtest.py
 			`}
 		/>
 		<p>
@@ -107,9 +107,8 @@ $ echo "export EDITOR=$VISUAL" > ~/.bashrc
 		</p>
 		<Code
 			value={`
-				# Southwest Check-in Script 20 14 19 04 * cd python
-				/home/pi/programs/southwest-checkin/checkin.py Chet Corcos G78ZOV
-				ccorcos@gmail.com
+# Southwest Check-in Script
+20 14 19 04 * cd python /home/pi/programs/southwest-checkin/checkin.py Chet Corcos G78ZOV ccorcos@gmail.com
 			`}
 		/>
 		<p>

@@ -221,6 +221,5 @@ export default () => (
 			computer even if they know the password. However, its not so hard for
 			computers.
 		</p>
-		Fork me on GitHub
 	</div>
 )

@@ -7,6 +7,7 @@
 	- better tags?
 	- better readmes? fix as many demo links as possible.
 
+- previous and next dont work for external urls
 
 - add more content
 	- about

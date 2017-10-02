@@ -81,26 +81,32 @@ export default () => (
 		</p>
 		<Code
 			value={`
-				# start stream of x position values toushStart =
-				@eventStream("touchstart", ".handle") .map (e) ->
-				e.originalEvent.touches[0].pageX mouseDown =
-				@eventStream("mousedown", ".handle") .map (e) ->
-				e.pageX startStream = Tracker.mergeStreams(toushStart, mouseDown) #
-				cancel on a variety of annoying events touchEnd =
-				self.eventStream("touchend", ".page", true)
-				touchCancel = self.eventStream("touchcancel",
-				".page", true) touchLeave =
-				self.eventStream("touchleave", ".page", true)
-				mouseUp = self.eventStream("mouseup", ".page", true)
-				mouseOut = self.eventStream("mouseout", ".page",
-				true) mouseOffPage = mouseOut .filter (e) -> (e.relatedTarget or
-				e.toElement) is undefined endStream = Tracker.mergeStreams(mouseUp,
-				mouseOffPage, touchEnd, touchCancel, touchLeave) # create a move stream
-				on demand returning the x position values mouseMove =
-				self.eventStream("mousemove", ".page", true) .map
-				(e) -> e.pageX touchMove = self.eventStream("touchmove",
-				".page", true) .map (e) -> e.originalEvent.touches[0].pageX
-				moveStream = Tracker.mergeStreams(mouseMove, touchMove)
+# start stream of x position values
+toushStart =	@eventStream("touchstart", ".handle")
+	.map (e) -> e.originalEvent.touches[0].pageX
+
+mouseDown = @eventStream("mousedown", ".handle")
+	.map (e) -> e.pageX
+
+startStream = Tracker.mergeStreams(toushStart, mouseDown)
+
+# cancel on a variety of annoying events
+touchEnd = self.eventStream("touchend", ".page", true)
+touchCancel = self.eventStream("touchcancel", ".page", true)
+touchLeave = self.eventStream("touchleave", ".page", true)
+mouseUp = self.eventStream("mouseup", ".page", true)
+mouseOut = self.eventStream("mouseout", ".page", true)
+mouseOffPage = mouseOut .filter (e) -> (e.relatedTarget or e.toElement) is undefined
+endStream = Tracker.mergeStreams(mouseUp, mouseOffPage, touchEnd, touchCancel, touchLeave)
+
+# create a move stream on demand returning the x position values
+mouseMove = self.eventStream("mousemove", ".page", true)
+	.map (e) -> e.pageX
+
+touchMove = self.eventStream("touchmove", ".page", true)
+  .map (e) -> e.originalEvent.touches[0].pageX
+
+moveStream = Tracker.mergeStreams(mouseMove, touchMove)
 			`}
 		/>
 		<p>
@@ -109,8 +115,8 @@ export default () => (
 		</p>
 		<Code
 			value={`
-				# create an animation stream to block the start stream from interrupting
-				an animation animatingStream = @stream(false)
+# create an animation stream to block the start stream from interrupting an animation
+animatingStream = @stream(false)
 			`}
 		/>
 		<p>
@@ -121,10 +127,14 @@ export default () => (
 		</p>
 		<Code
 			value={`
-				# get the jquery object we're going to drag $menu = $(@find('.menu'))
-				startStream .unless(animatingStream) .map (x) -> initLeft =
-				$menu.position().left offset = initLeft - x lastLeft = initLeft velocity
-				= 0
+# get the jquery object we're going to drag
+$menu = $(@find('.menu'))
+startStream .unless(animatingStream)
+	.map (x) ->
+		initLeft = $menu.position().left
+		offset = initLeft - x
+		lastLeft = initLeft
+		velocity = 0
 			`}
 		/>
 		<p>
@@ -136,13 +146,13 @@ export default () => (
 		<Code
 			value={`
 # toggle menu position
-      toggle = ->
-        if lastLeft > -menuWidth/2
-          # close it
-          $menu.velocity({translateX: [-menuWidth, 0], translateZ: [0, 0]}, {duration: 400, easing: 'ease-in-out', complete: -> animatingStream.set(false)})
-        else
-          # open it
-          $menu.velocity({translateX: [0, -menuWidth], translateZ: [0, 0]}, {duration: 400, easing: 'ease-in-out', complete: -> animatingStream.set(false)})
+toggle = ->
+	if lastLeft > -menuWidth/2
+		# close it
+		$menu.velocity({translateX: [-menuWidth, 0], translateZ: [0, 0]}, {duration: 400, easing: 'ease-in-out', complete: -> animatingStream.set(false)})
+	else
+		# open it
+		$menu.velocity({translateX: [0, -menuWidth], translateZ: [0, 0]}, {duration: 400, easing: 'ease-in-out', complete: -> animatingStream.set(false)})
 `}
 		/>
 		<p>
@@ -154,22 +164,22 @@ export default () => (
 		<Code
 			value={`
 # resolve menu position
-      resolve = ->
-        animatingStream.set(true)
-        # wait for animation to finish
-        if initLeft is lastLeft and velocity is 0
-          toggle()
-          return
+resolve = ->
+	animatingStream.set(true)
+	# wait for animation to finish
+	if initLeft is lastLeft and velocity is 0
+		toggle()
+		return
 
-        momentum = velocity*3
-        if lastLeft + momentum > -menuWidth/2
-          momentum = Math.abs(momentum)
-          duration = Math.min(-lastLeft/momentum*100, 400)
-          $menu.velocity({translateX: 0, translateZ: 0}, {duration: duration, easing: 'ease-out', complete: -> animatingStream.set(false)})
-        else
-          momentum = Math.abs(momentum)
-          duration = Math.min((200-lastLeft)/momentum*100, 400)
-          $menu.velocity({translateX: -menuWidth, translateZ: 0}, {duration: duration, easing: 'ease-out', complete: -> animatingStream.set(false)})
+	momentum = velocity*3
+	if lastLeft + momentum > -menuWidth/2
+		momentum = Math.abs(momentum)
+		duration = Math.min(-lastLeft/momentum*100, 400)
+		$menu.velocity({translateX: 0, translateZ: 0}, {duration: duration, easing: 'ease-out', complete: -> animatingStream.set(false)})
+	else
+		momentum = Math.abs(momentum)
+		duration = Math.min((200-lastLeft)/momentum*100, 400)
+		$menu.velocity({translateX: -menuWidth, translateZ: 0}, {duration: duration, easing: 'ease-out', complete: -> animatingStream.set(false)})
 `}
 		/>
 		<p>
@@ -181,13 +191,13 @@ export default () => (
 		<Code
 			value={`
 moveStream
-        .takeUntil(endStream, resolve)
-        .forEach (x) ->
-          # wait for animation to finish
-          left = strangle(x + offset, [-menuWidth, 0])
-          velocity = left - lastLeft
-          lastLeft = left
-          $menu.velocity({translateX: left, translateZ: 0}, {duration: 0})
+	.takeUntil(endStream, resolve)
+	.forEach (x) ->
+		# wait for animation to finish
+		left = strangle(x + offset, [-menuWidth, 0])
+		velocity = left - lastLeft
+		lastLeft = left
+		$menu.velocity({translateX: left, translateZ: 0}, {duration: 0})
 `}
 		/>
 		<p>

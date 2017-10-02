@@ -6,16 +6,16 @@ export interface ImageProps {
 }
 
 export default class Image extends React.PureComponent<ImageProps, {}> {
-	private static imageStyle: React.CSSProperties = {
-		maxWidth: "100%",
+	private getStyle(): React.CSSProperties {
+		return {
+			maxWidth: "100%",
+			display: "block",
+			margin: "0 auto",
+			...this.props.style,
+		}
 	}
 
 	render() {
-		return (
-			<img
-				style={{ ...Image.imageStyle, ...this.props.style }}
-				src={this.props.src}
-			/>
-		)
+		return <img style={this.getStyle()} src={this.props.src} />
 	}
 }

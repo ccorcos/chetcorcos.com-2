@@ -316,12 +316,6 @@ export const externalPosts: Array<Post> = [
 		url: "https://github.com/ccorcos/rURL",
 	},
 	{
-		title: "Elmish",
-		date: "January 25, 2016",
-		tags: ["code"],
-		url: "https://github.com/ccorcos/elmish",
-	},
-	{
 		title: "Spiral",
 		date: "March 20, 2017",
 		tags: ["code", "art"],
@@ -607,7 +601,7 @@ export const rsa: Post = {
 export const waterfall: Post = {
 	title: "Web Audio API Waterfall",
 	date: "December 28, 2014",
-	tags: ["music"],
+	tags: ["art", "music"],
 	url: "/posts/waterfall",
 	alias: "/projects/2014/12/20/webaudio-waterfall.html",
 	img:

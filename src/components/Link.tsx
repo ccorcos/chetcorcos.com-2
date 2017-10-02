@@ -19,7 +19,10 @@ export default class Link extends React.PureComponent<LinkProps, {}> {
 
 	render() {
 		const style = { ...Link.style, ...this.props.style }
-		if (this.props.href.startsWith("/")) {
+		if (
+			this.props.href.startsWith("/") &&
+			this.props.href.indexOf(".") === -1
+		) {
 			return (
 				<A
 					style={style}

@@ -33,6 +33,7 @@ css.global("html, body", {
 	margin: 0,
 	fontFamily: '"Comfortaa-Regular", "Helvetica", "Arial", sans-serif',
 	color: colors.dark,
+	tabSize: 4,
 })
 
 css.global("a", {
