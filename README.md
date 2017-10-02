@@ -2,8 +2,6 @@
 
 - polish up each project
 	- write briefly about each project
-	- get an image if possible
-	- consolidate writing with source code -- make sure they're in the same place
 	- better tags?
 	- better readmes? fix as many demo links as possible.
 

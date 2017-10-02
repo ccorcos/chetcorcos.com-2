@@ -2,15 +2,17 @@ import * as React from "react"
 import Link from "../components/Link"
 import Image from "../components/Image"
 import { waterfall } from "../postData"
+import * as postHelpers from "../helpers/postHelpers"
 
 export default () => (
 	<div>
 		<p>
-			Using the code from my <Link href={waterfall.url}>last post</Link> I
-			created what I like to call a "raw" guitar tuner. This tuner is just a
-			zoomed in waterfall plot of the frequency spectrum of a guitar in standard
-			tuner. The white lines are guides for the E-A-D-G-B-E frequencies. Now you
-			can tune your guitar based on the raw frequency information!
+			Using the code from my{" "}
+			<Link href={postHelpers.getUrl(waterfall)}>last post</Link> I created what
+			I like to call a "raw" guitar tuner. This tuner is just a zoomed in
+			waterfall plot of the frequency spectrum of a guitar in standard tuner.
+			The white lines are guides for the E-A-D-G-B-E frequencies. Now you can
+			tune your guitar based on the raw frequency information!
 		</p>
 		<p>Here you can see me tuning the A on my guitar.</p>
 		<p>

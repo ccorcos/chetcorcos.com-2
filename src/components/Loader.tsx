@@ -1,19 +1,21 @@
 import * as React from "react"
 
 export interface LoaderProps {
-	component: () => Promise<() => JSX.Element>
+	component?: () => Promise<() => JSX.Element>
 }
 
 export default class Loader extends React.PureComponent<LoaderProps, {}> {
-	private child: JSX.Element = null
+	private child: JSX.Element
 
 	async componentWillMount() {
-		const renderer = await this.props.component()
-		this.child = renderer()
-		this.forceUpdate()
+		if (this.props.component) {
+			const renderer = await this.props.component()
+			this.child = renderer()
+			this.forceUpdate()
+		}
 	}
 
 	render() {
-		return this.child
+		return this.child || null
 	}
 }

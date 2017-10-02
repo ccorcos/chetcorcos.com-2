@@ -7,16 +7,17 @@ import Post from "./Post"
 import Home from "./Home"
 import NotFound from "./NotFound"
 import * as world from "../world"
+import * as postHelpers from "../helpers/postHelpers"
 
 const Router = () => (
 	<BrowserRouter ref={world.saveRouter}>
 		<div>
 			<Switch>
-				<Route exact path="/" component={Posts} />
+				<Route exact={true} path="/" component={Posts} />
 				{myPosts.map(post => (
 					<Route
-						key={post.url}
-						path={post.url}
+						key={postHelpers.getUrl(post)}
+						path={postHelpers.getUrl(post)}
 						component={() => (
 							<Post {...post}>
 								<Loader component={post.component} />

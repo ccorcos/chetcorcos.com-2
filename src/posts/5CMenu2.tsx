@@ -7,14 +7,15 @@ import * as frary2 from "file-loader!../img/frary2.jpeg"
 import Link from "../components/Link"
 import Image from "../components/Image"
 import { claremontMenu } from "../postData"
+import * as postHelpers from "../helpers/postHelpers"
 
 export default () => (
 	<div>
 		<p>
 			This winter break, I've decided to rebuild the old{" "}
-			<Link href={claremontMenu.url}>5C Menu iPhone App</Link>. I've learned
-			some lessons the the past few years and I figured I could make it much
-			quicker this time.
+			<Link href={postHelpers.getUrl(claremontMenu)}>5C Menu iPhone App</Link>.
+			I've learned some lessons the the past few years and I figured I could
+			make it much quicker this time.
 		</p>
 		<p>
 			For one, I used <Link href="https://www.meteor.com/">Meteor</Link> and

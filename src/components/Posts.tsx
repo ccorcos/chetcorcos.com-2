@@ -7,7 +7,7 @@ import PostItem from "./PostItem"
 import Layout from "./Layout"
 import Link from "./Link"
 import Header from "./Header"
-import { Tag, allTags } from "../postData"
+import { Tag, allTags } from "../helpers/postHelpers"
 import * as world from "../world"
 
 const colors = [

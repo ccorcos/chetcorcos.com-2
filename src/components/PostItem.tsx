@@ -2,18 +2,19 @@ import * as React from "react"
 import Link from "./Link"
 import Image from "./Image"
 import Component from "reactive-magic/component"
+import * as postHelpers from "../helpers/postHelpers"
 
 export interface PostItemProps {
 	title: string
 	date: string
-	url: string
+	url?: string
 	img?: string
 }
 
 export default class PostItem extends Component<PostItemProps> {
 	view() {
 		return (
-			<Link href={this.props.url} style={{ color: "#444" }}>
+			<Link href={postHelpers.getUrl(this.props)} style={{ color: "#444" }}>
 				<div style={{ padding: 8, display: "flex" }}>
 					{this.props.img && (
 						<div

@@ -3,6 +3,7 @@ import Layout from "./Layout"
 import Header from "./Header"
 import Link from "./Link"
 import * as world from "../world"
+import * as postHelpers from "../helpers/postHelpers"
 
 export interface PostProps {
 	title: string
@@ -29,9 +30,13 @@ export default class Post extends React.PureComponent<PostProps, {}> {
 				/>
 				<p style={{ fontSize: 14, color: "gray" }}>{this.props.date}</p>
 				<p>
-					{prev !== null && <Link href={posts[prev].url}>Previous</Link>}
+					{prev !== null && (
+						<Link href={postHelpers.getUrl(posts[prev])}>Previous</Link>
+					)}
 					{prev !== null && next !== null && ", "}
-					{next !== null && <Link href={posts[next].url}>Next</Link>}
+					{next !== null && (
+						<Link href={postHelpers.getUrl(posts[next])}>Next</Link>
+					)}
 				</p>
 				{this.props.children}
 			</Layout>

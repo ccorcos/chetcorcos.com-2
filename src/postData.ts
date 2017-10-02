@@ -7,20 +7,7 @@ import * as claremontMenuCover2 from "file-loader!./img/mudd2.jpeg"
 import * as facebookGraphCover from "file-loader!./img/facebook-me.png"
 import * as rsaCover from "file-loader!./img/rsa.png"
 import * as passwordRhythmCover from "file-loader!./img/password/test-sample.png"
-
-export type Tag = "code" | "music" | "writing" | "cars" | "art"
-
-export const allTags: Array<Tag> = ["code", "music", "writing", "cars", "art"]
-
-export interface Post {
-	title: string
-	date: string
-	url: string
-	alias?: string
-	tags: Array<Tag>
-	img?: string
-	component?: () => Promise<() => JSX.Element>
-}
+import { Post } from "./helpers/postHelpers"
 
 export const externalPosts: Array<Post> = [
 	{
@@ -44,6 +31,7 @@ export const externalPosts: Array<Post> = [
 		title: "Dark Patterns at Venmo",
 		date: "February 9, 2017",
 		tags: [],
+		img: "http://gal-aa.org/wp-content/uploads/2017/03/VenmoLogo.png",
 		url: "https://medium.com/@chetcorcos/dark-patterns-at-venmo-ef6e4a3db7fa",
 	},
 	{
@@ -300,6 +288,8 @@ export const externalPosts: Array<Post> = [
 		title: "Airtable Blog",
 		date: "February 20, 2017",
 		tags: ["code"],
+		img:
+			"https://seeklogo.com/images/A/airtable-logo-216B9AF035-seeklogo.com.png",
 		url: "https://github.com/ccorcos/airtable-blog",
 	},
 	{
@@ -346,18 +336,22 @@ export const externalPosts: Array<Post> = [
 		title: "Circle",
 		date: "April 23, 2017",
 		tags: ["code", "art", "music"],
+		img:
+			"https://raw.githubusercontent.com/ccorcos/circle/master/assets/logo.png",
 		url: "https://github.com/ccorcos/circle",
 	},
 	{
 		title: "Groove Salad",
 		date: "May 13, 2017",
 		tags: ["code", "music"],
+		img: "https://tonejs.github.io/assets/images/groove-salad.png",
 		url: "https://github.com/ccorcos/groove-salad",
 	},
 	{
 		title: "Key Wheel",
 		date: "June 25, 2017",
 		tags: ["code", "music"],
+		img: "https://raw.githubusercontent.com/ccorcos/key-wheel/master/logo.png",
 		url: "https://github.com/ccorcos/key-wheel",
 	},
 	{
@@ -368,7 +362,7 @@ export const externalPosts: Array<Post> = [
 	},
 	{
 		title: "Shindig",
-		date: "May 20, 2017",
+		date: "November 22, 2015",
 		tags: ["code"],
 		url: "https://github.com/ccorcos/shindig",
 	},
@@ -391,7 +385,6 @@ export const claremontMenu: Post = {
 	title: "5C Menu iPhone App",
 	date: "June 2, 2012",
 	tags: ["code"],
-	url: "/posts/5cmenu",
 	alias: "/projects/2012/06/02/5c-menu-app.html",
 	img: claremontMenuCover,
 	component: () => import("./posts/5cMenu").then(m => m.default),
@@ -401,7 +394,6 @@ export const claremontMenu2: Post = {
 	title: "5C Menu iPhone App - Round 2",
 	date: "December 18, 2014",
 	tags: ["code"],
-	url: "/posts/5c-menu-2",
 	alias: "/projects/2014/12/18/5c-menu-round-2.html",
 	img: claremontMenuCover2,
 	component: () => import("./posts/5cMenu2").then(m => m.default),
@@ -411,7 +403,6 @@ export const anonymity: Post = {
 	title: "Anonymity on the Internet",
 	date: "September 10, 2014",
 	tags: ["writing"],
-	url: "/posts/anonymity",
 	alias: "/projects/2014/09/10/anonymity-no-the-internet.html",
 	component: () => import("./posts/anonymity").then(m => m.default),
 }
@@ -420,7 +411,8 @@ export const blazeAnimation: Post = {
 	title: "Animation with Meteor",
 	date: "November 20, 2014",
 	tags: ["code"],
-	url: "/posts/blaze-animation",
+	img:
+		"https://images.techhive.com/images/article/2013/12/meteor-js-background-100160552-primary.idge.jpg",
 	alias: "/projects/2014/11/20/blaze-animation.html",
 	component: () => import("./posts/blazeAnimation").then(m => m.default),
 }
@@ -429,7 +421,6 @@ export const blazer: Post = {
 	title: "1971 Blazer Restoration",
 	date: "January 1, 2010",
 	tags: ["cars"],
-	url: "/posts/blazer",
 	alias: "/projects/2010/01/01/1971-blazer.html",
 	img: blazerCover,
 	component: () => import("./posts/blazer").then(m => m.default),
@@ -439,7 +430,7 @@ export const craigslistWatch: Post = {
 	title: "Craigslist Watch",
 	date: "October 24, 2014",
 	tags: ["code"],
-	url: "/posts/craigslist-watch",
+	img: "http://askthemanager.com/wp-content/uploads/2016/12/cl1.jpg",
 	alias: "/projects/2014/10/24/craigslist-watch.html",
 	component: () => import("./posts/craigslistWatch").then(m => m.default),
 }
@@ -448,7 +439,6 @@ export const dns: Post = {
 	title: "Configuring Your DNS",
 	date: "June 6, 2014",
 	tags: ["code"],
-	url: "/posts/configure-dns",
 	alias: "/projects/2014/06/20/configuring-your-dns.html",
 	component: () => import("./posts/dns").then(m => m.default),
 }
@@ -457,7 +447,6 @@ export const electricTruck: Post = {
 	title: "Electric Truck Conversion",
 	date: "September 1, 2008",
 	tags: ["cars"],
-	url: "/posts/electric-truck",
 	alias: "/projects/2008/09/01/electric-truck.html",
 	img: electricTruckCover,
 	component: () => import("./posts/electricTruck").then(m => m.default),
@@ -467,7 +456,6 @@ export const fbGraph: Post = {
 	title: "Facebook Social Network Visualization",
 	date: "October 10, 2013",
 	tags: ["code"],
-	url: "/posts/fb-graph",
 	alias: "/projects/2013/10/10/facebook-network.html",
 	img: facebookGraphCover,
 	component: () => import("./posts/facebookGraph").then(m => m.default),
@@ -477,7 +465,7 @@ export const gitTutorial: Post = {
 	title: "Git Tutorial",
 	date: "May 21, 2012",
 	tags: ["code"],
-	url: "/posts/git-tutorial",
+	img: "https://git-for-windows.github.io/img/git_logo.png",
 	alias: "/projects/2012/05/21/git-tutorial.html",
 	component: () => import("./posts/gitTutorial").then(m => m.default),
 }
@@ -486,7 +474,8 @@ export const gpg: Post = {
 	title: "GNU Privacy Guard Tutorial",
 	date: "February 10, 2014",
 	tags: ["code"],
-	url: "/posts/gpg",
+	img:
+		"http://4.bp.blogspot.com/-bTyvY1fiIms/UJUvW6kx-hI/AAAAAAAAANw/qRfbfEKJ6sU/s400/gnupg.png",
 	alias: "/projects/2014/02/10/gnupg-tutorial.html",
 	component: () => import("./posts/gpg").then(m => m.default),
 }
@@ -495,7 +484,6 @@ export const guitarTuner: Post = {
 	title: "Raw Guitar Tuner",
 	date: "January 5, 2015",
 	tags: ["music"],
-	url: "/posts/guitar-tuner",
 	alias: "/projects/2015/01/05/guitar-tuner.html",
 	img:
 		"https://raw.githubusercontent.com/ccorcos/webaudio-guitar-tuner/master/public/screenshot.png",
@@ -506,7 +494,6 @@ export const hendrixMural: Post = {
 	title: "Jimi Hendrix Mural",
 	date: "August 29, 2011",
 	tags: ["art"],
-	url: "/posts/hendrix",
 	alias: "/projects/2011/08/29/hendrix-mural.html",
 	img: hendrixCover,
 	component: () => import("./posts/hendrix").then(m => m.default),
@@ -516,7 +503,8 @@ export const macSetup: Post = {
 	title: "Mac Development Setup",
 	date: "October 17, 2014",
 	tags: ["code", "writing"],
-	url: "/posts/mac-dev-setup",
+	img:
+		"https://www.apple.com/ac/structured-data/images/knowledge_graph_logo.png",
 	alias: "/projects/2014/10/17/mac-dev-setup.html",
 	component: () => import("./posts/macSetup").then(m => m.default),
 }
@@ -525,7 +513,6 @@ export const malibu: Post = {
 	title: "1965 Malibu Restoration",
 	date: "September 1, 2007",
 	tags: ["cars"],
-	url: "/posts/malibu",
 	alias: "/projects/2007/09/01/1965-mailibu.html",
 	img: malibuCover,
 	component: () => import("./posts/malibu").then(m => m.default),
@@ -535,7 +522,6 @@ export const meteorReact: Post = {
 	title: "Meteor and React",
 	date: "February 20, 2015",
 	tags: ["code"],
-	url: "/posts/meteor-react",
 	alias: "/projects/2015/02/20/meteor-react.html",
 	component: () => import("./posts/meteorReact").then(m => m.default),
 }
@@ -544,7 +530,6 @@ export const observableStreams: Post = {
 	title: "Observable Streams",
 	date: "February 7, 2015",
 	tags: ["code"],
-	url: "/posts/observable-streams",
 	alias: "/projects/2015/02/07/observable-streams.html",
 	component: () => import("./posts/observableStreams").then(m => m.default),
 }
@@ -553,7 +538,6 @@ export const passwordRhythm: Post = {
 	title: "Password Rhythm Authentication",
 	date: "March 11, 2014",
 	tags: ["code"],
-	url: "/posts/password-rhythm",
 	alias: "/projects/2014/03/11/password-rhythm.html",
 	img: passwordRhythmCover,
 	component: () => import("./posts/passwordRhythm").then(m => m.default),
@@ -563,7 +547,7 @@ export const raspberryPiSetup: Post = {
 	title: "Raspberry Pi Setup",
 	date: "October 25, 2014",
 	tags: ["code"],
-	url: "/posts/raspberry-pi-setup",
+	img: "https://www.raspberrypi.org/app/uploads/2011/10/Raspi-PGB001.png",
 	alias: "/projects/2014/10/25/raspberry-pi-setup.html",
 	component: () => import("./posts/raspberryPiSetup").then(m => m.default),
 }
@@ -572,7 +556,6 @@ export const reactiveCss: Post = {
 	title: "Reactive CSS",
 	date: "February 16, 2015",
 	tags: ["code"],
-	url: "/posts/reactive-css",
 	alias: "/projects/2015/02/16/reactive-css.html",
 	component: () => import("./posts/reactiveCss").then(m => m.default),
 }
@@ -581,7 +564,6 @@ export const roomTuner: Post = {
 	title: "Room Tuner",
 	date: "December 16, 2014",
 	tags: ["music"],
-	url: "/posts/room-tuner",
 	alias: "/projects/2014/12/16/room-tuner.html",
 	img:
 		"https://raw.githubusercontent.com/ccorcos/room-tuner/master/public/screenshot.png",
@@ -592,7 +574,6 @@ export const rsa: Post = {
 	title: "RSA Encryption Tutorial",
 	date: "February 22, 2014",
 	tags: ["code"],
-	url: "/posts/rsa",
 	alias: "/projects/2014/02/22/rsa-tutorial.html",
 	img: rsaCover,
 	component: () => import("./posts/rsa").then(m => m.default),
@@ -602,7 +583,6 @@ export const waterfall: Post = {
 	title: "Web Audio API Waterfall",
 	date: "December 28, 2014",
 	tags: ["art", "music"],
-	url: "/posts/waterfall",
 	alias: "/projects/2014/12/20/webaudio-waterfall.html",
 	img:
 		"https://raw.githubusercontent.com/ccorcos/webaudio-waterfall/master/public/screenshot.png",
