@@ -12,7 +12,7 @@ export default () => (
 			email every day of the apartments I should check out.
 		</p>
 		<p>
-			I also recently discovered an awesome free “data extrator” service called{" "}
+			I also recently discovered an awesome free "data extrator" service called{" "}
 			<Link href="https://import.io/">Import.io</Link>. Their app allows you to
 			create an API using a GUI and an intelligent parsing algorithm to get all
 			the data you want. Then you can just cURL an API to get a JSON string of

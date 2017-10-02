@@ -1,6 +1,7 @@
 import * as React from "react"
 import Code from "../components/Code"
 import Link from "../components/Link"
+import Quote from "../components/Quote"
 
 export default () => (
 	<div>
@@ -46,7 +47,12 @@ export default () => (
 			which will add a lot of garbage when you <code>diff</code>. I will
 			typically always have this in my <code>.gitignore</code> file:
 		</p>
-		<Code value={`**.DS_Store **.pyc`} />
+		<Code
+			value={`
+**.DS_Store
+**.pyc
+		`}
+		/>
 		<p>
 			Watch out for training spaces and use <code>**</code> to use this pattern
 			for all directories and subdirectories. I dont know what .DS_Store is, but
@@ -65,11 +71,11 @@ export default () => (
 		<p>
 			These changes are only committed to the local git repository. If you
 			cloned the repository from somewhere else, you'll need to{" "}
-			<code>push</code> the changes to the remote “origin” repository.
+			<code>push</code> the changes to the remote "origin" repository.
 		</p>
 		<Code value={`$ git push origin <branch>`} />
 		<p>
-			Every git repository is initialized with a “master” branch. Branches allow
+			Every git repository is initialized with a "master" branch. Branches allow
 			you to develop multiple versions of your code. You may have a different
 			branch for each of several different designs. Branching allows you to keep
 			track of the the differences in these designs and quickly change between
@@ -126,7 +132,7 @@ $ git commit -m "first commit"
 		<p>
 			You will likely want to put this code on Github so you can share the code
 			with others and develop together. Go onto Github to create a new
-			repository. The link the “remote origin” of your local repository to the
+			repository. The link the "remote origin" of your local repository to the
 			Github repo.
 		</p>
 		<Code
@@ -227,12 +233,12 @@ $ git init --bare
 			`}
 		/>
 		<p>
-			This makes a folder called “github” with a folder called “project” inside
+			This makes a folder called "github" with a folder called "project" inside
 			it. Then we initialized a bare git repo inside the project folder. Github
 			repositories are bare repos, and this will simplify things for us in this
 			tutorial.
 		</p>
-		<p>Now we want to copy this git repo over from “github”.</p>
+		<p>Now we want to copy this git repo over from "github".</p>
 		<Code
 			value={`
 $ cd ~/Desktop/
@@ -243,9 +249,9 @@ $ git clone ~/Desktop/github/project
 			`}
 		/>
 		<p>
-			Here, you made a folder called “me” which will represent you in this
-			example. Then you clone the project from “github”. This will copy the
-			repository into your “me” folder. You will see that there is a warning
+			Here, you made a folder called "me" which will represent you in this
+			example. Then you clone the project from "github". This will copy the
+			repository into your "me" folder. You will see that there is a warning
 			that you just copied an empty repo, so lets make a file and add it to the
 			repo.
 		</p>
@@ -256,7 +262,7 @@ $ touch file.txt
 `}
 		/>
 		<p>
-			In <code>file.txt</code>, write, “this is the initial file”. Then we want
+			In <code>file.txt</code>, write, "this is the initial file". Then we want
 			to add all of the files and subdirectories of the project folder to the
 			git repo using the <code>add</code> command. A period signifies all files
 			and subdirectories. You could add individual files if you wanted but I
@@ -288,7 +294,7 @@ $ git log`}
 		/>
 		<p>
 			You'll see that we are on the master branch, everything is updated and we
-			have one commit, the “first commit”. Now try this command.
+			have one commit, the "first commit". Now try this command.
 		</p>
 		<Code value={`$ git remote show origin`} />
 		<p>
@@ -313,7 +319,7 @@ $ git log`}
 			Also, it helps if you name the branch in terms of what you are working on
 			in that branch.
 		</p>
-		<p>So lets make “some change”.</p>
+		<p>So lets make "some change".</p>
 		<Code value={`$ git branch`} />
 		<p>
 			This shows you are on the master branch, so we are branching from master.
@@ -333,7 +339,7 @@ $ git log`}
 			Now lets make our changes.
 		</p>
 		<p>
-			Open <code>file.txt</code> and append the “me making a good change” to a
+			Open <code>file.txt</code> and append the "me making a good change" to a
 			new line at the end.
 		</p>
 		<Code
@@ -409,14 +415,14 @@ $ git checkout making_another_change
 			`}
 		/>
 		<p>
-			Open <code>file.txt</code> and add “me making another change” to the
+			Open <code>file.txt</code> and add "me making another change" to the
 			bottom of the file. So the file should look something like this.
 		</p>
-		<blockquote>
+		<Quote>
 			<p>this is the initial file</p>
 			<p>me making a good change</p>
 			<p>me making another change</p>
-		</blockquote>
+		</Quote>
 		<p>Then lets commit the change.</p>
 		<Code
 			value={`
@@ -434,7 +440,7 @@ $ git commit -m "me making another change"
 $ cd ~/Desktop/
 $ mkdir someone
 $ cd someone
-$ git clone	~/Desktop/github/project
+$ git clone ~/Desktop/github/project
 $ cd project
 
 			`}
@@ -458,14 +464,14 @@ $ git checkout someone_making_some_change
 			`}
 		/>
 		<p>
-			Open <code>file.txt</code> and write “someone made another good change” on
+			Open <code>file.txt</code> and write "someone made another good change" on
 			a new line at the end. So now the file should have the following.
 		</p>
-		<blockquote>
+		<Quote>
 			<p>this is the initial file</p>
 			<p>me making a good change</p>
 			<p>someone made another good change</p>
-		</blockquote>
+		</Quote>
 		<p>Now, lets merge and push…</p>
 		<Code
 			value={`
@@ -477,7 +483,7 @@ $ git push origin master
 			`}
 		/>
 		<p>
-			So now, lets go back to “me” and try merging{" "}
+			So now, lets go back to "me" and try merging{" "}
 			<code>making_another_change</code> into master and pushing to
 			origin/master. You can already tell this is going to get ugly right?
 		</p>
@@ -545,12 +551,12 @@ $ git log
 			branch.
 		</p>
 		<p>So lets delete the garbage so the file now looks like this:</p>
-		<blockquote>
+		<Quote>
 			<p>this is the initial file</p>
 			<p>me making a good change</p>
 			<p>me making another change</p>
 			<p>someone made another good change</p>
-		</blockquote>
+		</Quote>
 		<p>Lets commit our work.</p>
 		<Code
 			value={`
@@ -562,13 +568,13 @@ $ git log
 		/>
 		<p>
 			You'll see that we are 3 commits ahead of master now. And note the order
-			of the commits. Your commits from “me” we put on top of those from
-			“someone” because “someone” pushed to origin master before you. Then
+			of the commits. Your commits from "me" we put on top of those from
+			"someone" because "someone" pushed to origin master before you. Then
 			you'll see your merge success commit.
 		</p>
 		<p>
 			Now, you could have done anything you wanted in that merge. You could have
-			deleted the stuff that “someone” did. The point is that you want the code
+			deleted the stuff that "someone" did. The point is that you want the code
 			to be workable persisting someone's work before you push back to origin
 			master. So once you are done working on the code and think it is workable
 			you should push to origin master.
@@ -630,7 +636,7 @@ $ git rm
 $(git ls-files --deleted)`}
 		/>
 		<p>
-			Then commit with a message like “clean up deleted files”. I found this
+			Then commit with a message like "clean up deleted files". I found this
 			command online and it has been very useful…
 		</p>
 		<h3>Gitignore Isn't Working?</h3>

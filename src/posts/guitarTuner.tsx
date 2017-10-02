@@ -7,7 +7,7 @@ export default () => (
 	<div>
 		<p>
 			Using the code from my <Link href={waterfall.url}>last post</Link> I
-			created what I like to call a “raw” guitar tuner. This tuner is just a
+			created what I like to call a "raw" guitar tuner. This tuner is just a
 			zoomed in waterfall plot of the frequency spectrum of a guitar in standard
 			tuner. The white lines are guides for the E-A-D-G-B-E frequencies. Now you
 			can tune your guitar based on the raw frequency information!

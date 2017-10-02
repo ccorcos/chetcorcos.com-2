@@ -152,7 +152,7 @@ export default () => (
 		<p>
 			The training data can be plotted against the each Gaussian probability
 			density function. For this example, features that do not pass the 95%
-			confidence interval test are displayed with an “x”. This confidence
+			confidence interval test are displayed with an "x". This confidence
 			interval measure could be adjusted by the user according to the
 			repeatability of the rhythm and the amount of security desired.
 		</p>

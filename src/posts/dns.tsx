@@ -22,10 +22,10 @@ export default () => (
 		<p>
 			There are two different ways of setting up you're DNS Zone File depending
 			on you're needs. If you need to point your domain name to an IP address,
-			you'll want to set the “A (host)” record. If you need to point your domain
+			you'll want to set the "A (host)" record. If you need to point your domain
 			name to another domain, for example <code>something.meteor.com</code>,{" "}
 			<code>something.herokuapp.com</code>, or <code>username.github.io</code>,
-			you'll want to set the “CNAME (alias)”.
+			you'll want to set the "CNAME (alias)".
 		</p>
 		<p>
 			There is a special character, "@", which refers to the domain itself with

@@ -1,6 +1,7 @@
 import * as React from "react"
 import { Link as A } from "react-router-dom"
 import * as scrollActions from "../actions/scrollActions"
+import * as colors from "../helpers/colors"
 
 export interface RouteState {
 	scrollTop: number
@@ -13,7 +14,7 @@ export interface LinkProps {
 
 export default class Link extends React.PureComponent<LinkProps, {}> {
 	private static style: React.CSSProperties = {
-		color: "#e81c4f",
+		color: colors.accent,
 	}
 
 	render() {

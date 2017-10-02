@@ -33,7 +33,7 @@ export default () => (
 			library in only a few hundred lines of code. I've also always thought it
 			would be really cool to have an app with a rotating color scheme. This
 			package allows you to define CSS rules in JavaScript or Coffeescript and
-			is “Tracker aware”, meaning you can define CSS rules with functions and
+			is "Tracker aware", meaning you can define CSS rules with functions and
 			any reactive variables within that function will reactively update the
 			appropriate CSS rule.
 		</p>
