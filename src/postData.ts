@@ -7,6 +7,7 @@ import * as claremontMenuCover2 from "file-loader!./img/mudd2.jpeg"
 import * as facebookGraphCover from "file-loader!./img/facebook-me.png"
 import * as rsaCover from "file-loader!./img/rsa.png"
 import * as passwordRhythmCover from "file-loader!./img/password/test-sample.png"
+import * as rocketDone from "file-loader!./img/e80/e80-done.jpg"
 import { Post } from "./helpers/postHelpers"
 
 export const externalPosts: Array<Post> = [
@@ -589,7 +590,16 @@ export const waterfall: Post = {
 	component: () => import("./posts/webAudioWaterfall").then(m => m.default),
 }
 
+export const e80: Post = {
+	title: "High Power Rockets",
+	date: "May 30, 2011",
+	tags: [],
+	img: rocketDone,
+	component: () => import("./posts/e80").then(m => m.default),
+}
+
 export const myPosts = [
+	e80,
 	claremontMenu,
 	claremontMenu2,
 	anonymity,
