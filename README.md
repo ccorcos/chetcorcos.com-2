@@ -16,39 +16,7 @@
 		- https://www.youtube.com/watch?v=zAJ6muAZdX4&feature=player_embedded
 
 
-<template name="microps">
-	<h2 align="center">Microproccessor Design and Application (E155)</br>One-Handed Keyboard</h2>
-	<h4 align="center">Fall 2011</h4>
 
-	<div align="middle">
-		<image src="/microps/microps-1.jpg" width="700" style="padding:1%;">
-	</div>
-
-	<p>
-		My junior year at Harvey Mudd, I took a class called Microprocessor Design and Application. This class follows a digital electronics course where we design and implement a MIPS multicycle processor in System Verilog and implement it on an FPGA. In this course, we assemble a board with a PIC32 microcontroller and an Altera Vertex 2 FPGA. In this class, we learn various things from time-multiplexing displays, bluetooth serial communication, displaying to a CRT display through an FPGA, and controlling a mouse on screen. This class culminates with a paired final project. Max Gonzalez and I decided to develop a one-handed keyboard.
-	</p>
-
-	<div class="row images" align="middle">
-		<image src="/microps/microps-2.jpg" width="300">
-		<image src="/microps/microps-4.jpg" width="540">
-	</div>
-
-	<p>
-		The keyboard was assembled with unnecessarily large arcade buttons. However, they were cheap and easy to find. The microcontroller would poll the buttons to figure out what keys had been pressed or are being held down. It would then compute the letters for the keyboard helper and send that information to the FPGA through a UART. The FPGA then looks up the bits for each character in a lookup table and displays them in a custom build word processor on a CRT display. Check out the video for more information
-	</p>
-
-	<div class="row images" align="middle">
-	<iframe width="640" height="480" src="http://www.youtube.com/embed/23V3UcKeFqk" frameborder="0" allowfullscreen></iframe>
-	</div>
-
-	<p>
-		I made another prototype the following winter break. This time, I implemented it on an Arduino R3 and send commands to a computer through USB. With the difficulties involved in finding nice buttons, I decided to go with capacitive touch sensors as well. I included added fucntionality for using keyboard arrows, applying Shift, etc.
-	</p>
-
-	<div class="row images" align="middle">
-		<image src="/microps/microps-v2.jpg" width="700">
-	</div>
-</template>
 
 <template name="opencv">
 	<h2 align="center">OpenCV Eye Feature Tracker</h2>

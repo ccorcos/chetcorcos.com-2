@@ -8,6 +8,7 @@ import * as facebookGraphCover from "file-loader!./img/facebook-me.png"
 import * as rsaCover from "file-loader!./img/rsa.png"
 import * as passwordRhythmCover from "file-loader!./img/password/test-sample.png"
 import * as rocketDone from "file-loader!./img/e80/e80-done.jpg"
+import * as microps1 from "file-loader!./img/microps/microps-1.jpg"
 import { Post } from "./helpers/postHelpers"
 
 export const externalPosts: Array<Post> = [
@@ -598,7 +599,16 @@ export const e80: Post = {
 	component: () => import("./posts/e80").then(m => m.default),
 }
 
+export const microps: Post = {
+	title: "One-Handed Keyboard",
+	date: "December 10, 2011",
+	tags: [],
+	img: microps1,
+	component: () => import("./posts/microps").then(m => m.default),
+}
+
 export const myPosts = [
+	microps,
 	e80,
 	claremontMenu,
 	claremontMenu2,
