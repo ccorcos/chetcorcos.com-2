@@ -17,6 +17,7 @@
 	- Longboard article on website
 	- research, SAM, PGM
 
+- filter query params
 
 - Photos / Albums
 

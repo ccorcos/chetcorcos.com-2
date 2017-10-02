@@ -1,6 +1,7 @@
 import * as React from "react"
 import * as blazer from "file-loader!../img/blazer.jpg"
 import Image from "../components/Image"
+import IFrame from "../components/IFrame"
 
 export default () => (
 	<div>
@@ -14,6 +15,8 @@ export default () => (
 		<p>
 			<Image src={blazer} />
 		</p>
-		<iframe src="http://www.youtube.com/embed/fWozxL50oEI" />
+		<p>
+			<IFrame src="http://www.youtube.com/embed/fWozxL50oEI" />
+		</p>
 	</div>
 )

@@ -2,6 +2,7 @@ import * as React from "react"
 
 export interface ImageProps {
 	src: string
+	style?: React.CSSProperties
 }
 
 export default class Image extends React.PureComponent<ImageProps, {}> {
@@ -10,6 +11,11 @@ export default class Image extends React.PureComponent<ImageProps, {}> {
 	}
 
 	render() {
-		return <img style={Image.imageStyle} src={this.props.src} />
+		return (
+			<img
+				style={{ ...Image.imageStyle, ...this.props.style }}
+				src={this.props.src}
+			/>
+		)
 	}
 }
