@@ -1,46 +1,22 @@
 # chetcorcos.com
 
-deploy with surge.sh
+- polish up each project
+	- write briefly about each project
+	- get an image if possible
+	- consolidate writing with source code -- make sure they're in the same place
+	- better tags?
+	- better readmes? fix as many demo links as possible.
 
-- font (light and bold)
-- better colors
-
-- move chetcorcos.com to old.chetcorcos.com and point surge to dns
 
 - add more content
 	- about
-	- github repos and other music projects
 	- resume
-	- research, SAM, PGM
-
-- better readmes? fix as many demo links as possible.
-- code vs writing?
-- consolidate writing with source code -- make sure they're in the same place
-
-- github projects
-	- https://github.com/ccorcos/taxes
-	- https://github.com/ccorcos/deep-learning
-
-	- https://github.com/ccorcos/rURL
-	- https://github.com/ccorcos/elmish
-	- https://github.com/ccorcos/spiral
-	- https://github.com/ccorcos/visual
-	- https://github.com/ccorcos/reason-for-fun
-	- https://github.com/ccorcos/statechart
-	- https://github.com/ccorcos/arbol
-	- https://github.com/ccorcos/morph
-	- https://github.com/ccorcos/internet-speed-log
-	- https://github.com/ccorcos/circle
-	- https://github.com/ccorcos/groove-salad
-	- https://github.com/ccorcos/key-wheel
-	- https://github.com/ccorcos/reactive-magic
-	- https://github.com/ccorcos/grap
-	- https://github.com/ccorcos/roland-midi-patch
-	- https://github.com/ccorcos/dev-tool
-	- shindig source code?
-
+	- ui code designs!
 	- number system visualization using aparatus
 	- hack github project
+	- Longboard article on website
+	- research, SAM, PGM
+
 
 - Photos / Albums
 
@@ -71,9 +47,10 @@ deploy with surge.sh
 	- Affirm, Notion, SpaceX, AuraLabs,
 
 - photography
-- shadertoy projects
 
 - favorites tag?
+
+- move chetcorcos.com to old.chetcorcos.com and point surge to dns
 
 - image optimization
 - favicon
@@ -84,3 +61,9 @@ deploy with surge.sh
 
 - fuzzy search
 - chets news!
+
+
+  -Featured tag
+  -Links / news
+  -Fuzzy search
+  -webworker cache

@@ -309,6 +309,88 @@ export const externalPosts: Array<Post> = [
 		url: "https://github.com/ccorcos/cube",
 		img: "https://raw.githubusercontent.com/ccorcos/cube/master/cube.png",
 	},
+	{
+		title: "rURL",
+		date: "March 14, 2017",
+		tags: ["code"],
+		url: "https://github.com/ccorcos/rURL",
+	},
+	{
+		title: "Elmish",
+		date: "January 25, 2016",
+		tags: ["code"],
+		url: "https://github.com/ccorcos/elmish",
+	},
+	{
+		title: "Spiral",
+		date: "March 20, 2017",
+		tags: ["code", "art"],
+		url: "https://github.com/ccorcos/spiral",
+		img:
+			"https://static1.squarespace.com/static/534da071e4b09a268e6bd84a/t/58d27f01f5e231be5b2aea86/1490190086885/Chet+Corcos+v2.jpg",
+	},
+	{
+		title: "Reason for fun (and profit)",
+		date: "March 28, 2017",
+		tags: ["code"],
+		url: "https://github.com/ccorcos/reason-for-fun",
+		img: "https://pbs.twimg.com/profile_images/750811941778567168/xXynKg9m.jpg",
+	},
+	{
+		title: "Arbol",
+		date: "April 2, 2017",
+		tags: ["code"],
+		url: "https://github.com/ccorcos/arbol",
+	},
+	{
+		title: "Internet Speed Log",
+		date: "December 10, 2014",
+		tags: ["code"],
+		url: "https://github.com/ccorcos/internet-speed-log",
+	},
+	{
+		title: "Circle",
+		date: "April 23, 2017",
+		tags: ["code", "art", "music"],
+		url: "https://github.com/ccorcos/circle",
+	},
+	{
+		title: "Groove Salad",
+		date: "May 13, 2017",
+		tags: ["code", "music"],
+		url: "https://github.com/ccorcos/groove-salad",
+	},
+	{
+		title: "Key Wheel",
+		date: "June 25, 2017",
+		tags: ["code", "music"],
+		url: "https://github.com/ccorcos/key-wheel",
+	},
+	{
+		title: "Roland RD-100 Midi Patch",
+		date: "August 7, 2017",
+		tags: ["code", "music"],
+		url: "https://github.com/ccorcos/roland-midi-patch",
+	},
+	{
+		title: "Shindig",
+		date: "May 20, 2017",
+		tags: ["code"],
+		url: "https://github.com/ccorcos/shindig",
+	},
+	{
+		title: "Theano Deep Learning Models",
+		date: "February 25, 2015",
+		tags: ["code"],
+		url: "https://github.com/ccorcos/deep-learning",
+	},
+	{
+		title: "Color Morph",
+		date: "April 19, 2017",
+		tags: ["code", "art"],
+		url: "https://www.shadertoy.com/view/XsSyWw",
+		// https://github.com/ccorcos/morph
+	},
 ]
 
 export const claremontMenu: Post = {
