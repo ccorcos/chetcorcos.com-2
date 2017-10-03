@@ -4,14 +4,14 @@ import Image from "./Image"
 import Component from "reactive-magic/component"
 import * as postHelpers from "../helpers/postHelpers"
 
-export interface PostItemProps {
+export interface PostListItemProps {
 	title: string
 	date: string
 	url?: string
 	img?: string
 }
 
-export default class PostItem extends Component<PostItemProps> {
+export default class PostListItem extends Component<PostListItemProps> {
 	view() {
 		return (
 			<Link href={postHelpers.getUrl(this.props)} style={{ color: "#444" }}>

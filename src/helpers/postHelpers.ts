@@ -2,25 +2,25 @@ export type Tag = "code" | "music" | "writing" | "cars" | "art"
 
 export const allTags: Array<Tag> = ["code", "music", "writing", "cars", "art"]
 
-export interface Post {
+export interface InternalPost {
 	title: string
 	date: string
-	url?: string
 	alias?: string
 	tags: Array<Tag>
-	img?: string
-	component?: () => Promise<() => JSX.Element>
+	img: string
+	component: () => Promise<() => JSX.Element>
 }
 
-export interface Post {
+export interface ExternalPost {
 	title: string
 	date: string
-	url?: string
 	alias?: string
 	tags: Array<Tag>
-	img?: string
-	component?: () => Promise<() => JSX.Element>
+	img: string
+	url: string
 }
+
+export type Post = InternalPost | ExternalPost
 
 export const titleToUrl = (title: string) => {
 	return (

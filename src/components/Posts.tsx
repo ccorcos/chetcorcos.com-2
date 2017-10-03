@@ -3,7 +3,8 @@ import * as ReactDOM from "react-dom"
 import * as _ from "lodash"
 import Component from "reactive-magic/component"
 import { Value } from "reactive-magic"
-import PostItem from "./PostItem"
+import PostListItem from "./PostListItem"
+import PostGalleryItem from "./PostGalleryItem"
 import Layout from "./Layout"
 import Link from "./Link"
 import Header from "./Header"
@@ -41,7 +42,7 @@ export default class Posts extends Component<{}> {
 			<div
 				style={{
 					display: "flex",
-					//justifyContent: "center",
+					justifyContent: "center",
 					marginBottom: 16,
 				}}
 			>
@@ -86,26 +87,33 @@ export default class Posts extends Component<{}> {
 		return style
 	}
 
+	private renderTitle() {
+		return (
+			<div
+				style={{
+					fontSize: "6em",
+					textAlign: "center",
+					margin: "0.6em 0em 0.2em 0em",
+				}}
+			>
+				Chet Corcos
+			</div>
+		)
+	}
+
+	private renderPosts() {
+		return world.posts
+			.get()
+			.map((post, index) => <PostGalleryItem key={index} {...post} />)
+	}
+
 	view() {
 		return (
-			<Layout>
-				<Header
-					title="Chet Corcos"
-					links={[
-						{ url: "http://news.chetcorcos.com/", title: "News" },
-						{ url: "https://www.github.com/ccorcos", title: "Github" },
-						{ url: "https://www.twitter.com/ccorcos", title: "Twitter" },
-						{ url: "https://www.facebook.com/ccorcos", title: "Facebook" },
-						{ url: "mailto:ccorcos@gmail.com", title: "Email" },
-					]}
-				/>
-				<div style={{ width: "100%", maxWidth: "30em" }}>
-					{this.renderTags()}
-					{world.posts
-						.get()
-						.map((post, index) => <PostItem key={index} {...post} />)}
-				</div>
-			</Layout>
+			<div>
+				{this.renderTitle()}
+				{this.renderTags()}
+				{this.renderPosts()}
+			</div>
 		)
 	}
 }
