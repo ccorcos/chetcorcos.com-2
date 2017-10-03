@@ -1,8 +1,10 @@
 # chetcorcos.com
 
 - better design
-	- more tags
-	- featured tag
+	- "Chet's Projects", arrow right to "Chet's News", etc.
+	- articles have a back arrow
+	- links for everything in Home
+	- more tags, featured tag, better tags
 	- move all images into this project
 	- better image framing
 	- optimize images
@@ -10,8 +12,6 @@
 	- compute width to fill content, esp for mobile
 	- render tags?
 	- favicon
-	- display cover images in each article
-	- links for everything in Home
 	- better image displays
 	- polish up each article with some explanations where necessary
 
