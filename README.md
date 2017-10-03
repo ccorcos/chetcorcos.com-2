@@ -1,6 +1,11 @@
 # chetcorcos.com
 
+- Longboard article on website
 - better design
+- filter query params
+- fuzzy search
+- more tags
+- featured tag
 
 - polish up each project
 	- write briefly about each project
@@ -10,12 +15,9 @@
 - add more content
 	- about
 	- resume
-	- ui code designs!
-	- number system visualization using aparatus
-	- hack github project
-	- Longboard article on website
 
-- filter query params
+	- graphical coding ui designs!
+	- number system visualization using aparatus
 
 - Photos / Albums
 
@@ -43,8 +45,6 @@
 
 - photography
 
-- favorites tag?
-
 - move chetcorcos.com to old.chetcorcos.com and point surge to dns
 
 - image optimization
@@ -57,11 +57,10 @@
 - fuzzy search
 - chets news!
 
-
-  -Featured tag
-  -Links / news
-  -Fuzzy search
-  -webworker cache
+-Featured tag
+-Links / news
+-Fuzzy search
+-webworker cache
 
 
 ---
