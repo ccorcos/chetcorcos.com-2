@@ -1,19 +1,9 @@
 import * as React from "react"
-import * as ReactDOM from "react-dom"
-import * as _ from "lodash"
-import * as moment from "moment"
 import Component from "reactive-magic/component"
-import { Value } from "reactive-magic"
-import PostItem from "./PostItem"
-import { myPosts } from "../postData"
-import { allTags, Tag } from "../helpers/postHelpers"
 import Layout from "./Layout"
-import Link from "./Link"
 import Header from "./Header"
 
 export default class Home extends Component<{}> {
-	private selected = new Value<Array<Tag>>([])
-
 	view() {
 		return (
 			<Layout>

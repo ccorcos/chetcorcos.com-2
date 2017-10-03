@@ -13,7 +13,7 @@ import * as internetSpeed from "file-loader!./img/internetSpeed.png"
 import * as hearseCover from "file-loader!./img/hearse/hearse-done.jpg"
 import * as colorMorph from "file-loader!./img/color-morph.png"
 import * as gtoCover from "file-loader!./img/gto/gto-done.jpg"
-import { Post, ExternalPost, InternalPost } from "./helpers/postHelpers"
+import { ExternalPost, InternalPost } from "./helpers/postHelpers"
 
 const externalPosts: Array<ExternalPost> = []
 const myPosts: Array<InternalPost> = []

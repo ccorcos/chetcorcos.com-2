@@ -1,4 +1,3 @@
-import * as React from "react"
 import Component from "reactive-magic/component"
 import * as world from "../world"
 

@@ -1,9 +1,8 @@
 import { Value, DerivedValue } from "reactive-magic"
-import { BrowserRouter } from "react-router-dom"
 import * as _ from "lodash"
 import * as moment from "moment"
 import { myPosts, externalPosts } from "./postData"
-import { allTags, Tag } from "./helpers/postHelpers"
+import { Tag } from "./helpers/postHelpers"
 import { History } from "history"
 
 export let history: History

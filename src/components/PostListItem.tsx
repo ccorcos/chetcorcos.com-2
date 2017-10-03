@@ -1,6 +1,5 @@
 import * as React from "react"
 import Link from "./Link"
-import Image from "./Image"
 import Component from "reactive-magic/component"
 import * as postHelpers from "../helpers/postHelpers"
 

@@ -7,7 +7,7 @@
 		"jsx": "preserve",
 		"moduleResolution": "node",
 		"noImplicitAny": false,
-		"noUnusedLocals": false,
+		"noUnusedLocals": true,
 		"noUnusedParameters": false,
 		"removeComments": true,
 		"strictNullChecks": true,
