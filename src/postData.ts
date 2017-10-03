@@ -9,6 +9,9 @@ import * as rsaCover from "file-loader!./img/rsa.png"
 import * as passwordRhythmCover from "file-loader!./img/password/test-sample.png"
 import * as rocketDone from "file-loader!./img/e80/e80-done.jpg"
 import * as microps1 from "file-loader!./img/microps/microps-1.jpg"
+import * as internetSpeed from "file-loader!./img/internetSpeed.png"
+import * as hearseCover from "file-loader!./img/hearse/hearse-done.jpg"
+import * as gtoCover from "file-loader!./img/gto/gto-done.jpg"
 import { Post } from "./helpers/postHelpers"
 
 export const externalPosts: Array<Post> = [
@@ -329,12 +332,6 @@ export const externalPosts: Array<Post> = [
 		url: "https://github.com/ccorcos/arbol",
 	},
 	{
-		title: "Internet Speed Log",
-		date: "December 10, 2014",
-		tags: ["code"],
-		url: "https://github.com/ccorcos/internet-speed-log",
-	},
-	{
 		title: "Circle",
 		date: "April 23, 2017",
 		tags: ["code", "art", "music"],
@@ -520,6 +517,22 @@ export const malibu: Post = {
 	component: () => import("./posts/malibu").then(m => m.default),
 }
 
+export const hearse: Post = {
+	title: "1960 Cadillac Hearse Restoration",
+	date: "August 1, 2006",
+	tags: ["cars"],
+	img: hearseCover,
+	component: () => import("./posts/hearse").then(m => m.default),
+}
+
+export const gto: Post = {
+	title: "1966 Pontiac GTO Restoration",
+	date: "August 1, 2009",
+	tags: ["cars"],
+	img: gtoCover,
+	component: () => import("./posts/gto").then(m => m.default),
+}
+
 export const meteorReact: Post = {
 	title: "Meteor and React",
 	date: "February 20, 2015",
@@ -602,12 +615,32 @@ export const e80: Post = {
 export const microps: Post = {
 	title: "One-Handed Keyboard",
 	date: "December 10, 2011",
-	tags: [],
+	tags: ["code"],
 	img: microps1,
 	component: () => import("./posts/microps").then(m => m.default),
 }
 
+export const opencv: Post = {
+	title: "OpenCV Eye Feature Tracker",
+	date: "May 30, 2012",
+	tags: ["code"],
+	img: "https://i.ytimg.com/vi/LHfUeyxhgvk/hqdefault.jpg",
+	component: () => import("./posts/opencv").then(m => m.default),
+}
+
+export const speedtest: Post = {
+	title: "Internet Speed Logger",
+	date: "September 18, 2013",
+	tags: ["code"],
+	img: internetSpeed,
+	component: () => import("./posts/speedtest").then(m => m.default),
+}
+
 export const myPosts = [
+	gto,
+	hearse,
+	speedtest,
+	opencv,
 	microps,
 	e80,
 	claremontMenu,
