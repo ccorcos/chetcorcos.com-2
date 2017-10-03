@@ -1,67 +1,37 @@
 # chetcorcos.com
 
-- Longboard article on website
 - better design
-- filter query params
-- fuzzy search
-- more tags
-- featured tag
-
-- polish up each project
-	- write briefly about each project
-		- consolidate shindig into one post
-	- better tags?
+	- more tags
+	- featured tag
+	- move all images into this project
+	- better image framing
+	- optimize images
+	- gif of anything thats interactive
+	- compute width to fill content, esp for mobile
+	- render tags?
+	- favicon
+	- display cover images in each article
+	- links for everything in Home
+	- better image displays
+	- polish up each article with some explanations where necessary
 
 - add more content
+	- Longboard article on website
+	- brainrash album
+	- graphical coding ui designs!
 	- about
 	- resume
+	- photography
 
-	- graphical coding ui designs!
-	- number system visualization using aparatus
-
-- Photos / Albums
-
-- education
-	- USC
-	- Harvey Mudd
-	- Publication
-	- Research
-	- Projects
-	- Rockets
-	- MIPS Multicycle Processor Implementation
-	- JavaScript (React, Redux, Webpack, Babel, Meteor, Node, d3, Coffeescript, FlowType)
-	- Python (Theano, Numpy, iPython, TensorFlow)
-	- C (Arduino)
-	- C++ (OpenCV)
-	- Clojure (Overtone, ClojureScript)
-	- CAD (OpenSCAD, NX 7.5)
-	- iOS (Objective-C, Swift, React Native)
-	- Prolog
-	- System Verilog
-	- 3D Printing
-	- Machine Shop
-	- Work
-	- Affirm, Notion, SpaceX, AuraLabs,
-
-- photography
+- filter query params
+- fuzzy search
+- links / news
 
 - move chetcorcos.com to old.chetcorcos.com and point surge to dns
 
-- image optimization
-- favicon
 - better common chunk js optimization
 - babel optimizers for const styles
-
-- design
-
-- fuzzy search
-- chets news!
-
--Featured tag
--Links / news
--Fuzzy search
--webworker cache
-
+- webworker cache
 
 ---
 surganov [7:12 PM]
