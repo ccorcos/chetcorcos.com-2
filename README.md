@@ -1,8 +1,6 @@
 # chetcorcos.com
 
-- consolidate shindig articles
 - better design
-
 
 - polish up each project
 	- write briefly about each project

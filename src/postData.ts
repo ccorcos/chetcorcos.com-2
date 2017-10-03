@@ -131,124 +131,6 @@ export const externalPosts: Array<Post> = [
 			"https://medium.com/@chetcorcos/what-s-the-point-of-graphql-and-falcor-cdd0f35960c0",
 	},
 	{
-		title: "Shindig: Deployment and DevOps",
-		date: "November 23, 2015",
-		tags: ["code"],
-		img:
-			"https://cdn-images-1.medium.com/max/2000/1*tuHNFifrlokBT0Ixmphtgw.png",
-		url:
-			"https://medium.com/@chetcorcos/shindig-deployment-and-devops-a06db26aa833",
-	},
-	{
-		title: "Shindig: Patterns and Best Practices",
-		date: "November 23, 2015",
-		tags: ["code"],
-		img:
-			"https://cdn-images-1.medium.com/max/2000/1*tuHNFifrlokBT0Ixmphtgw.png",
-		url:
-			"https://medium.com/@chetcorcos/shindig-patterns-and-best-practices-3baffa406a75",
-	},
-	{
-		title: "Shindig: React Data Component",
-		date: "November 23, 2015",
-		tags: ["code"],
-		img:
-			"https://cdn-images-1.medium.com/max/2000/1*tuHNFifrlokBT0Ixmphtgw.png",
-		url:
-			"https://medium.com/@chetcorcos/shindig-react-data-component-aa0d2c82059e",
-	},
-	{
-		title: "Shindig: React Transitions with Stylus",
-		date: "November 23, 2015",
-		tags: ["code"],
-		img:
-			"https://cdn-images-1.medium.com/max/2000/1*tuHNFifrlokBT0Ixmphtgw.png",
-		url:
-			"https://medium.com/@chetcorcos/shindig-react-transitions-with-stylus-fab08e40818e",
-	},
-	{
-		title: "Shindig: React Nav View Controller",
-		date: "November 23, 2015",
-		tags: ["code"],
-		img:
-			"https://cdn-images-1.medium.com/max/2000/1*tuHNFifrlokBT0Ixmphtgw.png",
-		url:
-			"https://medium.com/@chetcorcos/shindig-react-nav-view-controller-414328034e6a",
-	},
-	{
-		title: "Shindig: React Proxy Component",
-		date: "November 23, 2015",
-		tags: ["code"],
-		img:
-			"https://cdn-images-1.medium.com/max/2000/1*tuHNFifrlokBT0Ixmphtgw.png",
-		url:
-			"https://medium.com/@chetcorcos/shindig-react-proxy-component-bb368510aad4",
-	},
-	{
-		title: "Shindig: React Tab View Controller",
-		date: "November 23, 2015",
-		tags: ["code"],
-		img:
-			"https://cdn-images-1.medium.com/max/2000/1*tuHNFifrlokBT0Ixmphtgw.png",
-		url:
-			"https://medium.com/@chetcorcos/shindig-react-tab-view-controller-48af935a5cd9",
-	},
-	{
-		title: "Shindig: React Component Instances",
-		date: "November 23, 2015",
-		tags: ["code"],
-		img:
-			"https://cdn-images-1.medium.com/max/2000/1*tuHNFifrlokBT0Ixmphtgw.png",
-		url:
-			"https://medium.com/@chetcorcos/shindig-react-component-instances-e8b68bf398f4",
-	},
-	{
-		title: "Shindig: React.js + Coffeescript",
-		date: "November 23, 2015",
-		tags: ["code"],
-		img:
-			"https://cdn-images-1.medium.com/max/2000/1*tuHNFifrlokBT0Ixmphtgw.png",
-		url:
-			"https://medium.com/@chetcorcos/shindig-react-js-coffeescript-c79d01197203",
-	},
-	{
-		title: "Shindig: Subscription Caching and Latency Compensation",
-		date: "November 23, 2015",
-		tags: ["code"],
-		img:
-			"https://cdn-images-1.medium.com/max/2000/1*tuHNFifrlokBT0Ixmphtgw.png",
-		url:
-			"https://medium.com/@chetcorcos/shindig-subscription-caching-and-latency-compensation-d2e01e708f31",
-	},
-	{
-		title: "Shindig: Reactive Meteor Publish/Subscribe with Any Database",
-		date: "November 23, 2015",
-		tags: ["code"],
-		img:
-			"https://cdn-images-1.medium.com/max/2000/1*tuHNFifrlokBT0Ixmphtgw.png",
-		url:
-			"https://medium.com/@chetcorcos/shindig-reactive-meteor-publish-subscribe-with-any-database-feb09105c343",
-	},
-	{
-		title: "Shindig: Integrating Neo4j with Meteor",
-		date: "November 23, 2015",
-		tags: ["code"],
-		img:
-			"https://cdn-images-1.medium.com/max/2000/1*tuHNFifrlokBT0Ixmphtgw.png",
-		url:
-			"https://medium.com/@chetcorcos/shindig-integrating-neo4j-with-meteor-17b0fce644d",
-	},
-	{
-		title:
-			"Shindig: An event discovery app built with Meteor.js, React.js, and Neo4j",
-		date: "November 23, 2015",
-		tags: ["code"],
-		img:
-			"https://cdn-images-1.medium.com/max/2000/1*tuHNFifrlokBT0Ixmphtgw.png",
-		url:
-			"https://medium.com/@chetcorcos/shindig-an-event-discovery-app-built-with-meteor-js-react-js-and-neo4j-602afb483ae6",
-	},
-	{
 		title: "Stitching React Components",
 		date: "July 20, 2015",
 		tags: ["code"],
@@ -358,12 +240,6 @@ export const externalPosts: Array<Post> = [
 		date: "August 7, 2017",
 		tags: ["code", "music"],
 		url: "https://github.com/ccorcos/roland-midi-patch",
-	},
-	{
-		title: "Shindig",
-		date: "November 22, 2015",
-		tags: ["code"],
-		url: "https://github.com/ccorcos/shindig",
 	},
 	{
 		title: "Theano Deep Learning Models",
@@ -636,7 +512,16 @@ export const speedtest: Post = {
 	component: () => import("./posts/speedtest").then(m => m.default),
 }
 
+export const shindig: Post = {
+	title: "Shindig",
+	date: "November 23, 2015",
+	tags: ["code"],
+	img: "https://cdn-images-1.medium.com/max/2000/1*tuHNFifrlokBT0Ixmphtgw.png",
+	component: () => import("./posts/shindig").then(m => m.default),
+}
+
 export const myPosts = [
+	shindig,
 	gto,
 	hearse,
 	speedtest,
