@@ -23,7 +23,7 @@ export default class Posts extends Component<{}> {
 				</p>
 				<Header title="Chet's Projects" />
 				<PostTags />
-				{width >= 535 ? <PostGallery /> : <PostList />}
+				{width >= 538 ? <PostGallery /> : <PostList />}
 			</Layout>
 		)
 	}
