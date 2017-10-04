@@ -4,6 +4,8 @@ import { css, fontFace } from "glamor"
 import * as comfortaaRegular from "file-loader!./comfortaa/Comfortaa-Regular.ttf"
 import Router from "./components/Router"
 import * as colors from "./helpers/colors"
+import * as world from "./world"
+window["world"] = world
 
 fontFace({
 	fontFamily: "Comfortaa-Regular",

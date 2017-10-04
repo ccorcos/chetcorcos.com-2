@@ -2,6 +2,7 @@ import * as React from "react"
 import Link from "./Link"
 import Component from "reactive-magic/component"
 import * as postHelpers from "../helpers/postHelpers"
+import * as world from "../world"
 
 export interface PostListItemProps {
 	title: string
@@ -10,7 +11,7 @@ export interface PostListItemProps {
 	img?: string
 }
 
-export default class PostListItem extends Component<PostListItemProps> {
+class PostListItem extends Component<PostListItemProps> {
 	view() {
 		return (
 			<Link href={postHelpers.getUrl(this.props)} style={{ color: "#444" }}>
@@ -33,6 +34,18 @@ export default class PostListItem extends Component<PostListItemProps> {
 					</div>
 				</div>
 			</Link>
+		)
+	}
+}
+
+export default class PostList extends Component<{}> {
+	view() {
+		return (
+			<div>
+				{world.posts
+					.get()
+					.map((post, index) => <PostListItem key={index} {...post} />)}
+			</div>
 		)
 	}
 }

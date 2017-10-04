@@ -18,14 +18,14 @@ class PostGalleryItem extends Component<PostGalleryItemProps> {
 				href={postHelpers.getUrl(this.props)}
 				style={{
 					color: "#444",
+					width: 240,
 					margin: 12,
-					width: 250,
 				}}
 			>
 				<div
 					style={{
-						width: 250,
-						height: 250,
+						width: 240,
+						height: 240,
 						backgroundImage: `url(${this.props.img})`,
 						backgroundSize: "cover",
 						backgroundPosition: "center",
@@ -47,7 +47,8 @@ export default class PostGallery extends Component<{}> {
 				style={{
 					display: "inline-flex",
 					flexWrap: "wrap",
-					justifyContent: "center",
+					//justifyContent: "space-between",
+					margin: -12,
 				}}
 			>
 				{world.posts

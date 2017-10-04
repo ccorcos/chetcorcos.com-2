@@ -5,6 +5,7 @@ import { myPosts } from "../postData"
 import Loader from "./Loader"
 import Post from "./Post"
 import NotFound from "./NotFound"
+import Home from "./Home"
 import * as world from "../world"
 import * as postHelpers from "../helpers/postHelpers"
 
@@ -24,6 +25,7 @@ const Router = () => (
 						)}
 					/>
 				))}
+				<Route path="/about" component={Home} />
 				<Route component={NotFound} />
 			</Switch>
 		</div>

@@ -1,9 +1,10 @@
 # chetcorcos.com
 
+- rebuild reactive magic without flyd. much simpler.
+
 - better design
-	- "Chet's Projects", arrow right to "Chet's News", etc.
-	- articles have a back arrow
-	- links for everything in Home
+	- better reponsive dedign for posts
+	- about page and chet's news page
 	- more tags, featured tag, better tags
 	- move all images into this project
 	- better image framing

@@ -1,6 +1,7 @@
 import * as React from "react"
 import Layout from "./Layout"
 import Header from "./Header"
+import Link from "./Link"
 
 export interface PostProps {
 	title: string
@@ -11,15 +12,10 @@ export default class Post extends React.PureComponent<PostProps, {}> {
 	render() {
 		return (
 			<Layout>
-				<Header
-					title={this.props.title}
-					links={[
-						{
-							title: "Chet Corcos",
-							url: "/",
-						},
-					]}
-				/>
+				<p>
+					<Link href="/">back</Link>
+				</p>
+				<Header title={this.props.title} />
 				<p style={{ fontSize: 14, color: "gray" }}>{this.props.date}</p>
 				{this.props.children}
 			</Layout>

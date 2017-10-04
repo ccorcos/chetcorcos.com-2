@@ -30,7 +30,6 @@ export default class PostTags extends Component<{}> {
 			<div
 				style={{
 					display: "flex",
-					justifyContent: "center",
 					marginBottom: 16,
 				}}
 			>

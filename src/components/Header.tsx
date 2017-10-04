@@ -1,32 +1,20 @@
 import * as React from "react"
-import Link from "./Link"
 import Component from "reactive-magic/component"
 
 export interface HeaderProps {
 	title: string
-	links: Array<{ title: string; url: string }>
 }
+
+"⟨"
+"❮"
 
 export default class Header extends Component<HeaderProps> {
 	view() {
-		const links = this.props.links.map(({ title, url }) => {
-			return (
-				<Link key={url} href={url}>
-					{title}
-				</Link>
-			)
-		})
-		const [first, ...rest] = links
-		const subtitle: Array<JSX.Element | string> = [first]
-		rest.forEach(item => {
-			subtitle.push(", ")
-			subtitle.push(item)
-		})
-
 		return (
 			<div style={{ marginBottom: 16 }}>
 				<h1
 					style={{
+						position: "relative",
 						display: "inline-block",
 						marginRight: 16,
 						marginBottom: 0,
@@ -35,7 +23,6 @@ export default class Header extends Component<HeaderProps> {
 				>
 					{this.props.title}
 				</h1>
-				<div style={{ display: "inline-block" }}>{subtitle}</div>
 			</div>
 		)
 	}

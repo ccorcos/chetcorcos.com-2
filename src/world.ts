@@ -13,7 +13,7 @@ export function saveRouter(comp) {
 
 export const windowSize = new Value({
 	width: window.innerWidth,
-	height: window.innerWidth,
+	height: window.innerHeight,
 })
 
 window.addEventListener(
@@ -21,7 +21,7 @@ window.addEventListener(
 	_.throttle(event => {
 		windowSize.set({
 			width: window.innerWidth,
-			height: window.innerWidth,
+			height: window.innerHeight,
 		})
 	}, 100)
 )
