@@ -13,7 +13,7 @@ export default class Post extends React.PureComponent<PostProps, {}> {
 		return (
 			<Layout>
 				<p>
-					<Link href="/">back</Link>
+					<Link href="/projects">back</Link>
 				</p>
 				<Header title={this.props.title} />
 				<p style={{ fontSize: 14, color: "gray" }}>{this.props.date}</p>

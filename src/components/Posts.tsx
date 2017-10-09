@@ -16,10 +16,7 @@ export default class Posts extends Component<{}> {
 		return (
 			<Layout>
 				<p>
-					<Link href="/about">About</Link>
-				</p>
-				<p>
-					<Link href="/news">Chet's News</Link>
+					<Link href="/">back</Link>
 				</p>
 				<Header title="Chet's Projects" />
 				<PostTags />

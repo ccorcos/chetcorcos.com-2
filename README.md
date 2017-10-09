@@ -1,10 +1,6 @@
 # chetcorcos.com
 
-- rebuild reactive magic without flyd. much simpler.
-
 - better design
-	- better reponsive dedign for posts
-	- about page and chet's news page
 	- more tags, featured tag, better tags
 	- move all images into this project
 	- better image framing
