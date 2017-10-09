@@ -14,7 +14,7 @@ const Router = () => (
 		<div>
 			<Switch>
 				<Route exact={true} path="/" component={Home} />
-				<Route path="/projects" component={Posts} />
+				<Route exact={true} path="/projects" component={Posts} />
 				{myPosts.map(post => (
 					<Route
 						key={postHelpers.getUrl(post)}

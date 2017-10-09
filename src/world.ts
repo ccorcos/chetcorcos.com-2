@@ -30,7 +30,9 @@ export const selected = new Value<Array<Tag>>([])
 
 export const posts = new DerivedValue(() => {
 	const tags = selected.get()
-	const allPosts = [...myPosts, ...externalPosts]
+	const allPosts = [...myPosts, ...externalPosts].filter(
+		post => post.tags.indexOf("ignore") === -1
+	)
 	const filterestPosts =
 		tags.length === 0
 			? allPosts

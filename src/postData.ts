@@ -38,7 +38,7 @@ externalPosts.push({
 externalPosts.push({
 	title: "Dark Patterns at Venmo",
 	date: "February 9, 2017",
-	tags: [],
+	tags: ["ignore"],
 	img: "http://gal-aa.org/wp-content/uploads/2017/03/VenmoLogo.png",
 	url: "https://medium.com/@chetcorcos/dark-patterns-at-venmo-ef6e4a3db7fa",
 })
@@ -62,7 +62,7 @@ externalPosts.push({
 
 externalPosts.push({
 	title: "Tolerance",
-	tags: ["writing"],
+	tags: ["writing", "ignore"],
 	date: "November 9, 2016",
 	url: "https://medium.com/@chetcorcos/tolerance-26a446e8afbb",
 	img:
@@ -72,7 +72,7 @@ externalPosts.push({
 externalPosts.push({
 	title: "How much better is Yarn than NPM?",
 	date: "November 3, 2016",
-	tags: ["code"],
+	tags: ["code", "ignore"],
 	img: "https://cdn-images-1.medium.com/max/1600/1*ET9Q5-3_QiwxWuGw98veMg.png",
 	url:
 		"https://medium.com/@chetcorcos/how-much-better-is-yarn-than-npm-bd4a114a0ed5",
@@ -131,7 +131,7 @@ externalPosts.push({
 externalPosts.push({
 	title: "What's the Point of GraphQL and Falcor?",
 	date: "December 1, 2015",
-	tags: ["code"],
+	tags: ["code", "ignore"],
 	img: "http://graphql.org/img/logo.svg",
 	url:
 		"https://medium.com/@chetcorcos/what-s-the-point-of-graphql-and-falcor-cdd0f35960c0",
@@ -140,7 +140,7 @@ externalPosts.push({
 externalPosts.push({
 	title: "Stitching React Components",
 	date: "July 20, 2015",
-	tags: ["code"],
+	tags: ["code", "ignore"],
 	img:
 		"https://upload.wikimedia.org/wikipedia/en/thumb/a/a7/React-icon.svg/1200px-React-icon.svg.png",
 	url: "https://medium.com/@chetcorcos/stitching-react-components-effbec3236d4",
@@ -167,7 +167,7 @@ externalPosts.push({
 externalPosts.push({
 	title: "How does Meteor's Tracker work?",
 	date: "April 22, 2015",
-	tags: ["code", "writing"],
+	tags: ["code", "writing", "ignore"],
 	img:
 		"https://raw.githubusercontent.com/mjhea0/meteor-in-action/master/images/meteor.jpeg",
 	url: "https://github.com/ccorcos/meteor-track",
@@ -185,7 +185,7 @@ externalPosts.push({
 externalPosts.push({
 	title: "Doug",
 	date: "December 22, 2016",
-	tags: ["code"],
+	tags: ["code", "ignore"],
 	img:
 		"https://emojipedia-us.s3.amazonaws.com/thumbs/120/apple/96/hammer_1f528.png",
 	url: "https://github.com/ccorcos/doug",
@@ -194,7 +194,7 @@ externalPosts.push({
 externalPosts.push({
 	title: "Airtable Blog",
 	date: "February 20, 2017",
-	tags: ["code"],
+	tags: ["code", "ignore"],
 	img:
 		"https://seeklogo.com/images/A/airtable-logo-216B9AF035-seeklogo.com.png",
 	url: "https://github.com/ccorcos/airtable-blog",
@@ -211,7 +211,7 @@ externalPosts.push({
 externalPosts.push({
 	title: "rURL",
 	date: "March 14, 2017",
-	tags: ["code"],
+	tags: ["code", "ignore"],
 	img: "http://www.freeiconspng.com/uploads/command-line-icon-1.png",
 	url: "https://github.com/ccorcos/rURL",
 })
@@ -228,7 +228,7 @@ externalPosts.push({
 externalPosts.push({
 	title: "Reason for fun (and profit)",
 	date: "March 28, 2017",
-	tags: ["code"],
+	tags: ["code", "ignore"],
 	url: "https://github.com/ccorcos/reason-for-fun",
 	img: "https://pbs.twimg.com/profile_images/750811941778567168/xXynKg9m.jpg",
 })
@@ -236,7 +236,7 @@ externalPosts.push({
 externalPosts.push({
 	title: "Arbol",
 	date: "April 2, 2017",
-	tags: ["code"],
+	tags: ["code", "ignore"],
 	img: "https://pythonschool.net/data-structures-algorithms/images/tree.jpg",
 	url: "https://github.com/ccorcos/arbol",
 })
@@ -269,7 +269,7 @@ externalPosts.push({
 externalPosts.push({
 	title: "Roland RD-100 Midi Patch",
 	date: "August 7, 2017",
-	tags: ["code", "music"],
+	tags: ["code", "music", "ignore"],
 	img: "http://www.dartlist.com/wp-content/uploads/2015/06/IMG_1489.jpg",
 	url: "https://github.com/ccorcos/roland-midi-patch",
 })
@@ -277,7 +277,7 @@ externalPosts.push({
 externalPosts.push({
 	title: "Theano Deep Learning Models",
 	date: "February 25, 2015",
-	tags: ["code"],
+	tags: ["code", "ignore"],
 	img:
 		"https://qph.ec.quoracdn.net/main-thumb-t-449747-200-vosprwwgrsgxbcuogpvzqfdrnccpscnt.jpeg",
 	url: "https://github.com/ccorcos/deep-learning",
@@ -315,7 +315,7 @@ myPosts.push(claremontMenu2)
 export const anonymity: InternalPost = {
 	title: "Anonymity on the Internet",
 	date: "September 10, 2014",
-	tags: ["writing"],
+	tags: ["writing", "ignore"],
 	alias: "/projects/2014/09/10/anonymity-no-the-internet.html",
 	img:
 		"https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Tor-logo-2011-flat.svg/1200px-Tor-logo-2011-flat.svg.png",
@@ -326,7 +326,7 @@ myPosts.push(anonymity)
 export const blazeAnimation: InternalPost = {
 	title: "Animation with Meteor",
 	date: "November 20, 2014",
-	tags: ["code"],
+	tags: ["code", "ignore"],
 	img:
 		"https://images.techhive.com/images/article/2013/12/meteor-js-background-100160552-primary.idge.jpg",
 	alias: "/projects/2014/11/20/blaze-animation.html",
@@ -357,7 +357,7 @@ myPosts.push(craigslistWatch)
 export const dns: InternalPost = {
 	title: "Configuring Your DNS",
 	date: "June 6, 2014",
-	tags: ["code"],
+	tags: ["code", "ignore"],
 	alias: "/projects/2014/06/20/configuring-your-dns.html",
 	img: "https://upload.wikimedia.org/wikipedia/commons/2/2e/World_wide_web.jpg",
 	component: () => import("./posts/dns").then(m => m.default),
@@ -429,7 +429,7 @@ myPosts.push(hendrixMural)
 export const macSetup: InternalPost = {
 	title: "Mac Development Setup",
 	date: "October 17, 2014",
-	tags: ["code", "writing"],
+	tags: ["code", "writing", "ignore"],
 	img:
 		"https://www.apple.com/ac/structured-data/images/knowledge_graph_logo.png",
 	alias: "/projects/2014/10/17/mac-dev-setup.html",
@@ -468,7 +468,7 @@ myPosts.push(gto)
 export const meteorReact: InternalPost = {
 	title: "Meteor and React",
 	date: "February 20, 2015",
-	tags: ["code"],
+	tags: ["code", "ignore"],
 	alias: "/projects/2015/02/20/meteor-react.html",
 	img:
 		"https://upload.wikimedia.org/wikipedia/en/thumb/a/a7/React-icon.svg/1200px-React-icon.svg.png",
@@ -479,7 +479,7 @@ myPosts.push(meteorReact)
 export const observableStreams: InternalPost = {
 	title: "Observable Streams",
 	date: "February 7, 2015",
-	tags: ["code"],
+	tags: ["code", "ignore"],
 	alias: "/projects/2015/02/07/observable-streams.html",
 	img: "http://notes.lucida.me/images/rxjava/marble_flatmap.png",
 	component: () => import("./posts/observableStreams").then(m => m.default),
@@ -509,7 +509,7 @@ myPosts.push(raspberryPiSetup)
 export const reactiveCss: InternalPost = {
 	title: "Reactive CSS",
 	date: "February 16, 2015",
-	tags: ["code"],
+	tags: ["code", "ignore"],
 	alias: "/projects/2015/02/16/reactive-css.html",
 	img: "http://www.codingdojo.com/blog/wp-content/uploads/css.jpg",
 	component: () => import("./posts/reactiveCss").then(m => m.default),

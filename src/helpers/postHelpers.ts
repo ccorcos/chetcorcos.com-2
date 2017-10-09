@@ -1,6 +1,6 @@
-export type Tag = "code" | "music" | "writing" | "cars" | "art"
+export type Tag = "code" | "music" | "writing" | "cars" | "art" | "ignore"
 
-export const allTags: Array<Tag> = ["code", "music", "writing", "cars", "art"]
+export const allTags: Array<Tag> = ["code", "music", "art", "cars"]
 
 export interface InternalPost {
 	title: string
@@ -24,7 +24,7 @@ export type Post = InternalPost | ExternalPost
 
 export const titleToUrl = (title: string) => {
 	return (
-		"/posts/" +
+		"/projects/" +
 		title
 			.toLowerCase()
 			.replace(/[^a-z0-9]/g, " ")
