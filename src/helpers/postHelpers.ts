@@ -1,4 +1,16 @@
-export type Tag = "code" | "music" | "writing" | "cars" | "art" | "ignore"
+export type Tag =
+	// Don't actually display ignored articles but their links are still valid.
+	| "ignore"
+	// Article tags.
+	| "code"
+	| "music"
+	| "writing"
+	| "cars"
+	| "art"
+	// Some tags are helpful for spending specific links to different people.
+	| "fp"
+	| "ml"
+	| "eng"
 
 export const allTags: Array<Tag> = ["code", "music", "art", "cars"]
 

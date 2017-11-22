@@ -55,7 +55,7 @@ externalPosts.push({
 externalPosts.push({
 	title: "Introduction to Parsers",
 	date: "March 3, 2017",
-	tags: ["code"],
+	tags: ["code", "fp"],
 	url: "https://medium.com/@chetcorcos/introduction-to-parsers-644d1b5d7f3d",
 	img: "https://cdn-images-1.medium.com/max/1600/1*C3YpuL_Fo4K5rYyeAJul2w.png",
 })
@@ -90,7 +90,7 @@ externalPosts.push({
 externalPosts.push({
 	title: "Redux Patterns and Anti-Patterns",
 	date: "September 19, 2016",
-	tags: ["code"],
+	tags: ["code", "fp"],
 	url: "https://tech.affirm.com/redux-patterns-and-anti-patterns-7d80ef3d53bc",
 	img: "https://cdn-images-1.medium.com/max/1600/1*GVyqpS_9WUJDeaf2OEiynw.png",
 })
@@ -122,7 +122,7 @@ externalPosts.push({
 externalPosts.push({
 	title: "Functional Programming for JavaScript People",
 	date: "February 29, 2016",
-	tags: ["code"],
+	tags: ["code", "fp"],
 	url:
 		"https://medium.com/@chetcorcos/functional-programming-for-javascript-people-1915d8775504",
 	img: "https://cdn-images-1.medium.com/max/2000/1*KPy3bUBCUFy6zqNFZys9lQ.png",
@@ -140,7 +140,7 @@ externalPosts.push({
 externalPosts.push({
 	title: "What's the Point of GraphQL and Falcor?",
 	date: "December 1, 2015",
-	tags: ["code", "ignore"],
+	tags: ["code", "ignore", "fp"],
 	img: "http://graphql.org/img/logo.svg",
 	url:
 		"https://medium.com/@chetcorcos/what-s-the-point-of-graphql-and-falcor-cdd0f35960c0",
@@ -167,7 +167,7 @@ externalPosts.push({
 externalPosts.push({
 	title: "Interactive Object Recognition",
 	date: "July 1, 2014",
-	tags: ["code"],
+	tags: ["code", "ml"],
 	url: "https://github.com/ccorcos/towards-interactive-object-recognition",
 	img:
 		"https://github.com/ccorcos/towards-interactive-object-recognition/raw/master/model.png",
@@ -185,7 +185,7 @@ externalPosts.push({
 externalPosts.push({
 	title: "Functional Declarative JavaScript",
 	date: "November 14, 2016",
-	tags: ["code"],
+	tags: ["code", "ml"],
 	img:
 		"https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1200px-Unofficial_JavaScript_logo_2.svg.png",
 	url: "https://ccorcos.github.io/functional-decarative-javascript-preso/#/",
@@ -212,7 +212,7 @@ externalPosts.push({
 externalPosts.push({
 	title: "Cube",
 	date: "March 12, 2017",
-	tags: ["code"],
+	tags: ["code", "fp"],
 	url: "https://github.com/ccorcos/cube",
 	img: "https://raw.githubusercontent.com/ccorcos/cube/master/cube.png",
 })
@@ -237,7 +237,7 @@ externalPosts.push({
 externalPosts.push({
 	title: "Reason for fun (and profit)",
 	date: "March 28, 2017",
-	tags: ["code", "ignore"],
+	tags: ["code", "ignore", "fp"],
 	url: "https://github.com/ccorcos/reason-for-fun",
 	img: "https://pbs.twimg.com/profile_images/750811941778567168/xXynKg9m.jpg",
 })
@@ -286,7 +286,7 @@ externalPosts.push({
 externalPosts.push({
 	title: "Theano Deep Learning Models",
 	date: "February 25, 2015",
-	tags: ["code", "ignore"],
+	tags: ["code", "ignore", "ml"],
 	img:
 		"https://qph.ec.quoracdn.net/main-thumb-t-449747-200-vosprwwgrsgxbcuogpvzqfdrnccpscnt.jpeg",
 	url: "https://github.com/ccorcos/deep-learning",
@@ -382,7 +382,7 @@ internalPosts.push(dns)
 export const electricTruck: InternalPost = {
 	title: "Electric Truck Conversion",
 	date: "September 1, 2008",
-	tags: ["cars"],
+	tags: ["cars", "eng"],
 	alias: "/projects/2008/09/01/electric-truck.html",
 	img: electricTruckCover,
 	component: () => import("./posts/electricTruck").then(m => m.default),
@@ -455,7 +455,7 @@ internalPosts.push(macSetup)
 export const malibu: InternalPost = {
 	title: "1965 Malibu Restoration",
 	date: "September 1, 2007",
-	tags: ["cars"],
+	tags: ["cars", "eng"],
 	alias: "/projects/2007/09/01/1965-mailibu.html",
 	img: malibuCover,
 	component: () => import("./posts/malibu").then(m => m.default),
@@ -465,7 +465,7 @@ internalPosts.push(malibu)
 export const hearse: InternalPost = {
 	title: "1960 Cadillac Hearse Restoration",
 	date: "August 1, 2006",
-	tags: ["cars"],
+	tags: ["cars", "eng"],
 	img: hearseCover,
 	component: () => import("./posts/hearse").then(m => m.default),
 }
@@ -474,7 +474,7 @@ internalPosts.push(hearse)
 export const gto: InternalPost = {
 	title: "1966 Pontiac GTO Restoration",
 	date: "August 1, 2009",
-	tags: ["cars"],
+	tags: ["cars", "eng"],
 	img: gtoCover,
 	component: () => import("./posts/gto").then(m => m.default),
 }
@@ -504,7 +504,7 @@ internalPosts.push(observableStreams)
 export const passwordRhythm: InternalPost = {
 	title: "Password Rhythm Authentication",
 	date: "March 11, 2014",
-	tags: ["code"],
+	tags: ["code", "ml"],
 	alias: "/projects/2014/03/11/password-rhythm.html",
 	img: passwordRhythmCover,
 	component: () => import("./posts/passwordRhythm").then(m => m.default),
@@ -566,7 +566,7 @@ internalPosts.push(waterfall)
 export const e80: InternalPost = {
 	title: "High Power Rockets",
 	date: "May 30, 2011",
-	tags: [],
+	tags: ["eng"],
 	img: rocketDone,
 	component: () => import("./posts/e80").then(m => m.default),
 }
@@ -575,7 +575,7 @@ internalPosts.push(e80)
 export const microps: InternalPost = {
 	title: "One-Handed Keyboard",
 	date: "December 10, 2011",
-	tags: ["code"],
+	tags: ["code", "eng"],
 	img: microps1,
 	component: () => import("./posts/microps").then(m => m.default),
 }
@@ -584,7 +584,7 @@ internalPosts.push(microps)
 export const opencv: InternalPost = {
 	title: "OpenCV Eye Feature Tracker",
 	date: "May 30, 2012",
-	tags: ["code"],
+	tags: ["code", "ml"],
 	img: "https://i.ytimg.com/vi/LHfUeyxhgvk/hqdefault.jpg",
 	component: () => import("./posts/opencv").then(m => m.default),
 }

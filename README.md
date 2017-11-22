@@ -1,8 +1,5 @@
 # chetcorcos.com
 
-- use pagejs instead of react router
-	- fix scroll remember
-	- more comments
 - more projects polish
 
 
@@ -17,6 +14,8 @@
 	- favicon
 	- better image displays
 	- polish up each article with some explanations where necessary
+	- audit all ignored posts
+	- external link cursor
 
 - add more content
 	- Longboard article on website
