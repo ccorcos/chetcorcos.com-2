@@ -15,6 +15,9 @@
 	- build size
 	- loader style
 
+	- images link to fullsize
+
+
 - add more content
 	- Longboard article on website
 	- brainrash album
