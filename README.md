@@ -1,15 +1,20 @@
 # chetcorcos.com
 
 - more projects polish
+	- external link cursor
+	- favicon
+
+	- check out surgey's designs
 	- polish up each article with some explanations where necessary
 	- audit all ignored posts
-	- external link cursor
 
 	- move all images to this project
 		- better image framing and cropping
 		- optimize images
 	- gif of anything thats interactive
-	- favicon
+
+	- build size
+	- loader style
 
 - add more content
 	- Longboard article on website

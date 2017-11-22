@@ -4,6 +4,7 @@ import PostGallery from "./PostGallery"
 import PostTags from "./PostTags"
 import Layout from "./Layout"
 import Header from "./Header"
+import Footer from "./Footer"
 import PostList from "./PostList"
 import * as world from "../world"
 
@@ -15,6 +16,7 @@ export default class Posts extends Component<{}> {
 				<Header title="Chet's Projects" />
 				<PostTags />
 				{world.isMobileWidth() ? <PostList /> : <PostGallery />}
+				<Footer />
 			</Layout>
 		)
 	}

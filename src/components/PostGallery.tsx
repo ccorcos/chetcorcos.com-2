@@ -4,6 +4,7 @@ import Component from "reactive-magic/component"
 import * as postHelpers from "../helpers/postHelpers"
 import * as world from "../world"
 import * as _ from "lodash"
+import * as colors from "../helpers/colors"
 
 export interface PostGalleryItemProps {
 	title: string
@@ -18,7 +19,7 @@ class PostGalleryItem extends Component<PostGalleryItemProps> {
 			<Link
 				href={postHelpers.getUrl(this.props)}
 				style={{
-					color: "#444",
+					color: colors.dark,
 					margin: 12,
 					flex: 1,
 				}}
@@ -47,7 +48,9 @@ class PostGalleryItem extends Component<PostGalleryItemProps> {
 					/>
 				</div>
 				<div style={{ fontSize: 18 }}>{this.props.title}</div>
-				<div style={{ fontSize: 14, color: "gray" }}>{this.props.date}</div>
+				<div style={{ fontSize: 14, color: colors.grey }}>
+					{this.props.date}
+				</div>
 			</Link>
 		)
 	}

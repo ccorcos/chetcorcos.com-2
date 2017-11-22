@@ -37,19 +37,20 @@ export default class Link extends React.PureComponent<LinkProps, {}> {
 	}
 
 	render() {
-		const style = { ...Link.style, ...this.props.style }
 		if (
 			// Internal link
 			this.props.href.startsWith("/") &&
 			// Not a file
 			this.props.href.indexOf(".") === -1
 		) {
+			const style = { ...Link.style, ...this.props.style }
 			return (
 				<a style={style} onClick={this.handleClick} href={this.props.href}>
 					{this.props.children}
 				</a>
 			)
 		} else {
+			const style = { ...Link.style, ...this.props.style, cursor: "alias" }
 			return (
 				<a style={style} href={this.props.href} target="_blank">
 					{this.props.children}

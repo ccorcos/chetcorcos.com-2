@@ -5,9 +5,6 @@ export interface HeaderProps {
 	title: string
 }
 
-"⟨"
-"❮"
-
 export default class Header extends Component<HeaderProps> {
 	view() {
 		return (

@@ -60,6 +60,7 @@ export default class PostTags extends Component<{}> {
 			borderRadius: 100,
 			textAlign: "center",
 			lineHeight: 1,
+			cursor: "pointer",
 		}
 
 		if (selected) {
