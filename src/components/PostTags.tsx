@@ -2,6 +2,7 @@ import * as React from "react"
 import Component from "reactive-magic/component"
 import { Tag, allTags } from "../helpers/postHelpers"
 import * as world from "../world"
+import * as router from "../router"
 
 const colors = [
 	"rgb(255, 199, 214)",
@@ -18,9 +19,9 @@ export default class PostTags extends Component<{}> {
 	private handleClick = (tag: Tag) => {
 		const tags = world.selected.get()
 		if (tags[0] === tag) {
-			world.selected.set([])
+			router.setTags([])
 		} else {
-			world.selected.set([tag])
+			router.setTags([tag])
 		}
 	}
 

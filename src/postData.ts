@@ -212,7 +212,7 @@ externalPosts.push({
 externalPosts.push({
 	title: "Cube",
 	date: "March 12, 2017",
-	tags: ["code", "fp"],
+	tags: ["code"],
 	url: "https://github.com/ccorcos/cube",
 	img: "https://raw.githubusercontent.com/ccorcos/cube/master/cube.png",
 })

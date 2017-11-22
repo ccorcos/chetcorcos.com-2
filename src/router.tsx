@@ -4,10 +4,6 @@
 
 ============================================================================= */
 
-interface newActionArgs {}
-
-export const newAction = (args: newActionArgs) => {}
-
 import * as React from "react"
 import * as ReactDOM from "react-dom"
 import { internalPosts } from "./postData"
@@ -15,13 +11,18 @@ import Posts from "./components/Posts"
 import Loader from "./components/Loader"
 import Post from "./components/Post"
 import * as postHelpers from "./helpers/postHelpers"
+import * as world from "./world"
 
 const root = document.createElement("div")
 document.body.appendChild(root)
 
 const routes: { [path: string]: () => void } = {}
 
-routes["/"] = () => ReactDOM.render(<Posts />, root)
+routes["/"] = () => {
+	const tags = getTags()
+	world.selected.set(tags)
+	ReactDOM.render(<Posts />, root)
+}
 
 for (const post of internalPosts) {
 	routes[postHelpers.getUrl(post)] = () => {
@@ -71,6 +72,27 @@ export function restoreScrollState() {
 		document.body.scrollTop = routeState.scrollTop
 	} else {
 		document.body.scrollTop = 0
+	}
+}
+
+// =============================================================================
+// Use queryparams for tags.
+// =============================================================================
+
+export function getTags() {
+	const result = window.location.search.match(/tags=([^&+]+)/)
+	if (result) {
+		return result[1].split(",") as Array<postHelpers.Tag>
+	} else {
+		return []
+	}
+}
+
+export function setTags(tags: Array<postHelpers.Tag>) {
+	if (tags.length > 0) {
+		push(window.location.pathname + "?tags=" + tags.join(","))
+	} else {
+		push(window.location.pathname)
 	}
 }
 
