@@ -1,17 +1,16 @@
 # chetcorcos.com
 
 - more projects polish
-	- external link cursor
+	- audit
+		- polish up each article with some explanations where necessary
+		- move all images to this project
+			- better image framing and cropping
+			- optimize images
+		- gif of anything thats interactive
+		- audit all ignored posts
+
 	- favicon
-
 	- check out surgey's designs
-	- polish up each article with some explanations where necessary
-	- audit all ignored posts
-
-	- move all images to this project
-		- better image framing and cropping
-		- optimize images
-	- gif of anything thats interactive
 
 	- build size
 	- loader style
@@ -19,8 +18,8 @@
 - add more content
 	- Longboard article on website
 	- brainrash album
+	- OP1 Music?
 	- graphical coding ui designs!
-	- about
 	- resume
 	- photography
 
