@@ -3,13 +3,6 @@ import * as _ from "lodash"
 import * as moment from "moment"
 import { myPosts, externalPosts } from "./postData"
 import { Tag } from "./helpers/postHelpers"
-import { History } from "history"
-
-export let history: History
-
-export function saveRouter(comp) {
-	history = comp.history
-}
 
 export const windowSize = new Value({
 	width: window.innerWidth,

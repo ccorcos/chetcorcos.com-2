@@ -1,11 +1,6 @@
 import * as React from "react"
-import { Link as A } from "react-router-dom"
-import * as scrollActions from "../actions/scrollActions"
 import * as colors from "../helpers/colors"
-
-export interface RouteState {
-	scrollTop: number
-}
+import * as router from "../router"
 
 export interface LinkProps {
 	href: string
@@ -17,29 +12,40 @@ export default class Link extends React.PureComponent<LinkProps, {}> {
 		color: colors.accent,
 	}
 
+	// https://github.com/ReactTraining/react-router/blob/master/packages/react-router-dom/modules/Link.js
+	private handleClick = (event: React.MouseEvent<HTMLAnchorElement>) => {
+		if (
+			// onClick prevented default
+			!event.defaultPrevented &&
+			// ignore everything but left clicks
+			event.button === 0 &&
+			// ignore clicks with modifier keys
+			!event.metaKey &&
+			!event.altKey &&
+			!event.ctrlKey &&
+			!event.shiftKey
+		) {
+			event.preventDefault()
+			router.push(this.props.href)
+		}
+	}
+
 	render() {
 		const style = { ...Link.style, ...this.props.style }
 		if (
+			// Internal link
 			this.props.href.startsWith("/") &&
+			// Not a file
 			this.props.href.indexOf(".") === -1
 		) {
 			return (
-				<A
-					style={style}
-					onClick={scrollActions.saveScrollPosition}
-					to={{ pathname: this.props.href }}
-				>
+				<a style={style} onClick={this.handleClick} href={this.props.href}>
 					{this.props.children}
-				</A>
+				</a>
 			)
 		} else {
 			return (
-				<a
-					style={style}
-					onClick={scrollActions.saveScrollPosition}
-					href={this.props.href}
-					target="_blank"
-				>
+				<a style={style} href={this.props.href} target="_blank">
 					{this.props.children}
 				</a>
 			)

@@ -12,7 +12,6 @@ export default class Posts extends Component<{}> {
 	debug = true
 	view() {
 		const { width } = world.windowSize.get()
-		console.log(width)
 		return (
 			<Layout>
 				<p>

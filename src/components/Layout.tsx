@@ -1,6 +1,6 @@
 import * as React from "react"
 import Component from "reactive-magic/component"
-import * as scrollActions from "../actions/scrollActions"
+import * as router from "../router"
 
 export interface LayoutProps {
 	style?: React.CSSProperties
@@ -8,7 +8,7 @@ export interface LayoutProps {
 
 export default class Layout extends Component<LayoutProps> {
 	didMount() {
-		scrollActions.restoreScrollPosition()
+		router.restoreScrollState()
 	}
 
 	private static layoutStyle: React.CSSProperties = {

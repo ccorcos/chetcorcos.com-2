@@ -1,5 +1,11 @@
 # chetcorcos.com
 
+- use pagejs instead of react router
+	- fix scroll remember
+	- more comments
+- more projects polish
+
+
 - better design
 	- more tags, featured tag, better tags
 	- move all images into this project
