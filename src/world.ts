@@ -29,6 +29,10 @@ window.addEventListener(
 	}, 100)
 )
 
+export const isMobileWidth = () => {
+	return windowSize.get().width < 538
+}
+
 // =============================================================================
 // Filtering posts based on selected tags.
 // =============================================================================

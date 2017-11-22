@@ -32,6 +32,8 @@ export default class PostTags extends Component<{}> {
 				style={{
 					display: "flex",
 					marginBottom: 16,
+					marginLeft: -4,
+					marginRight: -4,
 				}}
 			>
 				{allTags.map((tag, index) => {

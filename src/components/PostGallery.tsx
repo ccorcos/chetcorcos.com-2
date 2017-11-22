@@ -41,7 +41,7 @@ class PostGalleryItem extends Component<PostGalleryItemProps> {
 							backgroundImage: `url(${this.props.img})`,
 							backgroundSize: "cover",
 							backgroundPosition: "center",
-							borderRadius: 0,
+							borderRadius: 4,
 							marginBottom: 8,
 						}}
 					/>

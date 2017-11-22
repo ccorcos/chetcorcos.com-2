@@ -362,7 +362,7 @@ internalPosts.push(blazer)
 export const craigslistWatch: InternalPost = {
 	title: "Craigslist Watch",
 	date: "October 24, 2014",
-	tags: ["code"],
+	tags: ["code", "ignore"],
 	img: "http://askthemanager.com/wp-content/uploads/2016/12/cl1.jpg",
 	alias: "/projects/2014/10/24/craigslist-watch.html",
 	component: () => import("./posts/craigslistWatch").then(m => m.default),

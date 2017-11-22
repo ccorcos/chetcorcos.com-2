@@ -10,12 +10,11 @@ import * as world from "../world"
 export default class Posts extends Component<{}> {
 	debug = true
 	view() {
-		const { width } = world.windowSize.get()
 		return (
 			<Layout>
 				<Header title="Chet's Projects" />
 				<PostTags />
-				{width >= 538 ? <PostGallery /> : <PostList />}
+				{world.isMobileWidth() ? <PostList /> : <PostGallery />}
 			</Layout>
 		)
 	}
