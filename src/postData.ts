@@ -1,3 +1,9 @@
+/* =============================================================================
+
+	Metadata for all of my projects.
+
+============================================================================= */
+
 import * as malibuCover from "file-loader!./img/malibu/done.jpg"
 import * as electricTruckCover from "file-loader!./img/etruck/done.jpg"
 import * as blazerCover from "file-loader!./img/blazer.jpg"
@@ -15,8 +21,11 @@ import * as colorMorph from "file-loader!./img/color-morph.png"
 import * as gtoCover from "file-loader!./img/gto/gto-done.jpg"
 import { ExternalPost, InternalPost } from "./helpers/postHelpers"
 
+// =============================================================================
+// Posts that link to an external site.
+// =============================================================================
+
 const externalPosts: Array<ExternalPost> = []
-const myPosts: Array<InternalPost> = []
 
 externalPosts.push({
 	title: "Intuitive State Management with Reactive Magic",
@@ -292,6 +301,12 @@ externalPosts.push({
 	// https://github.com/ccorcos/morph
 })
 
+// =============================================================================
+// Posts that link to an internal link.
+// =============================================================================
+
+const internalPosts: Array<InternalPost> = []
+
 export const claremontMenu: InternalPost = {
 	title: "5C Menu iPhone App",
 	date: "June 2, 2012",
@@ -300,7 +315,7 @@ export const claremontMenu: InternalPost = {
 	img: claremontMenuCover,
 	component: () => import("./posts/5cMenu").then(m => m.default),
 }
-myPosts.push(claremontMenu)
+internalPosts.push(claremontMenu)
 
 export const claremontMenu2: InternalPost = {
 	title: "5C Menu iPhone App - Round 2",
@@ -310,7 +325,7 @@ export const claremontMenu2: InternalPost = {
 	img: claremontMenuCover2,
 	component: () => import("./posts/5cMenu2").then(m => m.default),
 }
-myPosts.push(claremontMenu2)
+internalPosts.push(claremontMenu2)
 
 export const anonymity: InternalPost = {
 	title: "Anonymity on the Internet",
@@ -321,7 +336,7 @@ export const anonymity: InternalPost = {
 		"https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Tor-logo-2011-flat.svg/1200px-Tor-logo-2011-flat.svg.png",
 	component: () => import("./posts/anonymity").then(m => m.default),
 }
-myPosts.push(anonymity)
+internalPosts.push(anonymity)
 
 export const blazeAnimation: InternalPost = {
 	title: "Animation with Meteor",
@@ -332,7 +347,7 @@ export const blazeAnimation: InternalPost = {
 	alias: "/projects/2014/11/20/blaze-animation.html",
 	component: () => import("./posts/blazeAnimation").then(m => m.default),
 }
-myPosts.push(blazeAnimation)
+internalPosts.push(blazeAnimation)
 
 export const blazer: InternalPost = {
 	title: "1971 Blazer Restoration",
@@ -342,7 +357,7 @@ export const blazer: InternalPost = {
 	img: blazerCover,
 	component: () => import("./posts/blazer").then(m => m.default),
 }
-myPosts.push(blazer)
+internalPosts.push(blazer)
 
 export const craigslistWatch: InternalPost = {
 	title: "Craigslist Watch",
@@ -352,7 +367,7 @@ export const craigslistWatch: InternalPost = {
 	alias: "/projects/2014/10/24/craigslist-watch.html",
 	component: () => import("./posts/craigslistWatch").then(m => m.default),
 }
-myPosts.push(craigslistWatch)
+internalPosts.push(craigslistWatch)
 
 export const dns: InternalPost = {
 	title: "Configuring Your DNS",
@@ -362,7 +377,7 @@ export const dns: InternalPost = {
 	img: "https://upload.wikimedia.org/wikipedia/commons/2/2e/World_wide_web.jpg",
 	component: () => import("./posts/dns").then(m => m.default),
 }
-myPosts.push(dns)
+internalPosts.push(dns)
 
 export const electricTruck: InternalPost = {
 	title: "Electric Truck Conversion",
@@ -372,7 +387,7 @@ export const electricTruck: InternalPost = {
 	img: electricTruckCover,
 	component: () => import("./posts/electricTruck").then(m => m.default),
 }
-myPosts.push(electricTruck)
+internalPosts.push(electricTruck)
 
 export const fbGraph: InternalPost = {
 	title: "Facebook Social Network Visualization",
@@ -382,7 +397,7 @@ export const fbGraph: InternalPost = {
 	img: facebookGraphCover,
 	component: () => import("./posts/facebookGraph").then(m => m.default),
 }
-myPosts.push(fbGraph)
+internalPosts.push(fbGraph)
 
 export const gitTutorial: InternalPost = {
 	title: "Git Tutorial",
@@ -392,7 +407,7 @@ export const gitTutorial: InternalPost = {
 	alias: "/projects/2012/05/21/git-tutorial.html",
 	component: () => import("./posts/gitTutorial").then(m => m.default),
 }
-myPosts.push(gitTutorial)
+internalPosts.push(gitTutorial)
 
 export const gpg: InternalPost = {
 	title: "GNU Privacy Guard Tutorial",
@@ -403,7 +418,7 @@ export const gpg: InternalPost = {
 	alias: "/projects/2014/02/10/gnupg-tutorial.html",
 	component: () => import("./posts/gpg").then(m => m.default),
 }
-myPosts.push(gpg)
+internalPosts.push(gpg)
 
 export const guitarTuner: InternalPost = {
 	title: "Raw Guitar Tuner",
@@ -414,7 +429,7 @@ export const guitarTuner: InternalPost = {
 		"https://raw.githubusercontent.com/ccorcos/webaudio-guitar-tuner/master/public/screenshot.png",
 	component: () => import("./posts/guitarTuner").then(m => m.default),
 }
-myPosts.push(guitarTuner)
+internalPosts.push(guitarTuner)
 
 export const hendrixMural: InternalPost = {
 	title: "Jimi Hendrix Mural",
@@ -424,7 +439,7 @@ export const hendrixMural: InternalPost = {
 	img: hendrixCover,
 	component: () => import("./posts/hendrix").then(m => m.default),
 }
-myPosts.push(hendrixMural)
+internalPosts.push(hendrixMural)
 
 export const macSetup: InternalPost = {
 	title: "Mac Development Setup",
@@ -435,7 +450,7 @@ export const macSetup: InternalPost = {
 	alias: "/projects/2014/10/17/mac-dev-setup.html",
 	component: () => import("./posts/macSetup").then(m => m.default),
 }
-myPosts.push(macSetup)
+internalPosts.push(macSetup)
 
 export const malibu: InternalPost = {
 	title: "1965 Malibu Restoration",
@@ -445,7 +460,7 @@ export const malibu: InternalPost = {
 	img: malibuCover,
 	component: () => import("./posts/malibu").then(m => m.default),
 }
-myPosts.push(malibu)
+internalPosts.push(malibu)
 
 export const hearse: InternalPost = {
 	title: "1960 Cadillac Hearse Restoration",
@@ -454,7 +469,7 @@ export const hearse: InternalPost = {
 	img: hearseCover,
 	component: () => import("./posts/hearse").then(m => m.default),
 }
-myPosts.push(hearse)
+internalPosts.push(hearse)
 
 export const gto: InternalPost = {
 	title: "1966 Pontiac GTO Restoration",
@@ -463,7 +478,7 @@ export const gto: InternalPost = {
 	img: gtoCover,
 	component: () => import("./posts/gto").then(m => m.default),
 }
-myPosts.push(gto)
+internalPosts.push(gto)
 
 export const meteorReact: InternalPost = {
 	title: "Meteor and React",
@@ -474,7 +489,7 @@ export const meteorReact: InternalPost = {
 		"https://upload.wikimedia.org/wikipedia/en/thumb/a/a7/React-icon.svg/1200px-React-icon.svg.png",
 	component: () => import("./posts/meteorReact").then(m => m.default),
 }
-myPosts.push(meteorReact)
+internalPosts.push(meteorReact)
 
 export const observableStreams: InternalPost = {
 	title: "Observable Streams",
@@ -484,7 +499,7 @@ export const observableStreams: InternalPost = {
 	img: "http://notes.lucida.me/images/rxjava/marble_flatmap.png",
 	component: () => import("./posts/observableStreams").then(m => m.default),
 }
-myPosts.push(observableStreams)
+internalPosts.push(observableStreams)
 
 export const passwordRhythm: InternalPost = {
 	title: "Password Rhythm Authentication",
@@ -494,7 +509,7 @@ export const passwordRhythm: InternalPost = {
 	img: passwordRhythmCover,
 	component: () => import("./posts/passwordRhythm").then(m => m.default),
 }
-myPosts.push(passwordRhythm)
+internalPosts.push(passwordRhythm)
 
 export const raspberryPiSetup: InternalPost = {
 	title: "Raspberry Pi Setup",
@@ -504,7 +519,7 @@ export const raspberryPiSetup: InternalPost = {
 	alias: "/projects/2014/10/25/raspberry-pi-setup.html",
 	component: () => import("./posts/raspberryPiSetup").then(m => m.default),
 }
-myPosts.push(raspberryPiSetup)
+internalPosts.push(raspberryPiSetup)
 
 export const reactiveCss: InternalPost = {
 	title: "Reactive CSS",
@@ -514,7 +529,7 @@ export const reactiveCss: InternalPost = {
 	img: "http://www.codingdojo.com/blog/wp-content/uploads/css.jpg",
 	component: () => import("./posts/reactiveCss").then(m => m.default),
 }
-myPosts.push(reactiveCss)
+internalPosts.push(reactiveCss)
 
 export const roomTuner: InternalPost = {
 	title: "Room Tuner",
@@ -525,7 +540,7 @@ export const roomTuner: InternalPost = {
 		"https://raw.githubusercontent.com/ccorcos/room-tuner/master/public/screenshot.png",
 	component: () => import("./posts/roomTuner").then(m => m.default),
 }
-myPosts.push(roomTuner)
+internalPosts.push(roomTuner)
 
 export const rsa: InternalPost = {
 	title: "RSA Encryption Tutorial",
@@ -535,7 +550,7 @@ export const rsa: InternalPost = {
 	img: rsaCover,
 	component: () => import("./posts/rsa").then(m => m.default),
 }
-myPosts.push(rsa)
+internalPosts.push(rsa)
 
 export const waterfall: InternalPost = {
 	title: "Web Audio API Waterfall",
@@ -546,7 +561,7 @@ export const waterfall: InternalPost = {
 		"https://raw.githubusercontent.com/ccorcos/webaudio-waterfall/master/public/screenshot.png",
 	component: () => import("./posts/webAudioWaterfall").then(m => m.default),
 }
-myPosts.push(waterfall)
+internalPosts.push(waterfall)
 
 export const e80: InternalPost = {
 	title: "High Power Rockets",
@@ -555,7 +570,7 @@ export const e80: InternalPost = {
 	img: rocketDone,
 	component: () => import("./posts/e80").then(m => m.default),
 }
-myPosts.push(e80)
+internalPosts.push(e80)
 
 export const microps: InternalPost = {
 	title: "One-Handed Keyboard",
@@ -564,7 +579,7 @@ export const microps: InternalPost = {
 	img: microps1,
 	component: () => import("./posts/microps").then(m => m.default),
 }
-myPosts.push(microps)
+internalPosts.push(microps)
 
 export const opencv: InternalPost = {
 	title: "OpenCV Eye Feature Tracker",
@@ -573,7 +588,7 @@ export const opencv: InternalPost = {
 	img: "https://i.ytimg.com/vi/LHfUeyxhgvk/hqdefault.jpg",
 	component: () => import("./posts/opencv").then(m => m.default),
 }
-myPosts.push(opencv)
+internalPosts.push(opencv)
 
 export const speedtest: InternalPost = {
 	title: "Internet Speed Logger",
@@ -582,7 +597,7 @@ export const speedtest: InternalPost = {
 	img: internetSpeed,
 	component: () => import("./posts/speedtest").then(m => m.default),
 }
-myPosts.push(speedtest)
+internalPosts.push(speedtest)
 
 export const shindig: InternalPost = {
 	title: "Shindig",
@@ -591,6 +606,6 @@ export const shindig: InternalPost = {
 	img: "https://cdn-images-1.medium.com/max/2000/1*tuHNFifrlokBT0Ixmphtgw.png",
 	component: () => import("./posts/shindig").then(m => m.default),
 }
-myPosts.push(shindig)
+internalPosts.push(shindig)
 
-export { externalPosts, myPosts }
+export { externalPosts, internalPosts }

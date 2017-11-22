@@ -1,6 +1,16 @@
+/* =============================================================================
+
+	Vanilla router using HTML5 history.pushState.
+
+============================================================================= */
+
+interface newActionArgs {}
+
+export const newAction = (args: newActionArgs) => {}
+
 import * as React from "react"
 import * as ReactDOM from "react-dom"
-import { myPosts } from "./postData"
+import { internalPosts } from "./postData"
 import Posts from "./components/Posts"
 import Loader from "./components/Loader"
 import Post from "./components/Post"
@@ -13,7 +23,7 @@ const routes: { [path: string]: () => void } = {}
 
 routes["/"] = () => ReactDOM.render(<Posts />, root)
 
-for (const post of myPosts) {
+for (const post of internalPosts) {
 	routes[postHelpers.getUrl(post)] = () => {
 		ReactDOM.render(
 			<Post {...post}>
@@ -29,6 +39,7 @@ export function render() {
 	if (route) {
 		route()
 	} else {
+		// Redirect unknown urls to root.
 		window.setTimeout(() => {
 			window.history.replaceState(undefined, "", "/")
 			render()
@@ -36,8 +47,9 @@ export function render() {
 	}
 }
 
-window.addEventListener("popstate", render)
-render()
+// =============================================================================
+// Preserve scroll position when routing.
+// =============================================================================
 
 export interface RouteState {
 	scrollTop: number
@@ -61,3 +73,10 @@ export function restoreScrollState() {
 		document.body.scrollTop = 0
 	}
 }
+
+// =============================================================================
+// Start.
+// =============================================================================
+
+window.addEventListener("popstate", render)
+render()

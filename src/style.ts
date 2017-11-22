@@ -1,3 +1,9 @@
+/* =============================================================================
+
+	Style uses glamor for injecting CSS.
+
+============================================================================= */
+
 import { css, fontFace } from "glamor"
 import * as comfortaaRegular from "file-loader!./comfortaa/Comfortaa-Regular.ttf"
 import * as colors from "./helpers/colors"

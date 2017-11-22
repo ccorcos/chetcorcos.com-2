@@ -1,3 +1,9 @@
+/* =============================================================================
+
+	Anchor tags that works with the router.
+
+============================================================================= */
+
 import * as React from "react"
 import * as colors from "../helpers/colors"
 import * as router from "../router"

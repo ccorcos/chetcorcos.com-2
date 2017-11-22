@@ -1,8 +1,18 @@
+/* =============================================================================
+
+	World contains global variables.
+
+============================================================================= */
+
 import { Value, DerivedValue } from "reactive-magic"
 import * as _ from "lodash"
 import * as moment from "moment"
-import { myPosts, externalPosts } from "./postData"
+import { internalPosts, externalPosts } from "./postData"
 import { Tag } from "./helpers/postHelpers"
+
+// =============================================================================
+// Use windowSize instead of CSS media queries
+// =============================================================================
 
 export const windowSize = new Value({
 	width: window.innerWidth,
@@ -19,11 +29,15 @@ window.addEventListener(
 	}, 100)
 )
 
+// =============================================================================
+// Filtering posts based on selected tags.
+// =============================================================================
+
 export const selected = new Value<Array<Tag>>([])
 
 export const posts = new DerivedValue(() => {
 	const tags = selected.get()
-	const allPosts = [...myPosts, ...externalPosts].filter(
+	const allPosts = [...internalPosts, ...externalPosts].filter(
 		post => post.tags.indexOf("ignore") === -1
 	)
 	const filterestPosts =
