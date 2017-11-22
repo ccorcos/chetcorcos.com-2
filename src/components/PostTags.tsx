@@ -3,6 +3,7 @@ import Component from "reactive-magic/component"
 import { Tag, allTags } from "../helpers/postHelpers"
 import * as world from "../world"
 import * as router from "../router"
+import Button from "./Button"
 
 const colors = [
 	"rgb(255, 199, 214)",
@@ -39,13 +40,13 @@ export default class PostTags extends Component<{}> {
 				{allTags.map((tag, index) => {
 					const selected = tags.length === 0 || tags.some(t => t === tag)
 					return (
-						<div
+						<Button
 							key={tag}
 							style={this.getTagStyle(selected, index)}
 							onClick={() => this.handleClick(tag)}
 						>
 							{tag}
-						</div>
+						</Button>
 					)
 				})}
 			</div>
