@@ -17,6 +17,7 @@ class PostGalleryItem extends Component<PostGalleryItemProps> {
 	view() {
 		return (
 			<Link
+				padding={Link.Padding.Large}
 				href={postHelpers.getUrl(this.props)}
 				style={{
 					color: colors.dark,
