@@ -6,9 +6,8 @@
 	images to this project - better image framing and cropping - optimize images -
 	gif of anything thats interactive - audit all ignored posts
 
-* groove salad review
-* circle
 * color morph
+* circle
 * spiral
 * cube
 * electron dev tool?
