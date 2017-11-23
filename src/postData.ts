@@ -272,7 +272,7 @@ externalPosts.push({
 	date: "June 25, 2017",
 	tags: ["code", "music"],
 	img: "https://raw.githubusercontent.com/ccorcos/key-wheel/master/logo.png",
-	url: "https://github.com/ccorcos/key-wheel",
+	url: "https://ccorcos.github.io/key-wheel/",
 })
 
 externalPosts.push({
