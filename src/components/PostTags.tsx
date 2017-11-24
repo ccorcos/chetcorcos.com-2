@@ -18,10 +18,12 @@ import * as colors from "../helpers/colors"
 // ]
 
 export default class PostTags extends Component<{}> {
-	private handleClick = (tag: Tag) => {
+	private handleClick = (tag: Tag, shift: boolean) => {
 		const tags = world.selected.get()
-		if (tags[0] === tag) {
-			router.setTags([])
+		if (tags.some(t => t === tag)) {
+			router.setTags(tags.filter(t => t !== tag))
+		} else if (shift) {
+			router.setTags(tags.filter(t => t !== tag).concat([tag]))
 		} else {
 			router.setTags([tag])
 		}
@@ -46,7 +48,7 @@ export default class PostTags extends Component<{}> {
 						<Button
 							key={tag}
 							style={this.getTagStyle(selected)}
-							onClick={() => this.handleClick(tag)}
+							onClick={event => this.handleClick(tag, event.shiftKey)}
 						>
 							{tag}
 						</Button>
