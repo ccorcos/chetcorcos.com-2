@@ -7,7 +7,7 @@
 		"start": "webpack-dev-server --content-base dist",
 		"build": "rm -rf dist && webpack -p && npm run setup200",
 		"setup200": "cd dist && cp index.html 200.html",
-		"deploy": "cd dist && rm -f *.map && surge . chetcorcos.surge.sh",
+		"deploy": "cd dist && rm -f *.map && surge .",
 		"release": "npm run build && npm run deploy"
 	},
 	"keywords": [],
