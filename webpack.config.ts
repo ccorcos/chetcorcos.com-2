@@ -1,6 +1,7 @@
 const webpack = require("webpack")
 const path = require("path")
 const HtmlWebpackPlugin = require("html-webpack-plugin")
+const FaviconsWebpackPlugin = require("favicons-webpack-plugin")
 
 module.exports = {
 	entry: "./src/index.tsx",
@@ -35,6 +36,7 @@ module.exports = {
 		new HtmlWebpackPlugin({
 			template: path.join(__dirname, "src/index.html"),
 		}),
+		new FaviconsWebpackPlugin("./src/img/icon.jpg"),
 		new webpack.optimize.CommonsChunkPlugin({
 			name: "common",
 		}),
