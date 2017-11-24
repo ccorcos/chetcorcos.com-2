@@ -26,6 +26,13 @@ export default class Footer extends Component<FooterProps> {
 				<Link href="mailto:ccorcos@gmail.com" style={{ color: colors.grey }}>
 					Email
 				</Link>
+				{" • "}
+				<Link
+					href="http://old.chetcorcos.com/resume/"
+					style={{ color: colors.grey }}
+				>
+					Resume
+				</Link>
 			</div>
 		)
 	}
