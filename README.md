@@ -1,6 +1,6 @@
 # chetcorcos.com
 
-* move chetcorcos.com to old.chetcorcos.com and point surge to dns
+- setup ssl: https://surge.sh/help/securing-your-custom-domain-with-ssl
 
 - Longboard article on website
 - brainrash album

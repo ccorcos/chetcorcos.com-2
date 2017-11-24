@@ -1,5 +1,4 @@
 import * as React from "react"
-import Spinner from "./Spinner"
 
 export interface LoaderProps {
 	component?: () => Promise<() => JSX.Element>
@@ -19,6 +18,6 @@ export default class Loader extends React.PureComponent<LoaderProps, {}> {
 	}
 
 	render() {
-		return this.child || <Spinner />
+		return this.child || "Loading..."
 	}
 }
