@@ -1,25 +1,25 @@
 # chetcorcos.com
 
-- optimize images
-
-* favicon
-* check out surgey's designs
-
-* build size
-* loader style
-
 * images link to fullsize
+* async loader style
+* build size
+	* better common chunk js optimization
+	* babel optimizers for const styles
+	* service worker cache
+* favicon
 
-- add more content
+- shiftclick tags
+
+* move chetcorcos.com to old.chetcorcos.com and point surge to dns
+
+
 - Longboard article on website
 - brainrash album
 - OP1 Music? - graphical coding ui designs! - resume - photography
 
-* fuzzy search
+
+- optimize images
+
 * links / news
 
-* move chetcorcos.com to old.chetcorcos.com and point surge to dns
 
-* better common chunk js optimization
-* babel optimizers for const styles
-* service worker cache

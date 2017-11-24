@@ -36,7 +36,9 @@ class PostListItem extends Component<PostListItemProps> {
 					/>
 				)}
 				<div style={{ flex: 1, paddingLeft: 8 }}>
-					<div style={{ fontSize: 18 }}>{this.props.title}</div>
+					<div style={{ fontSize: 14, fontWeight: "bold" }}>
+						{this.props.title}
+					</div>
 					<div style={{ fontSize: 14, color: "gray" }}>{this.props.date}</div>
 				</div>
 			</Link>

@@ -3,6 +3,7 @@ import Component from "reactive-magic/component"
 
 export interface HeaderProps {
 	title: string
+	style?: React.CSSProperties
 }
 
 export default class Header extends Component<HeaderProps> {

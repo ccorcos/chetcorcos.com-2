@@ -5,20 +5,12 @@
 ============================================================================= */
 
 import * as glamor from "glamor"
-import * as comfortaaRegular from "file-loader!./comfortaa/Comfortaa-Regular.ttf"
 import * as colors from "./helpers/colors"
-
-glamor.fontFace({
-	fontFamily: "Comfortaa-Regular",
-	fontStyle: "normal",
-	fontWeight: 400,
-	src: `url(${comfortaaRegular})`,
-})
 
 glamor.css.global("html, body", {
 	padding: 0,
 	margin: 0,
-	fontFamily: '"Comfortaa-Regular", "Helvetica", "Arial", sans-serif',
+	fontFamily: '-apple-system, "Helvetica", "Arial", sans-serif',
 	color: colors.dark,
 	tabSize: 4,
 })

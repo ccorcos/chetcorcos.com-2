@@ -48,7 +48,9 @@ class PostGalleryItem extends Component<PostGalleryItemProps> {
 						}}
 					/>
 				</div>
-				<div style={{ fontSize: 18 }}>{this.props.title}</div>
+				<div style={{ fontSize: 14, fontWeight: "bold" }}>
+					{this.props.title}
+				</div>
 				<div style={{ fontSize: 14, color: colors.grey }}>
 					{this.props.date}
 				</div>
