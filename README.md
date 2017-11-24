@@ -2,11 +2,14 @@
 
 * more projects polish
 * audit
-* polish up each article with some explanations where necessary - move all
-	images to this project - better image framing and cropping - optimize images -
-	gif of anything thats interactive - audit all ignored posts
+* polish up each article with some explanations where necessary
 
-* color morph
+- move all images to this project
+- better image framing and cropping
+- optimize images
+- gif of anything thats interactive
+- audit all ignored posts
+
 * circle
 * spiral
 * cube

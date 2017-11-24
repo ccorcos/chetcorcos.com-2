@@ -17,7 +17,7 @@ import * as rocketDone from "file-loader!./img/e80/e80-done.jpg"
 import * as microps1 from "file-loader!./img/microps/microps-1.jpg"
 import * as internetSpeed from "file-loader!./img/internetSpeed.png"
 import * as hearseCover from "file-loader!./img/hearse/hearse-done.jpg"
-import * as colorMorph from "file-loader!./img/color-morph.png"
+import * as colorMorphCover from "file-loader!./img/color-morph.png"
 import * as gtoCover from "file-loader!./img/gto/gto-done.jpg"
 import { ExternalPost, InternalPost } from "./helpers/postHelpers"
 
@@ -292,20 +292,20 @@ externalPosts.push({
 	url: "https://github.com/ccorcos/deep-learning",
 })
 
-externalPosts.push({
-	title: "Color Morph",
-	date: "April 19, 2017",
-	tags: ["code", "art"],
-	url: "https://www.shadertoy.com/view/XsSyWw",
-	img: colorMorph,
-	// https://github.com/ccorcos/morph
-})
-
 // =============================================================================
 // Posts that link to an internal link.
 // =============================================================================
 
 const internalPosts: Array<InternalPost> = []
+
+export const colorMorph: InternalPost = {
+	title: "Color Morph",
+	date: "April 19, 2017",
+	tags: ["code", "art"],
+	component: () => import("./posts/colorMorph").then(m => m.default),
+	img: colorMorphCover,
+}
+internalPosts.push(colorMorph)
 
 export const claremontMenu: InternalPost = {
 	title: "5C Menu iPhone App",
