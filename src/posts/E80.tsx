@@ -10,6 +10,7 @@ import * as rocket6 from "file-loader!../img/e80/e80-6.jpg"
 import * as rocket7 from "file-loader!../img/e80/e80-7.jpg"
 import * as rocket8 from "file-loader!../img/e80/e80-8.jpg"
 import * as rocket9 from "file-loader!../img/e80/e80-9.jpg"
+import * as rocket11 from "file-loader!../img/e80/e80-11.jpg"
 import * as rocketSchematic from "file-loader!../img/e80/e80-payload-schematic.jpg"
 import Image from "../components/Image"
 import IFrame from "../components/IFrame"
@@ -79,6 +80,9 @@ export default () => (
 		</p>
 		<p>
 			<Image src={rocket1} />
+		</p>
+		<p>
+			<Image src={rocket11} />
 		</p>
 		<p>
 			The orientation of the rocket is the easiest thing to see when compared to

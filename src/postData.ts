@@ -43,6 +43,7 @@ import * as keyboardCover from "file-loader!./img/gallery/keyboard.jpg"
 import * as hendrixCover from "file-loader!./img/gallery/hendrix.jpg"
 import * as rocketCover from "file-loader!./img/gallery/rocket.jpg"
 import * as gridCover from "file-loader!./img/gallery/grid.jpg"
+import * as longboardCover from "file-loader!./img/gallery/longboard.jpg"
 
 // =============================================================================
 // Posts that link to an external site.
@@ -632,5 +633,14 @@ export const shindig: InternalPost = {
 	component: () => import("./posts/shindig").then(m => m.default),
 }
 internalPosts.push(shindig)
+
+export const londboard: InternalPost = {
+	title: "Custom Longboard",
+	date: "April 7, 2011",
+	tags: ["eng", "art"],
+	img: longboardCover,
+	component: () => import("./posts/longboard").then(m => m.default),
+}
+internalPosts.push(londboard)
 
 export { externalPosts, internalPosts }
