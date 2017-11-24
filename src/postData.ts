@@ -44,6 +44,7 @@ import * as hendrixCover from "file-loader!./img/gallery/hendrix.jpg"
 import * as rocketCover from "file-loader!./img/gallery/rocket.jpg"
 import * as gridCover from "file-loader!./img/gallery/grid.jpg"
 import * as longboardCover from "file-loader!./img/gallery/longboard.jpg"
+import * as brainrashCover from "file-loader!./img/gallery/brainrash.png"
 
 // =============================================================================
 // Posts that link to an external site.
@@ -319,6 +320,14 @@ externalPosts.push({
 	tags: ["code", "music"],
 	url: "https://github.com/ccorcos/grid-noise",
 	img: gridCover,
+})
+
+externalPosts.push({
+	title: "Brainrash Album",
+	date: "June 24, 2009",
+	tags: ["music"],
+	url: "https://www.reverbnation.com/chetcorcos/song/1509577-brainrash",
+	img: brainrashCover,
 })
 
 // =============================================================================
