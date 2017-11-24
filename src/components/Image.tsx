@@ -17,6 +17,10 @@ export default class Image extends React.PureComponent<ImageProps, {}> {
 	}
 
 	render() {
-		return <img style={this.getStyle()} src={this.props.src} />
+		return (
+			<a href={this.props.src} target="_blank">
+				<img style={this.getStyle()} src={this.props.src} />
+			</a>
+		)
 	}
 }

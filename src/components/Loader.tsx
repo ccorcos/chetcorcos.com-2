@@ -1,4 +1,5 @@
 import * as React from "react"
+import Spinner from "./Spinner"
 
 export interface LoaderProps {
 	component?: () => Promise<() => JSX.Element>
@@ -6,6 +7,8 @@ export interface LoaderProps {
 
 export default class Loader extends React.PureComponent<LoaderProps, {}> {
 	private child: JSX.Element
+
+	state = { showSpinner: false }
 
 	async componentWillMount() {
 		if (this.props.component) {
@@ -16,6 +19,6 @@ export default class Loader extends React.PureComponent<LoaderProps, {}> {
 	}
 
 	render() {
-		return this.child || null
+		return this.child || <Spinner />
 	}
 }
