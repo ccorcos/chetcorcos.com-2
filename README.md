@@ -1,24 +1,8 @@
 # chetcorcos.com
 
-* more projects polish
-* audit
-* polish up each article with some explanations where necessary
-
-- move all images to this project
-- better image framing and cropping
 - optimize images
-- gif of anything thats interactive
-- audit all ignored posts
-
-* 5c menu images
-- better groove salad image
 
 - https://github.com/ccorcos/grid-noise
-
-* audit all images
-
-- image background shuoldnt be grey! png with transparency!
-- web audio waterfall art
 
 * favicon
 * check out surgey's designs

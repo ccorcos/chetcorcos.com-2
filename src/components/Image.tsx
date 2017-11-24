@@ -9,6 +9,7 @@ export default class Image extends React.PureComponent<ImageProps, {}> {
 	private getStyle(): React.CSSProperties {
 		return {
 			maxWidth: "100%",
+			maxHeight: "80vh",
 			display: "block",
 			margin: "0 auto",
 			...this.props.style,

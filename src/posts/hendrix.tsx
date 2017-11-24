@@ -51,6 +51,8 @@ export default () => (
 		<p>And here's a before/after pic.</p>
 		<p>
 			<Image src={hendrix0} />
+		</p>
+		<p>
 			<Image src={hendrix4} />
 		</p>
 		<p>
