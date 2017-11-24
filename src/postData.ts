@@ -7,19 +7,41 @@
 import * as malibuCover from "file-loader!./img/malibu/done.jpg"
 import * as electricTruckCover from "file-loader!./img/etruck/done.jpg"
 import * as blazerCover from "file-loader!./img/blazer.jpg"
-import * as hendrixCover from "file-loader!./img/hendrix/4.jpg"
-import * as claremontMenuCover from "file-loader!./img/mudd.jpg"
-import * as claremontMenuCover2 from "file-loader!./img/mudd2.jpeg"
 import * as facebookGraphCover from "file-loader!./img/facebook-me.png"
-import * as rsaCover from "file-loader!./img/rsa.png"
-import * as passwordRhythmCover from "file-loader!./img/password/test-sample.png"
-import * as rocketDone from "file-loader!./img/e80/e80-done.jpg"
-import * as microps1 from "file-loader!./img/microps/microps-1.jpg"
-import * as internetSpeed from "file-loader!./img/internetSpeed.png"
 import * as hearseCover from "file-loader!./img/hearse/hearse-done.jpg"
 import * as colorMorphCover from "file-loader!./img/color-morph.png"
 import * as gtoCover from "file-loader!./img/gto/gto-done.jpg"
 import { ExternalPost, InternalPost } from "./helpers/postHelpers"
+
+import * as reactiveMagicCover from "file-loader!./img/gallery/reactive-magic.jpg"
+import * as martianMathCover from "file-loader!./img/gallery/martian-math.png"
+import * as parsersCover from "file-loader!./img/gallery/parsers.png"
+import * as dockerCover from "file-loader!./img/gallery/docker.png"
+import * as reduxCover from "file-loader!./img/gallery/redux.png"
+import * as hackCover from "file-loader!./img/gallery/hack.jpg"
+import * as fpjsCover from "file-loader!./img/gallery/fpjs.png"
+import * as devtoolCover from "file-loader!./img/gallery/devtool.png"
+import * as elmCover from "file-loader!./img/gallery/elm.png"
+import * as samCover from "file-loader!./img/gallery/sam.png"
+import * as iorCover from "file-loader!./img/gallery/ior.png"
+import * as jsCover from "file-loader!./img/gallery/js.png"
+import * as cubeCover from "file-loader!./img/gallery/cube.png"
+import * as spiralCover from "file-loader!./img/gallery/spiral.jpg"
+import * as rsyncCover from "file-loader!./img/gallery/rsync.png"
+import * as shindigCover from "file-loader!./img/gallery/shindig.png"
+import * as tunerCover from "file-loader!./img/gallery/tuner.png"
+import * as waterfallCover from "file-loader!./img/gallery/waterfall.png"
+import * as claremontMenu2Cover from "file-loader!./img/gallery/5cmenu2.png"
+import * as craigslistCover from "file-loader!./img/gallery/craigslist.png"
+import * as passwordRhythmCover from "file-loader!./img/gallery/password.png"
+import * as rsaCover from "file-loader!./img/gallery/rsa.png"
+import * as gpgCover from "file-loader!./img/gallery/gpg.png"
+import * as internetSpeed from "file-loader!./img/gallery/internetSpeed.png"
+import * as claremontMenuCover from "file-loader!./img/gallery/5cmenu.png"
+import * as gitCover from "file-loader!./img/gallery/git.png"
+import * as keyboardCover from "file-loader!./img/gallery/keyboard.jpg"
+import * as hendrixCover from "file-loader!./img/gallery/hendrix.jpg"
+import * as rocketCover from "file-loader!./img/gallery/rocket.jpg"
 
 // =============================================================================
 // Posts that link to an external site.
@@ -33,14 +55,14 @@ externalPosts.push({
 	tags: ["code"],
 	url:
 		"https://medium.com/@chetcorcos/intuitive-state-management-with-reactive-magic-28402fa8b73b",
-	img: "https://cdn-images-1.medium.com/max/2000/1*7cW0pwtxjK0M3KGFeG7Jmw.jpeg",
+	img: reactiveMagicCover,
 })
 
 externalPosts.push({
 	title: "Martian Math",
 	date: "March 16, 2017",
 	tags: ["code"],
-	img: "https://cdn-images-1.medium.com/max/2000/1*mK-q8ZwVLhz_XB5XUuItow.png",
+	img: martianMathCover,
 	url: "https://medium.freecodecamp.org/martian-math-812a029e2ea0",
 })
 
@@ -57,14 +79,14 @@ externalPosts.push({
 	date: "March 3, 2017",
 	tags: ["code", "fp"],
 	url: "https://medium.com/@chetcorcos/introduction-to-parsers-644d1b5d7f3d",
-	img: "https://cdn-images-1.medium.com/max/1600/1*C3YpuL_Fo4K5rYyeAJul2w.png",
+	img: parsersCover,
 })
 
 externalPosts.push({
 	title: "Getting started with Docker in 2 minutes",
 	date: "December 23, 2016",
 	tags: ["code"],
-	img: "https://cdn-images-1.medium.com/max/1600/1*xjh1TUq3yKAB-4HWNSCkSQ.png",
+	img: dockerCover,
 	url:
 		"https://medium.com/@chetcorcos/getting-started-with-docker-in-2-minutes-fd6a7668eb39",
 })
@@ -92,7 +114,7 @@ externalPosts.push({
 	date: "September 19, 2016",
 	tags: ["code", "fp"],
 	url: "https://tech.affirm.com/redux-patterns-and-anti-patterns-7d80ef3d53bc",
-	img: "https://cdn-images-1.medium.com/max/1600/1*GVyqpS_9WUJDeaf2OEiynw.png",
+	img: reduxCover,
 })
 
 externalPosts.push({
@@ -100,14 +122,14 @@ externalPosts.push({
 	date: "July 27, 2016",
 	tags: ["code"],
 	url: "https://medium.freecodecamp.org/how-to-hack-your-friends-eef055389344",
-	img: "https://cdn-images-1.medium.com/max/2000/1*CRdFzUjOuDE-qB0ASTk9yQ.jpeg",
+	img: hackCover,
 })
 
 externalPosts.push({
 	title: "Simple Backups with Rsync",
 	date: "July 20, 2016",
 	tags: ["code"],
-	img: "http://www.freeiconspng.com/uploads/command-line-icon-1.png",
+	img: rsyncCover,
 	url: "https://medium.com/@chetcorcos/simple-backups-with-rsync-b97535ca1703",
 })
 
@@ -116,7 +138,7 @@ externalPosts.push({
 	date: "April 14, 2016",
 	tags: ["code"],
 	url: "https://medium.com/@chetcorcos/electron-dev-tool-13a4b4b3b0b",
-	img: "https://cdn-images-1.medium.com/max/2000/1*GOKroXSkw0uvgX-NMAgOeg.png",
+	img: devtoolCover,
 })
 
 externalPosts.push({
@@ -125,14 +147,14 @@ externalPosts.push({
 	tags: ["code", "fp"],
 	url:
 		"https://medium.com/@chetcorcos/functional-programming-for-javascript-people-1915d8775504",
-	img: "https://cdn-images-1.medium.com/max/2000/1*KPy3bUBCUFy6zqNFZys9lQ.png",
+	img: fpjsCover,
 })
 
 externalPosts.push({
 	title: "Elmish: Functional Programming in Javascript",
 	date: "February 24, 2016",
 	tags: ["code"],
-	img: "https://avatars2.githubusercontent.com/u/4359353",
+	img: elmCover,
 	url:
 		"https://medium.com/@chetcorcos/elmish-functional-programming-in-javascript-50995f1d4b9e",
 })
@@ -160,8 +182,7 @@ externalPosts.push({
 	date: "December 1, 2014",
 	tags: ["code"],
 	url: "https://github.com/ccorcos/robotics-smoothing-and-mapping",
-	img:
-		"https://raw.githubusercontent.com/ccorcos/robotics-smoothing-and-mapping/master/img/single-dense-after.png",
+	img: samCover,
 })
 
 externalPosts.push({
@@ -169,8 +190,7 @@ externalPosts.push({
 	date: "July 1, 2014",
 	tags: ["code", "ml"],
 	url: "https://github.com/ccorcos/towards-interactive-object-recognition",
-	img:
-		"https://github.com/ccorcos/towards-interactive-object-recognition/raw/master/model.png",
+	img: iorCover,
 })
 
 externalPosts.push({
@@ -186,8 +206,7 @@ externalPosts.push({
 	title: "Functional Declarative JavaScript",
 	date: "November 14, 2016",
 	tags: ["code", "ml"],
-	img:
-		"https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1200px-Unofficial_JavaScript_logo_2.svg.png",
+	img: jsCover,
 	url: "https://ccorcos.github.io/functional-decarative-javascript-preso/#/",
 })
 
@@ -214,7 +233,7 @@ externalPosts.push({
 	date: "March 12, 2017",
 	tags: ["code"],
 	url: "https://github.com/ccorcos/cube",
-	img: "https://raw.githubusercontent.com/ccorcos/cube/master/cube.png",
+	img: cubeCover,
 })
 
 externalPosts.push({
@@ -230,8 +249,7 @@ externalPosts.push({
 	date: "March 20, 2017",
 	tags: ["code", "art"],
 	url: "https://github.com/ccorcos/spiral",
-	img:
-		"https://static1.squarespace.com/static/534da071e4b09a268e6bd84a/t/58d27f01f5e231be5b2aea86/1490190086885/Chet+Corcos+v2.jpg",
+	img: spiralCover,
 })
 
 externalPosts.push({
@@ -263,8 +281,9 @@ externalPosts.push({
 	title: "Groove Salad",
 	date: "May 13, 2017",
 	tags: ["code", "music"],
-	img: "https://tonejs.github.io/assets/images/groove-salad.png",
-	url: "https://github.com/ccorcos/groove-salad",
+	img:
+		"https://raw.githubusercontent.com/ccorcos/groove-salad/master/assets/logo.png",
+	url: "https://ccorcos.github.io/groove-salad/",
 })
 
 externalPosts.push({
@@ -322,7 +341,7 @@ export const claremontMenu2: InternalPost = {
 	date: "December 18, 2014",
 	tags: ["code"],
 	alias: "/projects/2014/12/18/5c-menu-round-2.html",
-	img: claremontMenuCover2,
+	img: claremontMenu2Cover,
 	component: () => import("./posts/5cMenu2").then(m => m.default),
 }
 internalPosts.push(claremontMenu2)
@@ -362,8 +381,8 @@ internalPosts.push(blazer)
 export const craigslistWatch: InternalPost = {
 	title: "Craigslist Watch",
 	date: "October 24, 2014",
-	tags: ["code", "ignore"],
-	img: "http://askthemanager.com/wp-content/uploads/2016/12/cl1.jpg",
+	tags: ["code"],
+	img: craigslistCover,
 	alias: "/projects/2014/10/24/craigslist-watch.html",
 	component: () => import("./posts/craigslistWatch").then(m => m.default),
 }
@@ -403,7 +422,7 @@ export const gitTutorial: InternalPost = {
 	title: "Git Tutorial",
 	date: "May 21, 2012",
 	tags: ["code"],
-	img: "https://git-for-windows.github.io/img/git_logo.png",
+	img: gitCover,
 	alias: "/projects/2012/05/21/git-tutorial.html",
 	component: () => import("./posts/gitTutorial").then(m => m.default),
 }
@@ -413,8 +432,7 @@ export const gpg: InternalPost = {
 	title: "GNU Privacy Guard Tutorial",
 	date: "February 10, 2014",
 	tags: ["code"],
-	img:
-		"http://4.bp.blogspot.com/-bTyvY1fiIms/UJUvW6kx-hI/AAAAAAAAANw/qRfbfEKJ6sU/s400/gnupg.png",
+	img: gpgCover,
 	alias: "/projects/2014/02/10/gnupg-tutorial.html",
 	component: () => import("./posts/gpg").then(m => m.default),
 }
@@ -425,8 +443,7 @@ export const guitarTuner: InternalPost = {
 	date: "January 5, 2015",
 	tags: ["music"],
 	alias: "/projects/2015/01/05/guitar-tuner.html",
-	img:
-		"https://raw.githubusercontent.com/ccorcos/webaudio-guitar-tuner/master/public/screenshot.png",
+	img: tunerCover,
 	component: () => import("./posts/guitarTuner").then(m => m.default),
 }
 internalPosts.push(guitarTuner)
@@ -557,8 +574,7 @@ export const waterfall: InternalPost = {
 	date: "December 28, 2014",
 	tags: ["art", "music"],
 	alias: "/projects/2014/12/20/webaudio-waterfall.html",
-	img:
-		"https://raw.githubusercontent.com/ccorcos/webaudio-waterfall/master/public/screenshot.png",
+	img: waterfallCover,
 	component: () => import("./posts/webAudioWaterfall").then(m => m.default),
 }
 internalPosts.push(waterfall)
@@ -567,7 +583,7 @@ export const e80: InternalPost = {
 	title: "High Power Rockets",
 	date: "May 30, 2011",
 	tags: ["eng"],
-	img: rocketDone,
+	img: rocketCover,
 	component: () => import("./posts/e80").then(m => m.default),
 }
 internalPosts.push(e80)
@@ -576,7 +592,7 @@ export const microps: InternalPost = {
 	title: "One-Handed Keyboard",
 	date: "December 10, 2011",
 	tags: ["code", "eng"],
-	img: microps1,
+	img: keyboardCover,
 	component: () => import("./posts/microps").then(m => m.default),
 }
 internalPosts.push(microps)
@@ -603,7 +619,7 @@ export const shindig: InternalPost = {
 	title: "Shindig",
 	date: "November 23, 2015",
 	tags: ["code"],
-	img: "https://cdn-images-1.medium.com/max/2000/1*tuHNFifrlokBT0Ixmphtgw.png",
+	img: shindigCover,
 	component: () => import("./posts/shindig").then(m => m.default),
 }
 internalPosts.push(shindig)

@@ -10,11 +10,10 @@
 - gif of anything thats interactive
 - audit all ignored posts
 
-* circle
-* spiral
-* cube
-* electron dev tool?
-* 5c menu images craigslist watch?
+* 5c menu images
+- better groove salad image
+
+- https://github.com/ccorcos/grid-noise
 
 * audit all images
 

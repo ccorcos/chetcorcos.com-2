@@ -10,7 +10,6 @@ import Link from "../components/Link"
 
 export default () => (
 	<div>
-		<p>Color Morph</p>
 		<p>
 			I went to the 50th Anniversary Summer of Love exhibit at the De Young
 			Museum and one of the things that really stood out was this poster.
