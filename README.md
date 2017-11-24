@@ -2,8 +2,6 @@
 
 - optimize images
 
-- https://github.com/ccorcos/grid-noise
-
 * favicon
 * check out surgey's designs
 

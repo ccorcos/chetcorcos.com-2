@@ -42,6 +42,7 @@ import * as gitCover from "file-loader!./img/gallery/git.png"
 import * as keyboardCover from "file-loader!./img/gallery/keyboard.jpg"
 import * as hendrixCover from "file-loader!./img/gallery/hendrix.jpg"
 import * as rocketCover from "file-loader!./img/gallery/rocket.jpg"
+import * as gridCover from "file-loader!./img/gallery/grid.jpg"
 
 // =============================================================================
 // Posts that link to an external site.
@@ -309,6 +310,14 @@ externalPosts.push({
 	img:
 		"https://qph.ec.quoracdn.net/main-thumb-t-449747-200-vosprwwgrsgxbcuogpvzqfdrnccpscnt.jpeg",
 	url: "https://github.com/ccorcos/deep-learning",
+})
+
+externalPosts.push({
+	title: "Grid Synth",
+	date: "October 8, 2017",
+	tags: ["code", "music"],
+	url: "https://github.com/ccorcos/grid-noise",
+	img: gridCover,
 })
 
 // =============================================================================
