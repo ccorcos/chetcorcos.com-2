@@ -1517,4 +1517,74 @@ news.push({
 	url: "https://nodered.org/",
 })
 
+news.push({
+	date: 1511721999000,
+	tags: [],
+	title: "BBC Radio 4 - A History of Ideas - A History of Ideas",
+	url:
+		"http://www.bbc.co.uk/programmes/articles/3vVjcY47k2p5Wsnj3ZFHV5W/a-history-of-ideas",
+})
+
+news.push({
+	date: 1504757197000,
+	tags: [],
+	title: "Business Casual",
+	url: "https://www.youtube.com/channel/UC_E4px0RST-qFwXLJWBav8Q",
+	description:
+		"A YouTube channel that explains the founding of many famous companies.",
+})
+
+news.push({
+	date: 1504718660000,
+	tags: [],
+	title: "Chalktalk Magic Crayon Demo",
+	url: "https://vimeo.com/232230096",
+	description:
+		"An interesting demo of an interactive drawing and simulation program.",
+})
+
+news.push({
+	date: 1504199564000,
+	tags: [],
+	title: "Kyteman - Root Canal Therapy",
+	url: "https://www.youtube.com/watch?v=_YbQwqBgdZA",
+	description: "A cool song performed on a modular synth.",
+})
+
+news.push({
+	date: 1503987828000,
+	tags: [],
+	title: "Programming with Nothing by Tom Stuart",
+	url: "https://www.youtube.com/watch?v=VUhlNx_-wYk",
+	description:
+		"An interesting talk about lambda calculus and how you can write a program with only functions.",
+})
+
+news.push({
+	date: 1503987786000,
+	tags: [],
+	title: "Y Not - Adventures in Functional Programming by Jim Weirich",
+
+	url: "https://www.youtube.com/watch?v=FITJMJjASUs",
+
+	description: "A great explanation of the Y combinator from first principles.",
+})
+
+news.push({
+	date: 1503256664000,
+	tags: [],
+	title: "Rebooting the Desktop Operating System Experience",
+	url: "https://joshondesign.com/2017/08/18/idealos_essay",
+	description:
+		"An awesome essay on the lack of innovation in operating systems and some relatively straightforward features that would accelerate the software world.",
+})
+
+news.push({
+	date: 1501222477000,
+	tags: [],
+	title: "The Evolution of Trust",
+	url: "http://ncase.me/trust/",
+	description: "An interactive explanation of the game theory of trust.",
+})
+
 export { news }
