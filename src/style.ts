@@ -37,10 +37,7 @@ glamor.css.global(".button:after", {
 	opacity: 0,
 })
 
-glamor.css.global(
-	".button:hover:after,.button:active:after,.button:focus:after",
-	{
-		opacity: 0.06,
-		transition: "opacity 200ms ease-in",
-	}
-)
+glamor.css.global(".button:hover:after,.button:active:after", {
+	opacity: 0.06,
+	transition: "opacity 200ms ease-in",
+})
