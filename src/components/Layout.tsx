@@ -2,6 +2,7 @@ import * as React from "react"
 import Component from "reactive-magic/component"
 import * as router from "../router"
 import * as world from "../world"
+import Nav from "./Nav"
 
 export interface LayoutProps {
 	style?: React.CSSProperties
@@ -13,7 +14,12 @@ export default class Layout extends Component<LayoutProps> {
 	}
 
 	render() {
-		return <div style={this.getStyle()}>{this.props.children}</div>
+		return (
+			<div style={this.getStyle()}>
+				<Nav />
+				{this.props.children}
+			</div>
+		)
 	}
 
 	private getStyle() {
@@ -21,6 +27,7 @@ export default class Layout extends Component<LayoutProps> {
 			margin: "0 auto",
 			maxWidth: "50em",
 			lineHeight: 1.5,
+			marginTop: 50,
 			...this.props.style,
 		}
 		if (world.isMobileWidth()) {

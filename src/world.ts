@@ -33,6 +33,15 @@ export const isMobileWidth = () => {
 	return windowSize.get().width < 538
 }
 
+export const scrollY = new Value(window.scrollY)
+
+window.addEventListener(
+	"scroll",
+	_.throttle(event => {
+		scrollY.set(window.scrollY)
+	}, 100)
+)
+
 // =============================================================================
 // Filtering posts based on selected tags.
 // =============================================================================
