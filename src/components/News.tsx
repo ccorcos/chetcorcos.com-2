@@ -9,7 +9,11 @@ import { news } from "../newsData"
 export default class News extends Component<{}> {
 	view() {
 		return (
-			<Layout>
+			<Layout
+				style={{
+					maxWidth: "40em",
+				}}
+			>
 				<div style={{ textAlign: "center" }}>
 					<h1 style={{ margin: 0, fontSize: 42 }}>Chet's News</h1>
 				</div>
@@ -25,7 +29,7 @@ class NewsList extends Component<{}> {
 		return (
 			<div>
 				{news.map(item => {
-					return <NewsItem {...item} />
+					return <NewsItem {...item} key={item.title} />
 				})}
 			</div>
 		)
@@ -51,17 +55,15 @@ class NewsItem extends Component<NewsItemProps> {
 					display: "flex",
 				}}
 			>
-				<div style={{ flex: 1 }}>
+				<div style={{ flex: 1, fontSize: 14 }}>
 					<div>
-						<span style={{ fontSize: 14, fontWeight: "bold" }}>
-							{this.props.title}
-						</span>
-						<span style={{ fontSize: 14, color: "gray" }}>
+						<span style={{ fontWeight: "bold" }}>{this.props.title}</span>
+						<span style={{ color: "gray" }}>
 							{" • "}
 							{this.renderDate()}
 						</span>
 					</div>
-					<div style={{ fontSize: 14, color: "gray" }}>
+					<div style={{ color: "gray" }}>
 						<Markdown text={this.props.description || ""} />
 					</div>
 				</div>
