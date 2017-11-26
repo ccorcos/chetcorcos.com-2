@@ -60,6 +60,7 @@ export function render() {
 export function push(href: string) {
 	window.history.pushState({}, "", href)
 	render()
+	window.scrollTo(0, 0)
 }
 
 // =============================================================================
