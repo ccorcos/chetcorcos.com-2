@@ -15,11 +15,6 @@ glamor.css.global("html, body", {
 	tabSize: 4,
 })
 
-glamor.css.global("a", {
-	color: "inherit",
-	textDecoration: "none",
-})
-
 glamor.css.global(".button", {
 	position: "relative",
 })

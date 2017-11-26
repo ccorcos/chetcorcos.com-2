@@ -25,6 +25,7 @@ export default class Link extends React.PureComponent<LinkProps, {}> {
 
 	private static style: React.CSSProperties = {
 		color: colors.accent,
+		textDecoration: "none",
 	}
 
 	private static smallPadding: React.CSSProperties = {

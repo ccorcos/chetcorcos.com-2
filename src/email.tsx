@@ -8,7 +8,6 @@ import * as React from "react"
 import * as ReactDOM from "react-dom/server"
 import * as _ from "lodash"
 import NewsItem from "./components/NewsItem"
-import Layout from "./components/Layout"
 import { news } from "./newsData"
 import * as colors from "./helpers/colors"
 
@@ -24,9 +23,9 @@ class Email extends React.PureComponent<EmailProps, {}> {
 		}).filter(item => item.date > this.props.since)
 
 		return (
-			<Layout
+			<div
 				style={{
-					maxWidth: "40em",
+					lineHeight: 1.5,
 					fontFamily: '-apple-system, "Helvetica", "Arial", sans-serif',
 					color: colors.dark,
 				}}
@@ -36,10 +35,16 @@ class Email extends React.PureComponent<EmailProps, {}> {
 				</div>
 				<div>
 					{sorted.map(item => {
-						return <NewsItem {...item} key={item.title} />
+						return (
+							<NewsItem
+								{...item}
+								key={item.title}
+								style={{ padding: 0, margin: 0 }}
+							/>
+						)
 					})}
 				</div>
-			</Layout>
+			</div>
 		)
 	}
 }
@@ -49,22 +54,5 @@ w["email"] = () => {
 	const html = ReactDOM.renderToString(
 		<Email title="Chet's News - November 26, 2017" since={1501222477000} />
 	)
-	console.log(
-		`
-	<div>
-		<style>
-			a {
-				color: inherit;
-				text-decoration: none !important;
-				text-decoration: none;
-			}
-		</style>
-		${html}
-	</div>
-	`
-			.split("\n")
-			.map(l => l.trim())
-			.join("")
-			.trim()
-	)
+	console.log(html)
 }

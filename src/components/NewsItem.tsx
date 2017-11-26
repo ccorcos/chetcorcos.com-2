@@ -8,6 +8,7 @@ export interface NewsItemProps {
 	date: number
 	url: string
 	description?: string
+	style?: React.CSSProperties
 }
 
 export default class NewsItem extends Component<NewsItemProps> {
@@ -20,6 +21,7 @@ export default class NewsItem extends Component<NewsItemProps> {
 					padding: 8,
 					margin: "0px -8px",
 					display: "flex",
+					...this.props.style,
 				}}
 			>
 				<div style={{ flex: 1, fontSize: 14 }}>
