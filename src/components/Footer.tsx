@@ -9,6 +9,14 @@ export default class Footer extends Component<FooterProps> {
 	view() {
 		return (
 			<div style={{ marginTop: "2em", fontSize: 14 }}>
+				<Link href="/" style={{ color: colors.grey }}>
+					Projects
+				</Link>
+				{" • "}
+				<Link href="/news" style={{ color: colors.grey }}>
+					News
+				</Link>
+				{" • "}
 				<Link
 					href="https://www.twitter.com/ccorcos"
 					style={{ color: colors.grey }}

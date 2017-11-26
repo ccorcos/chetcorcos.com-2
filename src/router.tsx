@@ -57,27 +57,9 @@ export function render() {
 // Preserve scroll position when routing.
 // =============================================================================
 
-export interface RouteState {
-	scrollTop: number
-}
-
-function getScrollState() {
-	const routeState: RouteState = { scrollTop: document.body.scrollTop }
-	return routeState
-}
-
 export function push(href: string) {
-	window.history.pushState(getScrollState(), "", href)
+	window.history.pushState({}, "", href)
 	render()
-}
-
-export function restoreScrollState() {
-	const routeState: RouteState = window.history.state
-	if (routeState && routeState.scrollTop) {
-		document.body.scrollTop = routeState.scrollTop
-	} else {
-		document.body.scrollTop = 0
-	}
 }
 
 // =============================================================================

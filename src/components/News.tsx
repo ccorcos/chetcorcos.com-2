@@ -10,11 +10,7 @@ import { news } from "../newsData"
 export default class News extends Component<{}> {
 	view() {
 		return (
-			<Layout
-				style={{
-					maxWidth: "40em",
-				}}
-			>
+			<Layout style={{ maxWidth: "40em" }}>
 				<div style={{ textAlign: "center" }}>
 					<h1 style={{ margin: 0, fontSize: 42 }}>Chet's News</h1>
 				</div>
