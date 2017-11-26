@@ -8,6 +8,7 @@ import * as React from "react"
 import * as ReactDOM from "react-dom"
 import { internalPosts } from "./postData"
 import Posts from "./components/Posts"
+import News from "./components/News"
 import Loader from "./components/Loader"
 import Post from "./components/Post"
 import * as postHelpers from "./helpers/postHelpers"
@@ -22,6 +23,10 @@ routes["/"] = () => {
 	const tags = getTags()
 	world.selected.set(tags)
 	ReactDOM.render(<Posts />, root)
+}
+
+routes["/news"] = () => {
+	ReactDOM.render(<News />, root)
 }
 
 for (const post of internalPosts) {

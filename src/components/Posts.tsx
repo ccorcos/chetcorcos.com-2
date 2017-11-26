@@ -8,7 +8,6 @@ import PostList from "./PostList"
 import * as world from "../world"
 
 export default class Posts extends Component<{}> {
-	debug = true
 	view() {
 		return (
 			<Layout>
