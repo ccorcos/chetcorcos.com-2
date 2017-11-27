@@ -1510,14 +1510,6 @@ news.push({
 })
 
 news.push({
-	date: 1511721999000,
-	tags: [],
-	title: "BBC Radio 4 - A History of Ideas - A History of Ideas",
-	url:
-		"http://www.bbc.co.uk/programmes/articles/3vVjcY47k2p5Wsnj3ZFHV5W/a-history-of-ideas",
-})
-
-news.push({
 	date: 1504757197000,
 	tags: [],
 	title: "Business Casual",
@@ -1540,7 +1532,7 @@ news.push({
 	tags: [],
 	title: "Kyteman - Root Canal Therapy",
 	url: "https://www.youtube.com/watch?v=_YbQwqBgdZA",
-	description: "A cool song performed on a modular synth.",
+	description: "A song performed entirely on a modular synth.",
 })
 
 news.push({
@@ -1549,7 +1541,7 @@ news.push({
 	title: "Programming with Nothing by Tom Stuart",
 	url: "https://www.youtube.com/watch?v=VUhlNx_-wYk",
 	description:
-		"An interesting talk about lambda calculus and how you can write a program with only functions.",
+		"A talk about lambda calculus and how you can write a program with only functions and no other primative datatypes.",
 })
 
 news.push({
@@ -1578,5 +1570,110 @@ news.push({
 	url: "http://ncase.me/trust/",
 	description: "An interactive explanation of the game theory of trust.",
 })
+
+news.push({
+	date: 1511721999000,
+	tags: [],
+	title: "A History of Ideas",
+	url:
+		"http://www.bbc.co.uk/programmes/articles/3vVjcY47k2p5Wsnj3ZFHV5W/a-history-of-ideas",
+	description: "The BBC produced a nice video series on philosophy.",
+})
+
+news.push({
+	date: 1511739530295,
+	tags: [],
+	title: "You and your research",
+	url: "http://www.paulgraham.com/hamming.html",
+	description:
+		"A talk given by Richard Hamming in 1986 about how to do great research.",
+})
+
+news.push({
+	date: 1511739530295,
+	tags: [],
+	title: "Generominos: Ideation Cards for Interactive Art",
+	url:
+		"https://www.kickstarter.com/projects/1921765752/generominos-ideation-cards-for-interactive-art",
+	description: "A creative game for coming up with creative ideas.",
+})
+
+news.push({
+	date: 1511739530295,
+	tags: [],
+	title: "GuitarStack",
+	url: "https://github.com/lucaong/guitarstack",
+	description: "Guitar effects in your web browser using the Web Audio API!",
+})
+
+// news.push({
+// 	date: 1511739530295,
+// 	tags: [],
+// 	title: "Bubble",
+// 	url: "https://bubble.is/",
+// 	description: "A graphical user interface for building web applications.",
+// })
+
+// news.push({
+// 	date: 1511739530295,
+// 	tags: [],
+// 	title: "Augmenting Human Intellect",
+// 	url: "http://www.1962paper.org/web.html",
+// 	description:
+// 		"The proposal Doug Engelbart submited to ARPA that culminated with the [Mother of all Demos](https://www.youtube.com/watch?v=1U-b7lxG_z8).",
+// })
+
+// news.push({
+// 	date: 1511739530295,
+// 	tags: [],
+// 	title: "A Five Minutes Guide to Better Typography",
+// 	url:
+// 		"http://pierrickcalvez.com/journal/a-five-minutes-guide-to-better-typography",
+// 	description: "",
+// })
+
+// news.push({
+// 	date: 1511739530295,
+// 	tags: [],
+// 	title: "Jam Origin: Midi Guitar 2",
+// 	url: "http://www.jamorigin.com/",
+// 	description: "This software can interpret your guitar as a MIDI controller!",
+// })
+
+// news.push({
+// 	date: 1511739530295,
+// 	tags: [],
+// 	title: "Snowflake Macro Photography",
+// 	url:
+// 		"https://chaoticmind75.blogspot.com/2013/08/my-technique-for-snowflakes-shooting.html",
+// 	description: "An awesome guide to get you started with macro photography.",
+// })
+
+// news.push({
+// 	date: 1511739530295,
+// 	tags: [],
+// 	title: "Why Does Time Exist at All?",
+// 	url: "https://www.youtube.com/watch?time_continue=169&v=tqn73A5Csi0",
+// 	description:
+// 		"A mindblowing talk from a cosmologist about our existence in the universe.",
+// })
+
+// news.push({
+// 	date: 1511739530295,
+// 	tags: [],
+// 	title: "Cosmo Project",
+// 	url: "http://cosmoproject.github.io/about/",
+// 	description: "A raspberry-pi based DIY audio pedal-box kit.",
+// })
+
+// news.push({
+// 	date: 1511739530295,
+// 	tags: [],
+// 	title: "Sampulator",
+// 	url: "http://sampulator.com/",
+// 	description: "A fun music making application.",
+// })
+
+// https://github.com/DeerMichel/pedalboard
 
 export { news }

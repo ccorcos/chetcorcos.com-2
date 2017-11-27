@@ -52,7 +52,7 @@ class Email extends React.PureComponent<EmailProps, {}> {
 const w = window as any
 w["email"] = () => {
 	const html = ReactDOM.renderToString(
-		<Email title="Chet's News - November 26, 2017" since={1501222477000} />
+		<Email title="Chet's News - November 26, 2017" since={1500752791000 + 1} />
 	)
 	console.log(html)
 }

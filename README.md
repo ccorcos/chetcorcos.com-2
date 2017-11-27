@@ -4,9 +4,13 @@
 
 - OP1 Music? - graphical coding ui designs! - resume - photography
 
-- navbar
-- lazy load news?
-- cache images
-- use moment for dates in news
-- more news
-- send latest news
+- todo
+	- more news
+	- send latest news
+
+- refactor
+	- use moment for dates in news
+
+- performance
+	- lazy load news
+	- cache images
