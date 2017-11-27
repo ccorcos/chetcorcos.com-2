@@ -8,6 +8,7 @@ import * as React from "react"
 import * as ReactDOM from "react-dom/server"
 import * as _ from "lodash"
 import NewsItem from "./components/NewsItem"
+import Link from "./components/Link"
 import { news } from "./newsData"
 import * as colors from "./helpers/colors"
 
@@ -31,7 +32,15 @@ class Email extends React.PureComponent<EmailProps, {}> {
 				}}
 			>
 				<div style={{ textAlign: "left" }}>
-					<h1 style={{ margin: 0, fontSize: 28 }}>{this.props.title}</h1>
+					<h1 style={{ margin: 0, fontSize: 28 }}>
+						<Link
+							href={"http://www.chetcorcos.com/news"}
+							padding={Link.Padding.None}
+							style={{ color: colors.dark }}
+						>
+							{this.props.title}
+						</Link>
+					</h1>
 				</div>
 				<div>
 					{sorted.map(item => {
@@ -39,7 +48,7 @@ class Email extends React.PureComponent<EmailProps, {}> {
 							<NewsItem
 								{...item}
 								key={item.title}
-								style={{ padding: 0, margin: 0 }}
+								style={{ paddingLeft: 0, paddingRight: 0, margin: 0 }}
 							/>
 						)
 					})}
