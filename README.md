@@ -4,9 +4,8 @@
 
 - OP1 Music? - graphical coding ui designs! - resume - photography
 
-- todo
-	- more news
-	- send latest news
+- email unsubscribe link
+	- <a href="*|UNSUB|*">Unsubscribe from this list.</a>
 
 - refactor
 	- use moment for dates in news

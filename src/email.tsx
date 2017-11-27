@@ -49,6 +49,7 @@ class Email extends React.PureComponent<EmailProps, {}> {
 								{...item}
 								key={item.title}
 								style={{ paddingLeft: 0, paddingRight: 0, margin: 0 }}
+								hideDate={true}
 							/>
 						)
 					})}

@@ -8,6 +8,7 @@ export interface NewsItemProps {
 	date: number
 	url: string
 	description?: string
+	hideDate?: boolean
 	style?: React.CSSProperties
 }
 
@@ -27,10 +28,12 @@ export default class NewsItem extends Component<NewsItemProps> {
 				<div style={{ flex: 1, fontSize: 14 }}>
 					<div>
 						<span style={{ fontWeight: "bold" }}>{this.props.title}</span>
-						<span style={{ color: "gray" }}>
-							{" • "}
-							{this.renderDate()}
-						</span>
+						{this.props.hideDate ? null : (
+							<span style={{ color: "gray" }}>
+								{" • "}
+								{this.renderDate()}
+							</span>
+						)}
 					</div>
 					<div style={{ color: "gray" }}>
 						<Markdown text={this.props.description || ""} />
