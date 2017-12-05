@@ -45,12 +45,21 @@ import * as rocketCover from "file-loader!./img/gallery/rocket.jpg"
 import * as gridCover from "file-loader!./img/gallery/grid.jpg"
 import * as longboardCover from "file-loader!./img/gallery/longboard.jpg"
 import * as brainrashCover from "file-loader!./img/gallery/brainrash.png"
+import * as explorableCover from "file-loader!./img/gallery/explorable.png"
 
 // =============================================================================
 // Posts that link to an external site.
 // =============================================================================
 
 const externalPosts: Array<ExternalPost> = []
+
+externalPosts.push({
+	title: "Explorable Explanations with Markdown",
+	date: "December 5, 2017",
+	tags: ["code"],
+	url: "https://ccorcos.github.io/explorable/",
+	img: explorableCover,
+})
 
 externalPosts.push({
 	title: "Intuitive State Management with Reactive Magic",
