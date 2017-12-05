@@ -1701,14 +1701,6 @@ news.push({
 news.push({
 	date: 1512489318405,
 	tags: [],
-	title: "Pixelmator",
-	url: "http://www.pixelmator.com/pro/",
-	description: "An incredibly polished photo editing tool.",
-})
-
-news.push({
-	date: 1512489318405,
-	tags: [],
 	title: "Microtonal Guitar",
 	url: "https://www.youtube.com/watch?v=iRsSjh5TTqI",
 	description: "A custom-built microtonal guitar.",
@@ -1717,7 +1709,7 @@ news.push({
 news.push({
 	date: 1512489318405,
 	tags: [],
-	title: "Pedalm Board",
+	title: "Pedal Board",
 	url: "https://github.com/DeerMichel/pedalboard",
 	description: "Another webaudio guitar effects chain.",
 })
