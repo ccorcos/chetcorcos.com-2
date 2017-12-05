@@ -1606,74 +1606,122 @@ news.push({
 	description: "Guitar effects in your web browser using the Web Audio API!",
 })
 
-// news.push({
-// 	date: 1511739530295,
-// 	tags: [],
-// 	title: "Bubble",
-// 	url: "https://bubble.is/",
-// 	description: "A graphical user interface for building web applications.",
-// })
+news.push({
+	date: 1512489318405,
+	tags: [],
+	title: "Bubble",
+	url: "https://bubble.is/",
+	description: "A graphical user interface for building web applications.",
+})
 
-// news.push({
-// 	date: 1511739530295,
-// 	tags: [],
-// 	title: "Augmenting Human Intellect",
-// 	url: "http://www.1962paper.org/web.html",
-// 	description:
-// 		"The proposal Doug Engelbart submited to ARPA that culminated with the [Mother of all Demos](https://www.youtube.com/watch?v=1U-b7lxG_z8).",
-// })
+news.push({
+	date: 1512489318405,
+	tags: [],
+	title: "Augmenting Human Intellect",
+	url: "http://www.1962paper.org/web.html",
+	description:
+		"The proposal Doug Engelbart submited to ARPA that culminated with the [Mother of all Demos](https://www.youtube.com/watch?v=1U-b7lxG_z8).",
+})
 
-// news.push({
-// 	date: 1511739530295,
-// 	tags: [],
-// 	title: "A Five Minutes Guide to Better Typography",
-// 	url:
-// 		"http://pierrickcalvez.com/journal/a-five-minutes-guide-to-better-typography",
-// 	description: "",
-// })
+news.push({
+	date: 1512489318405,
+	tags: [],
+	title: "A Five Minutes Guide to Better Typography",
+	url:
+		"http://pierrickcalvez.com/journal/a-five-minutes-guide-to-better-typography",
+	description: "",
+})
 
-// news.push({
-// 	date: 1511739530295,
-// 	tags: [],
-// 	title: "Jam Origin: Midi Guitar 2",
-// 	url: "http://www.jamorigin.com/",
-// 	description: "This software can interpret your guitar as a MIDI controller!",
-// })
+news.push({
+	date: 1512489318405,
+	tags: [],
+	title: "Jam Origin: Midi Guitar 2",
+	url: "http://www.jamorigin.com/",
+	description: "This software can interpret your guitar as a MIDI controller!",
+})
 
-// news.push({
-// 	date: 1511739530295,
-// 	tags: [],
-// 	title: "Snowflake Macro Photography",
-// 	url:
-// 		"https://chaoticmind75.blogspot.com/2013/08/my-technique-for-snowflakes-shooting.html",
-// 	description: "An awesome guide to get you started with macro photography.",
-// })
+news.push({
+	date: 1512489318405,
+	tags: [],
+	title: "Snowflake Macro Photography",
+	url:
+		"https://chaoticmind75.blogspot.com/2013/08/my-technique-for-snowflakes-shooting.html",
+	description: "An awesome guide to get you started with macro photography.",
+})
 
-// news.push({
-// 	date: 1511739530295,
-// 	tags: [],
-// 	title: "Why Does Time Exist at All?",
-// 	url: "https://www.youtube.com/watch?time_continue=169&v=tqn73A5Csi0",
-// 	description:
-// 		"A mindblowing talk from a cosmologist about our existence in the universe.",
-// })
+news.push({
+	date: 1512489318405,
+	tags: [],
+	title: "Why Does Time Exist at All?",
+	url: "https://www.youtube.com/watch?time_continue=169&v=tqn73A5Csi0",
+	description:
+		"A mindblowing talk from a cosmologist about our existence in the universe.",
+})
 
-// news.push({
-// 	date: 1511739530295,
-// 	tags: [],
-// 	title: "Cosmo Project",
-// 	url: "http://cosmoproject.github.io/about/",
-// 	description: "A raspberry-pi based DIY audio pedal-box kit.",
-// })
+news.push({
+	date: 1512489318405,
+	tags: [],
+	title: "Cosmo Project",
+	url: "http://cosmoproject.github.io/about/",
+	description: "A raspberry-pi based DIY audio pedal-box kit.",
+})
 
-// news.push({
-// 	date: 1511739530295,
-// 	tags: [],
-// 	title: "Sampulator",
-// 	url: "http://sampulator.com/",
-// 	description: "A fun music making application.",
-// })
+news.push({
+	date: 1512489318405,
+	tags: [],
+	title: "Sampulator",
+	url: "http://sampulator.com/",
+	description: "A fun music making application.",
+})
 
-// https://github.com/DeerMichel/pedalboard
+news.push({
+	date: 1512489318405,
+	tags: [],
+	title: "Compositor Lab",
+	url: "https://compositor.io/lab/",
+	description: "A UI for designing React components.",
+})
+
+news.push({
+	date: 1512489318405,
+	tags: [],
+	title: "Computoser",
+	url: "http://computoser.com/",
+	description: "Computer generated music.",
+})
+
+news.push({
+	date: 1512489318405,
+	tags: [],
+	title: "Pixelmator",
+	url: "http://www.pixelmator.com/pro/",
+	description: "An incredibly polished photo editing tool.",
+})
+
+news.push({
+	date: 1512489318405,
+	tags: [],
+	title: "Pixelmator",
+	url: "http://www.pixelmator.com/pro/",
+	description: "An incredibly polished photo editing tool.",
+})
+
+news.push({
+	date: 1512489318405,
+	tags: [],
+	title: "Microtonal Guitar",
+	url: "https://www.youtube.com/watch?v=iRsSjh5TTqI",
+	description: "A custom-built microtonal guitar.",
+})
+
+news.push({
+	date: 1512489318405,
+	tags: [],
+	title: "Pedalm Board",
+	url: "https://github.com/DeerMichel/pedalboard",
+	description: "Another webaudio guitar effects chain.",
+})
 
 export { news }
+
+// 1512489318405
