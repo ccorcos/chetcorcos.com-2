@@ -54,6 +54,14 @@ import * as explorableCover from "file-loader!./img/gallery/explorable.png"
 const externalPosts: Array<ExternalPost> = []
 
 externalPosts.push({
+	title: "Nippon 2017",
+	date: "January 15, 2018",
+	tags: ["music"],
+	url: "https://soundcloud.com/chet-corcos/sets/nippon-2017",
+	img: "https://i1.sndcdn.com/artworks-000285872042-m040l8-t500x500.jpg",
+})
+
+externalPosts.push({
 	title: "Explorable Explanations with Markdown",
 	date: "December 5, 2017",
 	tags: ["code"],
