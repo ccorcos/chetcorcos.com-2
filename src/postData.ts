@@ -53,6 +53,9 @@ import * as explorableCover from "file-loader!./img/gallery/explorable.png"
 
 const externalPosts: Array<ExternalPost> = []
 
+// TODO
+// typescript validator https://www.npmjs.com/package/typescript-validator
+
 externalPosts.push({
 	title: "Nippon 2017",
 	date: "January 15, 2018",
